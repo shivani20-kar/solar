@@ -3,17 +3,19 @@
   width: 100%;
   background: #f0f0f0;
 }
-
 .footer-hero {
   height: 70vh;
-  width: 90%;
+  width: 83%;
   margin: 0 auto;
   border-radius: 16px;
-  background-size: cover;
+
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
+
   position: relative;
   overflow: hidden;
-  transform: translateY(80px);
+  transform: translateY(8vw);
   z-index: 2;
 }
 
@@ -57,17 +59,20 @@
   border-radius: 8px;
   border: 1px solid transparent;
   background: linear-gradient(90deg, #15b2ff, #4867ff);
-  color: #fff;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1vw;
-  padding: 1vw 1.5vw;
-  font-family: "Figtree";
-  font-size: 1.2vw;
-  font-weight: 600;
+  gap: 0.5vw;
+  padding: 1.5vh 1vw;
   transition: all 0.3s ease;
+  color: #fff;
+  text-align: right;
+  font-family: Figtree;
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
 }
 
 .footer-hero-input button svg {
