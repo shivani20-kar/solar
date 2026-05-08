@@ -61,6 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 16px;
   gap: 8px;
   padding: 14px 18px;
   font-weight: 600;
@@ -70,6 +71,7 @@
 .footer-hero-input button svg {
   width: 18px;
   height: 18px;
+  font-weight: 600;
   transform: rotate(-45deg);
   transition: all 0.3s ease;
   fill: #fff;
@@ -123,7 +125,7 @@
 
 .footer-desc {
   color: #fff;
-  font-family: Figtree;
+   font-family: "Figtree";
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -135,7 +137,7 @@
   gap: 12px;
   margin-bottom: 14px;
   color: #fff;
-  font-family: Figtree;
+  font-family: "Figtree";
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -215,7 +217,7 @@
 .footer-heading {
   margin-bottom: 15px;
   color: #fff;
-  font-family: Figtree;
+  font-family: "Figtree";
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -232,7 +234,7 @@
 
 .footer-links a {
   color: #fff;
-  font-family: Figtree;
+  font-family: "Figtree";
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -253,7 +255,7 @@
 
 .footer-copy {
   color: #fff;
-  font-family: Figtree;
+ font-family: "Figtree";
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
@@ -269,7 +271,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: Figtree;
+  font-family: "Figtree";
   font-size: 18px;
   line-height: 18px;
   opacity: 0.9;
@@ -293,7 +295,7 @@
   content: "POURNIMA";
   position: absolute;
   bottom: -20px;
-  font-family: Figtree;
+  font-family: "Figtree";
   left: 49.5%;
   transform: translateX(-50%);
   font-size: 18vw;
