@@ -1,17 +1,21 @@
-/* Navbar */
-
 .navbar {
-  width: 100%;
+  width: 90%;
   background:
     linear-gradient(0deg, #fff 0%, #fff 100%), rgba(255, 255, 255, 0.1);
-  padding: 18px 0;
+  padding: 1.5vh 9vw;
+height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  /* border: 1px solid red; */
 }
 
 /* Container */
 
 .navbar-container {
   width: 90%;
-  margin: auto;
+  gap: 5vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,19 +29,16 @@
 }
 
 .navbar-logo-image {
-  width: 13vw;
+  width: 11vw;
   height: auto;
   object-fit: contain;
 }
 
-/* =========================
-   NAV LINKS
-========================= */
 
 .navbar-nav-links {
   display: flex;
   align-items: center;
-  gap: 3vw;
+  gap: 2.5vw;
   list-style: none;
 }
 
@@ -57,7 +58,7 @@
   color: #000;
   text-align: center;
   font-family: "Figtree";
-  font-size: 1vw;
+  font-size: 1.1vw;
   font-style: normal;
   font-weight: 500;
   line-height: 1.2;
@@ -71,12 +72,10 @@
 
 .active-link::after {
   content: "";
-
   position: absolute;
   left: 0;
   bottom: -18px;
-
-  width: 100%;
+  width: 90%;
   height: 2px;
 
   background: #6f78ff;
@@ -118,33 +117,20 @@
 
 .navbar-dropdown-menu {
   position: absolute;
-
-  top: 3.5vw;
+  top: 2vw;
   left: 0;
-
-  min-width: 18vw;
-
+  min-width: 15vw;
   background: #fff;
-
   border-radius: 12px;
-
   padding: 0.5vw 0;
-
   list-style: none;
-
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-
   opacity: 0;
   visibility: hidden;
-
   transform: translateY(10px);
-
   transition: all 0.3s ease;
-
   z-index: 999;
-
   color: #000;
-
   font-family: "Figtree";
   font-size: 1vw;
   font-style: normal;
@@ -190,17 +176,21 @@
   border-radius: 8px;
   border: 1px solid transparent;
   background: linear-gradient(90deg, #15b2ff, #4867ff);
-  color: #fff;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1vw;
-  padding: 1vw 1.5vw;
-  font-family: "Figtree";
-  font-size: 1.2vw;
-  font-weight: 600;
+  gap: 0.5vw;
+  padding: 1.5vh 1vw;
   transition: all 0.3s ease;
+
+  color: #FFF;
+text-align: right;
+font-family: Figtree;
+font-size: 1.1vw;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 100% */
 }
 
 /* ARROW */
