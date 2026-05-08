@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import { Routes, Route } from "react-router-dom";
 import BlogHeroSection from "./BlogPage/BlogHeroSection";
 import BlogSolarSection from "./BlogPage/BlogSolarSection";
+import HeroSection from "./HomePage/HeroSection";
 
 function App() {
   return (
@@ -13,10 +14,8 @@ function App() {
 
       <Routes>
         {/* HOME */}
-        {/* <Route
-          path="/"
-          element={<h1>Home Page</h1>}
-        /> */}
+        <Route path="/"
+          element={<HeroSection/>} />
 
         {/* BLOG PAGE */}
         <Route
