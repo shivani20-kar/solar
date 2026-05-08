@@ -11,9 +11,7 @@
 
 .navbar-container {
   width: 90%;
-  max-width: 1280px;
   margin: auto;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,7 +25,7 @@
 }
 
 .navbar-logo-image {
-  width: 200px;
+  width: 13vw;
   height: auto;
   object-fit: contain;
 }
@@ -39,7 +37,7 @@
 .navbar-nav-links {
   display: flex;
   align-items: center;
-  gap: 42px;
+  gap: 3vw;
   list-style: none;
 }
 
@@ -55,14 +53,14 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 1vw;
   color: #000;
   text-align: center;
-  font-family: Figtree;
-  font-size: 16px;
+  font-family: "Figtree";
+  font-size: 1vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 27px;
+  line-height: 1.2;
 }
 
 /* ACTIVE LINK */
@@ -98,15 +96,15 @@
 .navbar-services-link {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 1vw;
   cursor: pointer;
 }
 
 /* DROPDOWN ICON */
 
 .navbar-dropdown-icon {
-  font-size: 16px;
-  margin-top: 2px;
+  font-size: 1vw;
+  margin-top: 0.1vw;
   transition: 0.3s ease;
 }
 
@@ -121,16 +119,16 @@
 .navbar-dropdown-menu {
   position: absolute;
 
-  top: 45px;
+  top: 3.5vw;
   left: 0;
 
-  min-width: 230px;
+  min-width: 18vw;
 
   background: #fff;
 
   border-radius: 12px;
 
-  padding: 10px 0;
+  padding: 0.5vw 0;
 
   list-style: none;
 
@@ -147,11 +145,11 @@
 
   color: #000;
 
-   font-family: "Figtree";
-  font-size: 16px;
+  font-family: "Figtree";
+  font-size: 1vw;
   font-style: normal;
   font-weight: 500;
-  line-height: 10px;
+  line-height: 1.2;
 }
 
 /* SHOW DROPDOWN */
@@ -167,12 +165,12 @@
 .navbar-dropdown-item {
   display: block;
 
-  padding: 12px 18px;
+  padding: 1vw 1.5vw;
 
   text-decoration: none;
 
   color: #111;
-  font-size: 16px;
+  font-size: 1vw;
   font-weight: 500;
 
   transition: 0.3s ease;
@@ -181,7 +179,7 @@
 .navbar-dropdown-item:hover {
   background: #f5f7ff;
   color: #302e99;
-  padding-left: 24px;
+  padding-left: 2vw;
 }
 
 /* =========================
@@ -189,24 +187,19 @@
 ========================= */
 
 .navbar-contact-btn {
-  border: none;
   border-radius: 8px;
   border: 1px solid transparent;
   background: linear-gradient(90deg, #15b2ff, #4867ff);
-
   color: #fff;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-
-  padding: 14px 18px;
-
+  gap: 1vw;
+  padding: 1vw 1.5vw;
   font-family: "Figtree";
-  font-size: 16px;
+  font-size: 1.2vw;
   font-weight: 600;
-
   transition: all 0.3s ease;
 }
 
@@ -215,7 +208,7 @@
 .navbar-contact-btn svg {
   width: 18px;
   height: 18px;
-   font-weight: 600;
+  font-weight: 600;
   fill: #fff;
 
   transform: rotate(-45deg);

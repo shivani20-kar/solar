@@ -45,27 +45,29 @@
 }
 
 .footer-hero-input input {
-  flex: 2.5;
+  flex: 2;
   padding: 14px;
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 
 .footer-hero-input button {
   flex: 1;
-  border: none;
   border-radius: 8px;
-  background: linear-gradient(90deg, #15b2ff, #4867ff);
-  color: #fff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  gap: 8px;
-  padding: 14px 18px;
-  font-weight: 600;
-  transition: all 0.3s ease;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    padding: 1vw 1.5vw;
+    font-family: "Figtree";
+    font-size: 1.2vw;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .footer-hero-input button svg {
@@ -80,6 +82,7 @@
 .footer-hero-input button:hover {
   background: #fff;
   color: #302e99;
+  border: 1px solid #302e99;
 }
 
 .footer-hero-input button:hover svg {
