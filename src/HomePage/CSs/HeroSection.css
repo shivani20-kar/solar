@@ -21,19 +21,12 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 0.55) 0%,
-    rgba(0, 0, 0, 0.25) 40%,
-    rgba(0, 0, 0, 0.1) 100%
-  );
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
   max-width: 600px;
-  color: white;
 }
 
 .hero-tag {
@@ -50,42 +43,73 @@ font-style: normal;
 font-weight: 400;
 line-height: 16px; /* 100% */
 text-transform: uppercase;
+margin-bottom: 0px;
 }
 
 .hero-content h1 {
-  font-size: 68px;
-  line-height: 1.1;
-  font-weight: 700;
-  margin-bottom: 20px;
+ color: #FFF;
+font-family: Figtree;
+font-size: 4vw;
+font-style: normal;
+font-weight: 700;
+line-height: 62px; /* 113.889% */
+  margin-bottom: 10px;
 }
 
 .hero-content p {
-  font-size: 15px;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.9);
-  max-width: 500px;
-  margin-bottom: 35px;
+ color: #FFF;
+font-family: Figtree;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 175% */
+  max-width: 70vw;
+  margin-bottom: 12px;
 }
 
 .hero-btn {
-  border: none;
-  outline: none;
-  background: #3b82f6;
-  color: white;
-  padding: 16px 28px;
-  border-radius: 12px;
-  font-size: 15px;
-  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: linear-gradient(90deg, #15b2ff, #4867ff);
+  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  transition: 0.3s;
+  justify-content: center;
+  gap: 0.5vw;
+  padding: 1.5vh 1vw;
+  transition: all 0.3s ease;
+  color: #FFF;
+text-align: right;
+font-family: Figtree;
+font-size: 1.1vw;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 100% */
 }
 
+
+.hero-btn svg {
+  width: 18px;
+  height: 18px;
+  font-weight: 600;
+  fill: #fff;
+
+  transform: rotate(-45deg);
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
 .hero-btn:hover {
-  background: #2563eb;
-  transform: translateY(-3px);
+  background: #fff;
+  color: #302e99;
+  border: 1px solid #302e99;
+}
+
+.hero-btn:hover svg {
+  transform: rotate(0deg);
+  fill: #302e99;
 }
 
 .hero-card {
@@ -93,55 +117,82 @@ text-transform: uppercase;
   right: 7%;
   bottom: 60px;
   z-index: 3;
-  width: 340px;
-  padding: 22px;
-  border-radius: 20px;
-  backdrop-filter: blur(14px);
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  width: 500px;
+
+  display: flex;
+  align-items: flex-end; /* bottom align */
+  gap: 1vw;
 }
 
-.card-top {
+/* Common Card Style */
+.stat-box-hero {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0vw;
+  padding: 0vh 1vw;
+border-radius: 16px;
+background: rgba(255, 255, 255, 0.20);
+box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.20);
+}
+
+/* First Small Card */
+.small-card {
+  width: 15vw;
+  height: 25vh;
+}
+
+/* Second Big Card */
+.big-card {
+  width: 20vw;
+  height: 40vh;
+}
+
+.card-top-hero {
+  display: flex;
   align-items: center;
-  color: white;
+  justify-content: space-between;
   margin-bottom: 25px;
 }
 
-.card-top p {
+.card-top-hero p {
   font-size: 16px;
   font-weight: 500;
 }
 
-.card-top button {
-  width: 38px;
-  height: 38px;
+.card-top-hero button {
+
   border-radius: 50%;
-  border: none;
-  background: #3b82f6;
+border: 1px solid #4867FF;
+background: linear-gradient(271deg, #17AEFF -99.15%, #4869FF 137.57%);
   color: white;
   font-size: 16px;
   cursor: pointer;
+  
+}
+.card-top-hero button svg{
+    fill: #fff;
+transform: rotate(-45deg);
+ width: 19px;
+  height: 25px;
+
 }
 
-.card-stats {
-  display: flex;
-  gap: 20px;
+.stat-box-hero h2 {
+color: #FFF;
+font-family: Figtree;
+font-size: 4vw;
+font-style: normal;
+font-weight: 500;
+line-height: 70px; /* 128.125% */
+  margin-bottom: 0px;
 }
 
-.stat-box {
-  flex: 1;
-  color: white;
-}
-
-.stat-box h2 {
-  font-size: 52px;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.stat-box p {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.85);
+.stat-box-hero p {
+ color: #FFF;
+font-family: Figtree;
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 341.667% */
 }
