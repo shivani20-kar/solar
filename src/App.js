@@ -18,6 +18,8 @@ import AboutWhatWe from "./AboutPage/AboutWhatWe";
 import AboutProduct from "./AboutPage/AboutProduct";
 import AboutMissionSection from "./AboutPage/AboutMissionSection";
 import AboutDetailSection from "./AboutPage/AboutDetailSection";
+import Testimonials from "./HomePage/Testimonial";
+import TeamSection from "./HomePage/OurTeam";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
               <Services />
               <WhyChooseUs />
               <ProjectsSection />
+              <Testimonials/>
+              <TeamSection/>
             </>
           }
         />

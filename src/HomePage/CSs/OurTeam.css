@@ -1,0 +1,104 @@
+
+.team-section {
+background: #F6F8FA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+padding: 12vh 10vw;
+  overflow: hidden;
+}
+
+.team-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.team-content {
+  flex: 1;
+}
+
+.team-badge {
+    display: inline-block;
+border-radius: 31px;
+border: 1px solid #EEE;
+background: #FFF; 
+color: #15B2FF;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.team-content h1 {
+  margin-top: 4vh;
+color: #302E99;
+font-family: Figtree;
+font-size: 3vw;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; 
+}
+
+.team-content p {
+color: #676B74;
+font-family: Figtree;
+font-size: 1.6vw;
+font-style: normal;
+font-weight: 400;
+line-height: 38px; /* 158.333% */
+  margin-bottom: 40px;
+}
+
+.contact-btn {
+   border-radius: 8px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1.5vh 1vw;
+    transition: all 0.3s ease;
+    color: #FFF;
+    text-align: right;
+    font-family: Figtree;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.contact-btn svg {
+    width: 18px;
+    height: 18px;
+    font-weight: 600;
+    fill: #fff;
+
+    transform: rotate(-45deg);
+
+    transition: all 0.3s ease;
+}
+
+.contact-btn span {
+  margin-left: 10px;
+}
+
+.contact-btn:hover {
+    background: #fff;
+    color: #302e99;
+    border: 1px solid #302e99;
+}
+
+.contact-btn:hover svg {
+    transform: rotate(0deg);
+    fill: #302e99;
+}
+.map-wrapper {
+width: 520px;
+}
+.map-wrapper img{
+ width: 100%;
+}
