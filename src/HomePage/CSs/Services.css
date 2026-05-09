@@ -1,0 +1,183 @@
+.services-section {
+background: #F6F8FA;
+padding: 12vh 8vw;
+}
+
+.services-container {
+  width: 90%;
+  max-width: 1050px;
+  margin: auto;
+}
+
+/* Top Section */
+
+.services-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  gap: 10px;
+}
+
+.services-tag {
+ border-radius: 31px;
+border: 1px solid #EEE;
+background: #FFF; 
+color: #15B2FF;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.services-top h2 {
+    margin-top: 4vh;
+color: #302E99;
+font-family: Figtree;
+font-size: 3vw;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; /* 116.667% */
+}
+
+.services-btn {
+  border-radius: 8px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1.5vh 1vw;
+    transition: all 0.3s ease;
+    color: #FFF;
+    text-align: right;
+    font-family: Figtree;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.services-btn svg {
+    width: 18px;
+    height: 18px;
+    font-weight: 600;
+    fill: #fff;
+
+    transform: rotate(-45deg);
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.services-btn:hover {
+    background: #fff;
+    color: #302e99;
+    border: 1px solid #302e99;
+}
+
+.services-btn:hover svg {
+    transform: rotate(0deg);
+    fill: #302e99;
+}
+
+/* Cards */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* CARD */
+
+.service-card {
+  position: relative;
+  background: #fff;
+  border: 1.5px solid #3189FF;
+  border-radius: 16px;
+  padding: 3vh 2vw 8vh;
+  height: 35vh;
+  overflow: visible;
+}
+
+/* card cut shape */
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  background: #F6F8FA;
+  border-top: 1.5px solid #3189FF;
+  border-left: 1.5px solid #3189FF;
+  border-top-left-radius: 10px;
+  z-index: 1;
+}
+
+/* top curve */
+
+.service-card::after {
+  content: "";
+  position: absolute;
+  bottom: 60px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-bottom-right-radius: 10px;
+  box-shadow: 6px 6px 0 #F6F8FA;
+  border-right: 1.5px solid #3189FF;
+  z-index: 2;
+}
+
+.service-icon {
+  margin-bottom: 2px;
+}
+
+.service-card h3 {
+ color: #000;
+font-family: Figtree;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 100% */
+  margin-bottom: 10px;
+}
+
+.service-card p {
+ color: #000;
+font-family: Figtree;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 175% */
+}
+/* .arrow-btn {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  width: 56px;
+  height: 56px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #3f8cff, #4164ff);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 5;
+}
+
+.arrow-btn svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+} */

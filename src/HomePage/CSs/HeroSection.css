@@ -1,198 +1,205 @@
 .solar-hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  padding: 0 8%;
-  box-sizing: border-box;
-  margin-top: 11vh;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 12%;
+    box-sizing: border-box;
+    margin-top: 11vh;
 }
 
 .hero-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    inset: 0;
 }
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
+    position: absolute;
+    inset: 0;
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-  max-width: 600px;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
 }
 
 .hero-tag {
-  display: inline-block;
-  padding: 8px 16px;
-  border-radius: 30px;
-  border-radius: 35px;
-border: 1px solid rgba(255, 255, 255, 0.10);
-background: rgba(255, 255, 255, 0.20);
-  color: #FFF;
-font-family: Figtree;
-font-size: 1.2vw;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 100% */
-text-transform: uppercase;
-margin-bottom: 0px;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+    border-radius: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.20);
+    color: #FFF;
+    font-family: Figtree;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    /* 100% */
+    text-transform: uppercase;
+    margin-bottom: 0px;
 }
 
 .hero-content h1 {
- color: #FFF;
-font-family: Figtree;
-font-size: 4vw;
-font-style: normal;
-font-weight: 700;
-line-height: 62px; /* 113.889% */
-  margin-bottom: 10px;
+    color: #FFF;
+    font-family: Figtree;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    /* 113.889% */
+    margin-bottom: 10px;
 }
 
 .hero-content p {
- color: #FFF;
-font-family: Figtree;
-font-size: 1.2vw;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; /* 175% */
-  max-width: 70vw;
-  margin-bottom: 12px;
+    color: #FFF;
+    font-family: Figtree;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 175% */
+    max-width: 70vw;
+    margin-bottom: 12px;
 }
 
 .hero-btn {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  background: linear-gradient(90deg, #15b2ff, #4867ff);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5vw;
-  padding: 1.5vh 1vw;
-  transition: all 0.3s ease;
-  color: #FFF;
-text-align: right;
-font-family: Figtree;
-font-size: 1.1vw;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 100% */
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1.5vh 1vw;
+    transition: all 0.3s ease;
+    color: #FFF;
+    text-align: right;
+    font-family: Figtree;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
 }
 
 
 .hero-btn svg {
-  width: 18px;
-  height: 18px;
-  font-weight: 600;
-  fill: #fff;
+    width: 18px;
+    height: 18px;
+    font-weight: 600;
+    fill: #fff;
 
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 
-  transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 /* HOVER EFFECT */
 
 .hero-btn:hover {
-  background: #fff;
-  color: #302e99;
-  border: 1px solid #302e99;
+    background: #fff;
+    color: #302e99;
+    border: 1px solid #302e99;
 }
 
 .hero-btn:hover svg {
-  transform: rotate(0deg);
-  fill: #302e99;
+    transform: rotate(0deg);
+    fill: #302e99;
 }
 
 .hero-card {
-  position: absolute;
-  right: 7%;
-  bottom: 60px;
-  z-index: 3;
-  width: 500px;
+    position: absolute;
+    right: 7%;
+    bottom: 60px;
+    z-index: 3;
+    width: 500px;
 
-  display: flex;
-  align-items: flex-end; /* bottom align */
-  gap: 1vw;
+    display: flex;
+    align-items: flex-end;
+    /* bottom align */
+    gap: 1vw;
 }
 
 /* Common Card Style */
 .stat-box-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0vw;
-  padding: 0vh 1vw;
-border-radius: 16px;
-background: rgba(255, 255, 255, 0.20);
-box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0vw;
+    padding: 0vh 1vw;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.20);
+    box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.20);
 }
 
 /* First Small Card */
 .small-card {
-  width: 15vw;
-  height: 25vh;
+    width: 15vw;
+    height: 25vh;
 }
 
 /* Second Big Card */
 .big-card {
-  width: 20vw;
-  height: 40vh;
+    width: 20vw;
+    height: 40vh;
 }
 
 .card-top-hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .card-top-hero p {
-  font-size: 16px;
-  font-weight: 500;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .card-top-hero button {
 
-  border-radius: 50%;
-border: 1px solid #4867FF;
-background: linear-gradient(271deg, #17AEFF -99.15%, #4869FF 137.57%);
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  
+    border-radius: 50%;
+    border: 1px solid #4867FF;
+    background: linear-gradient(271deg, #17AEFF -99.15%, #4869FF 137.57%);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+
 }
-.card-top-hero button svg{
+
+.card-top-hero button svg {
     fill: #fff;
-transform: rotate(-45deg);
- width: 19px;
-  height: 25px;
+    transform: rotate(-45deg);
+    width: 19px;
+    height: 25px;
 
 }
 
 .stat-box-hero h2 {
-color: #FFF;
-font-family: Figtree;
-font-size: 4vw;
-font-style: normal;
-font-weight: 500;
-line-height: 70px; /* 128.125% */
-  margin-bottom: 0px;
+    color: #FFF;
+    font-family: Figtree;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 70px;
+    /* 128.125% */
+    margin-bottom: 0px;
 }
 
 .stat-box-hero p {
- color: #FFF;
-font-family: Figtree;
-font-size: 1.5vw;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 341.667% */
+    color: #FFF;
+    font-family: Figtree;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 341.667% */
 }

@@ -1,0 +1,179 @@
+
+.projects-section {
+ padding: 12vh 10vw;
+}
+
+.top-row {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  gap: 10px;
+}
+
+.tag {
+  display: inline-block;
+border-radius: 31px;
+border: 1px solid #EEE;
+background: #FFF; 
+color: #15B2FF;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.top-row h2 {
+  margin-top: 4vh;
+color: #302E99;
+font-family: Figtree;
+font-size: 3vw;
+font-style: normal;
+font-weight: 700;
+line-height: 50px; 
+}
+
+.view-btn {
+   border-radius: 8px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1.5vh 1vw;
+    transition: all 0.3s ease;
+    color: #FFF;
+    text-align: right;
+    font-family: Figtree;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.view-btn svg {
+    width: 18px;
+    height: 18px;
+    font-weight: 600;
+    fill: #fff;
+
+    transform: rotate(-45deg);
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.view-btn:hover {
+    background: #fff;
+    color: #302e99;
+    border: 1px solid #302e99;
+}
+
+.view-btn:hover svg {
+    transform: rotate(0deg);
+    fill: #302e99;
+}
+/* GRID */
+.projects-grid {
+  display: flex;
+  gap: 1vw;
+  overflow: hidden;
+}
+
+/* CARD */
+.project-card {
+  position: relative;
+  width: 250px;
+  height: 350px;
+  border-radius: 18px;
+  overflow: hidden;
+  /* cursor: pointer; */
+  flex-shrink: 0;
+
+  /* Smooth width animation */
+  transition: width 0.5s ease;
+}
+
+.project-card:hover {
+  width: 300px;
+}
+
+/* IMAGE */
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* Image zoom */
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  bottom: 1vw;
+  left: 1vw;
+
+  background: white;
+  width: 83%;
+  padding: 1.5vh 1vw;
+  border-radius: 14px;
+
+  opacity: 0;
+  transform: translateX(-120%);
+  transition: all 0.5s ease;
+}
+
+/* Hover -> left to right */
+.project-card:hover .overlay {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.overlay small {
+ font-family: Figtree;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 2px; /* 100% */
+color: #15B2FF;
+}
+
+.overlay-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1vw;
+}
+
+.overlay-content p {
+color: #302E99;
+font-family: Figtree;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 125% */
+text-transform: capitalize;
+}
+
+.arrow-btn {
+  min-width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: none;
+background: linear-gradient(90deg, #15B2FF 0%, #4867FF 100%);  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.arrow-btn svg{
+      fill: #fff;
+    transform: rotate(-45deg);
+    width: 19px;
+    height: 25px;
+}

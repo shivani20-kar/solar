@@ -31,7 +31,7 @@ const HeroSection = () => {
                     </svg>
                 </button>
             </div>
-{/* 
+
             <div className="hero-card">
                 <div className="stat-box-hero small-card">
                     <h2>120+</h2>
@@ -51,7 +51,7 @@ const HeroSection = () => {
                 </div>
 
 
-            </div> */}
+            </div>
         </section>
     );
 };
