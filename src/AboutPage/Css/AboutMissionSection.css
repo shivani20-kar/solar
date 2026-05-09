@@ -1,0 +1,222 @@
+/* ========================= */
+/* ABOUT MISSION SECTION */
+/* ========================= */
+
+.aboutmission-section {
+  position: relative;
+  width: 100%;
+  background: #302e99;
+  padding: 2vw 0 6vw;
+  overflow: hidden;
+}
+
+/* ========================= */
+/* DECORATIVE CIRCLES */
+/* ========================= */
+
+.aboutmission-circle-top,
+.aboutmission-circle-bottom {
+  position: absolute;
+  width: 22vw;
+  height: 22vw;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* ========================= */
+/* PNG CORNER IMAGES */
+/* ========================= */
+
+.aboutmission-corner-top-left,
+.aboutmission-corner-top-right,
+.aboutmission-corner-bottom-left,
+.aboutmission-corner-bottom-right {
+  position: absolute;
+  z-index: 1;
+
+  width: 18vw;
+  pointer-events: none;
+}
+
+.aboutmission-corner-top-left {
+  top: 0;
+  left: 0;
+}
+
+.aboutmission-corner-top-right {
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
+}
+
+.aboutmission-corner-bottom-left {
+  bottom: 0;
+  left: 0;
+  transform: rotate(-90deg);
+}
+
+.aboutmission-corner-bottom-right {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.aboutmission-corner-top-left img,
+.aboutmission-corner-top-right img,
+.aboutmission-corner-bottom-left img,
+.aboutmission-corner-bottom-right img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ========================= */
+/* MAIN CONTAINER */
+/* ========================= */
+
+.aboutmission-container {
+  position: relative;
+  z-index: 2;
+
+  width: 82%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================= */
+/* HEADING */
+/* ========================= */
+
+.aboutmission-heading {
+  font-family: "Figtree";
+  font-size: 4vw;
+  font-weight: 600;
+  line-height: 1.1;
+
+  margin: 0;
+  padding: 2vw 0;
+
+  color: #fff;
+  text-align: center;
+
+  font-style: normal;
+}
+
+/* ========================= */
+/* CARD COMMON */
+/* ========================= */
+
+.aboutmission-card {
+  width: 43vw;
+  border-radius: 0.8vw;
+  padding: 1.7vw 3vw;
+  transition: 0.35s ease;
+  background: #fff;
+  box-shadow: 0 4px 4px 9px rgba(0, 0, 0, 0.25);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* ========================= */
+/* FIRST CARD */
+/* ========================= */
+
+.aboutmission-card:first-of-type {
+  align-self: flex-start;
+
+  margin-left: 0;
+  margin-bottom: 3vw;
+}
+
+/* ========================= */
+/* SECOND CARD */
+/* ========================= */
+
+.aboutmission-card:last-of-type {
+  align-self: flex-end;
+
+  margin-right: 0;
+}
+
+/* ========================= */
+/* CARD TITLE */
+/* ========================= */
+
+.aboutmission-card-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1vw;
+
+  margin-bottom: 1vw;
+}
+
+/* ========================= */
+/* ICON */
+/* ========================= */
+
+.aboutmission-icon {
+  width: 2.4vw;
+  height: 2.4vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutmission-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+.aboutmission-card-title h3 {
+  color: #000;
+  font-family: "Figtree";
+  font-size: 2.3vw;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  font-style: normal;
+}
+
+/* ========================= */
+/* YELLOW LINE */
+/* ========================= */
+
+.aboutmission-yellow-line {
+  width: 18vw;
+  height: 0.22vw;
+  background: #ffd700;
+  border-radius: 10vw;
+  margin: 0;
+}
+
+.aboutmission-yellow-line.small {
+  width: 16vw;
+}
+
+/* ========================= */
+/* PARAGRAPH */
+/* ========================= */
+
+.aboutmission-card p {
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.7vw;
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+}

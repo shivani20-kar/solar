@@ -6,10 +6,18 @@ import { Routes, Route } from "react-router-dom";
 import BlogHeroSection from "./BlogPage/BlogHeroSection";
 import BlogSolarSection from "./BlogPage/BlogSolarSection";
 import HeroSection from "./HomePage/HeroSection";
+
 import AboutSolar from "./HomePage/AboutSolar";
 import Services from "./HomePage/Services";
 import WhyChooseUs from "./HomePage/WhyChooseUs";
 import ProjectsSection from "./HomePage/Projects";
+
+import AboutHeroSection from "./AboutPage/AboutHeroSection";
+import AboutPartnersSection from "./AboutPage/AboutPartnersSection";
+import AboutWhatWe from "./AboutPage/AboutWhatWe";
+import AboutProduct from "./AboutPage/AboutProduct";
+import AboutMissionSection from "./AboutPage/AboutMissionSection";
+import AboutDetailSection from "./AboutPage/AboutDetailSection";
 
 function App() {
   return (
@@ -18,14 +26,18 @@ function App() {
 
       <Routes>
         {/* HOME */}
-        <Route path="/"
+        <Route
+          path="/"
           element={
-          <><HeroSection/>
-          <AboutSolar/>
-          <Services/>
-          <WhyChooseUs/>
-          <ProjectsSection/>
-          </>} />
+            <>
+              <HeroSection />
+              <AboutSolar />
+              <Services />
+              <WhyChooseUs />
+              <ProjectsSection />
+            </>
+          }
+        />
 
         {/* BLOG PAGE */}
         <Route
@@ -34,6 +46,20 @@ function App() {
             <>
               <BlogHeroSection />
               <BlogSolarSection />
+            </>
+          }
+        />
+
+        <Route
+          path="/about"
+          element={
+            <>
+              <AboutHeroSection />
+              <AboutPartnersSection />
+              <AboutWhatWe />
+              <AboutProduct />
+              <AboutMissionSection />
+              <AboutDetailSection />
             </>
           }
         />

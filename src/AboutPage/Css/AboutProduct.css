@@ -1,0 +1,102 @@
+/* AboutProduct.css */
+
+.aboutproduct-section {
+  width: 100%;
+  background: rgba(103, 107, 116, 0.17);
+  padding: 5vw 0 7vw;
+}
+
+.aboutproduct-container {
+  width: 88%;
+  margin: auto;
+}
+
+/* ========================= */
+/* HEADING */
+/* ========================= */
+
+.aboutproduct-heading {
+  color: #000;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 4vw;
+  line-height: 1;
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.aboutproduct-subtext {
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.8vw;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding: 1vw 0 2.5vw 0;
+  color: #000;
+  font-style: normal;
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+.aboutproduct-grid {
+  width: 74%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.8vw;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.aboutproduct-card {
+  background: #333267;
+  box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 0.5vw;
+  padding: 2vw 1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+/* ========================= */
+/* ICON */
+/* ========================= */
+
+.aboutproduct-icon {
+  color: #fff;
+  font-size: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vw;
+}
+
+.aboutproduct-icon svg {
+  width: 4vw;
+  height: 4vw;
+}
+
+/* ========================= */
+/* TEXT */
+/* ========================= */
+
+.aboutproduct-card h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.3vw;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+  margin: 0;
+}

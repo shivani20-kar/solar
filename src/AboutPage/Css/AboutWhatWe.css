@@ -1,0 +1,151 @@
+/* AboutWhatWe.css */
+
+.aboutwhatwe-section {
+  width: 100%;
+  background: rgba(48, 46, 153, 0.28);
+  overflow: hidden;
+  padding: 2vw 0;
+}
+
+.aboutwhatwe-container {
+  width: 83%;
+  margin: auto;
+}
+
+/* ========================= */
+/* HEADING */
+/* ========================= */
+
+.aboutwhatwe-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+  margin-bottom: 1.5vw;
+}
+
+.aboutwhatwe-heading h2 {
+  color: #000;
+  font-family: "Figtree";
+  font-size: 4vw;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  margin: 0;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+}
+
+.aboutwhatwe-line {
+  width: 23vw;
+  height: 0.22vw;
+  background: #ffd700;
+  border-radius: 10vw;
+}
+
+/* ========================= */
+/* SUB TEXT */
+/* ========================= */
+
+.aboutwhatwe-subtext {
+  font-family: "Figtree";
+  font-size: 1.8vw;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2vw;
+  margin-top: 0;
+
+  color: #000;
+  text-align: center;
+
+  font-style: normal;
+}
+
+/* ========================= */
+/* CARDS */
+/* ========================= */
+
+.aboutwhatwe-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4vw;
+  margin-bottom: 4vw;
+}
+
+/* CARD */
+
+.aboutwhatwe-card {
+  position: relative;
+  width: 100%;
+  height: 20vw;
+  border-radius: 1vw;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.aboutwhatwe-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+/* OVERLAY */
+
+.aboutwhatwe-overlay {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
+}
+
+/* TEXT */
+
+.aboutwhatwe-card h3 {
+  position: absolute;
+  left: 50%;
+  bottom: 1.8vw;
+  transform: translateX(-50%);
+
+  width: 90%;
+
+  color: #fff;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.8vw;
+  font-weight: 400;
+  line-height: 1.1;
+  z-index: 2;
+
+  font-style: normal;
+}
+
+/* HOVER */
+
+/* ========================= */
+/* BOTTOM TEXT BOX */
+/* ========================= */
+
+.aboutwhatwe-bottomtext {
+  width: 88%;
+  margin: auto;
+
+  border: 1px solid #302e99;
+  border-radius: 1.6vw;
+
+  padding: 1.2vw 1.6vw;
+}
+
+.aboutwhatwe-bottomtext p {
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.8vw;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0;
+
+  color: #000;
+
+  font-style: normal;
+}

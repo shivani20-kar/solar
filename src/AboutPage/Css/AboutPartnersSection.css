@@ -1,0 +1,109 @@
+/* AboutPartnersSection.css */
+
+.aboutpartners-section {
+  width: 100%;
+  background: #fff;
+  padding: 2vw 0;
+  overflow: hidden;
+}
+
+.aboutpartners-container {
+  width: 83%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HEADING */
+/* HEADING */
+
+.aboutpartners-heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.aboutpartners-heading h2 {
+  font-family: "Figtree";
+  font-size: 4vw;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: #000;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+/* LINE */
+
+.aboutpartners-line {
+  width: 22vw;
+  height: 0.22vw;
+  background: #ffd700;
+  border-radius: 10vw;
+  display: block;
+}
+
+/* ========================= */
+/* LOGOS WRAPPER */
+/* ========================= */
+
+.aboutpartners-logos {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================= */
+/* FIRST ROW */
+/* ========================= */
+
+.aboutpartners-row1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 3vw; */
+  align-items: center;
+}
+
+/* ========================= */
+/* SECOND ROW */
+/* ========================= */
+
+.aboutpartners-row2 {
+  width: 75%;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+  align-items: center;
+}
+
+/* ========================= */
+/* ITEM */
+/* ========================= */
+
+.aboutpartners-item {
+  width: 100%;
+  height: 12vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.35s ease;
+}
+
+
+
+.aboutpartners-item img {
+  max-width: 90%;
+  max-height: 100%;
+  object-fit: contain;
+}

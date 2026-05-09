@@ -1,0 +1,145 @@
+/* AboutHeroSection.css */
+
+.abouthero-section {
+  width: 100%;
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-top: 11vh;
+}
+
+/* OVERLAY */
+
+.abouthero-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+}
+
+/* CONTAINER */
+
+.abouthero-container {
+  width: 89%;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+
+  /* display: flex;
+  justify-content: space-between;
+  align-items: flex-end; */
+  gap: 4vw;
+}
+
+/* LEFT CONTENT */
+
+.abouthero-content {
+  width: 52%;
+}
+
+.abouthero-content h1 {
+  color: #fff;
+  font-family: "Figtree";
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 2vw;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+.abouthero-content h1 span {
+  color: #00b552;
+}
+
+.abouthero-content p {
+  color: #fff;
+  font-family: "Figtree";
+  font-size: 1.6vw;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 1vw;
+  opacity: 0.95;
+  font-style: normal;
+  width: 52vw;
+}
+
+/* RIGHT CARDS */
+
+.abouthero-cards {
+  display: flex;
+  align-items: flex-end;
+  gap: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 43vw;
+}
+
+/* CARD */
+
+.abouthero-card {
+  width: 20vw;
+  height: 12vw;
+
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.4s ease;
+}
+
+/* ICON */
+
+.abouthero-icon {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  background: #385aff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1.4vw;
+}
+
+.abouthero-icon svg {
+  width: 2.2vw;
+  height: 2.2vw;
+}
+
+/* TEXT */
+
+.abouthero-card h3 {
+  color: #fff;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.7vw;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+  margin: 0;
+}
+
+.abouthero-card p {
+  color: #fff;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.7vw;
+  font-weight: 400;
+  line-height: 1.2;
+  font-style: normal;
+  margin: 0;
+}
