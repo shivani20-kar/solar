@@ -41,7 +41,6 @@ function App() {
               <WhyChooseUs />
               <ProjectsSection />
               <Testimonials/>
-              
               <TeamSection/>
               <FAQ/>
               <BlogSection/>
