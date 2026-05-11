@@ -1,6 +1,7 @@
 // BlogSolarSection.jsx
 
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./BlogSolarSection.css";
 
 import blog1 from "../BlogPage/blog1.png";
@@ -12,64 +13,102 @@ import blog6 from "../BlogPage/blog6.png";
 
 const blogs = [
   {
+    id: 1,
     image: blog1,
     author: "Rahul Deshmukh",
-    date: " 08 May, 2024",
+    date: "08 May, 2024",
     title: "Energy Max Expands to Three New Cities",
     desc: "Energy Max brings solar solutions to new regions, expanding clean energy access. This move aims to make solar more affordable and widely available.",
+    route: "/blog-one",
   },
+
   {
+    id: 2,
     image: blog2,
     author: "Neha Patil",
     date: "14 Sep, 2024",
     title: "The Future of Clean Power",
     desc: "Solar energy is revolutionizing how we generate and consume electricity. By harnessing the sun’s power, solar panels provide a sustainable.",
+    route: "/blog-two",
   },
+
   {
+    id: 3,
     image: blog3,
     author: "Sophia Lee",
     date: "18 Sep, 2024",
     title: "Complete Guide to Solar Panels for Homes",
     desc: "Learn everything you need to know before installing solar panels at home. From system types to costs, make informed decisions with ease.",
+    route: "/blog-three",
   },
+
   {
+    id: 4,
     image: blog4,
     author: "Michael Brown",
     date: "22 Sep, 2024",
     title: "Solar Panel Maintenance Tips for Long Life",
     desc: "Learn everything you need to know before installing solar panels at home. From system types to costs, make informed decisions with ease.",
+    route: "/blog-four",
   },
+
   {
+    id: 5,
     image: blog5,
     author: "Emma Wilson",
     date: "25 Sep, 2024",
     title: "On-Grid vs Off-Grid vs Hybrid Solar Systems",
     desc: "Understand the differences between major solar system types. Choose the right solution based on your energy needs and budget.",
+    route: "/blog-five",
   },
+
   {
+    id: 6,
     image: blog6,
     author: "James Carter",
     date: "30 Sep, 2024",
     title: "How Much Does a Solar System Cost in India?",
     desc: "Explore the complete cost breakdown of solar installations in India. Learn about pricing, subsidies, and long-term savings.",
+    route: "/blog-six",
   },
 ];
 
 const BlogSolarSection = () => {
+
+  const navigate = useNavigate();
+
+  const handleBlogClick = (blog) => {
+    navigate(blog.route);
+  };
+
   return (
     <section className="blogsolar-section">
+
       <div className="blogsolar-container">
+
         <h2 className="blogsolar-heading">
           Going Solar Made Easy: <br />
           Everything You Need to Know
         </h2>
 
         <div className="blogsolar-grid">
+
           {blogs.map((blog, index) => (
-            <div className="blogsolar-card" key={index}>
-              <img src={blog.image} alt="blog" className="blogsolar-image" />
+
+            <div
+              className="blogsolar-card"
+              key={index}
+              onClick={() => handleBlogClick(blog)}
+            >
+
+              <img
+                src={blog.image}
+                alt="blog"
+                className="blogsolar-image"
+              />
 
               <div className="blogsolar-meta">
+
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -140,23 +179,33 @@ const BlogSolarSection = () => {
 
                   {blog.date}
                 </span>
+
               </div>
 
               <h3>{blog.title}</h3>
 
               <p>{blog.desc}</p>
+
             </div>
+
           ))}
+
         </div>
 
         <button className="blogsolar-load-btn">
+
           Learn More
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+
             <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
+
           </svg>
+
         </button>
+
       </div>
+
     </section>
   );
 };

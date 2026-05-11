@@ -2,7 +2,9 @@ import "./App.css";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+
 import BlogHeroSection from "./BlogPage/BlogHeroSection";
 import BlogSolarSection from "./BlogPage/BlogSolarSection";
 import HeroSection from "./HomePage/HeroSection";
@@ -18,13 +20,21 @@ import AboutWhatWe from "./AboutPage/AboutWhatWe";
 import AboutProduct from "./AboutPage/AboutProduct";
 import AboutMissionSection from "./AboutPage/AboutMissionSection";
 import AboutDetailSection from "./AboutPage/AboutDetailSection";
-import Testimonials from "./HomePage/Testimonial";
-import TeamSection from "./HomePage/OurTeam";
-import FAQ from "./HomePage/FAQ";
-import BlogSection from "./HomePage/BlogSection";
-import Consultation from "./HomePage/Consultation;";
+
+import BlogOne from "./BlogPage/BlogOne";
 
 function App() {
+  const { pathname } = useLocation();
+
+  // AUTO SCROLL TOP
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  }, [pathname]);
+
   return (
     <>
       <Navbar />
@@ -40,11 +50,6 @@ function App() {
               <Services />
               <WhyChooseUs />
               <ProjectsSection />
-              <Testimonials/>
-              <TeamSection/>
-              <FAQ/>
-              <BlogSection/>
-              <Consultation/>
             </>
           }
         />
@@ -60,6 +65,10 @@ function App() {
           }
         />
 
+        {/* BLOG DETAILS ROUTES */}
+        <Route path="/blog-one" element={<BlogOne />} />
+
+        {/* ABOUT */}
         <Route
           path="/about"
           element={

@@ -37,6 +37,7 @@
   background: #fff;
   padding: 1vw;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 
 .blogsolar-card:hover {
@@ -151,4 +152,3 @@
   transform: rotate(0deg);
   fill: #302e99;
 }
-
