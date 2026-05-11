@@ -1,18 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
+
 /* HERO SECTION */
 .footer-wrapper {
   width: 100%;
   background: #f0f0f0;
 }
+
 .footer-hero {
   height: 70vh;
   width: 83%;
   margin: 0 auto;
   border-radius: 16px;
-
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
   position: relative;
   overflow: hidden;
   transform: translateY(8vw);
@@ -31,7 +32,7 @@
 
 .footer-hero-title {
   color: #fff;
-  font-size: 4.1vw;
+  font-size: 4vw;
   max-width: 44vw;
   margin-bottom: 3vw;
   text-align: center;
@@ -68,9 +69,8 @@
   transition: all 0.3s ease;
   color: #fff;
   text-align: right;
-  font-family: Figtree;
+  font-family: "Figtree";
   font-size: 1.1vw;
-  font-style: normal;
   font-weight: 500;
   line-height: 20px;
 }
@@ -103,40 +103,54 @@
   margin-top: -20px;
   position: relative;
   z-index: 1;
-  overflow: hidden; /* 🔥 fix for watermark */
+  overflow: hidden;
+}
+
+/* WATERMARK IMAGE */
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 70vh;
+  background-image: var(--watermark-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.footer-container,
+.footer-bottom {
+  position: relative;
+  z-index: 2;
 }
 
 .footer-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 60px;
-
-  max-width: 1000px; /* 🔥 match with bottom */
+  max-width: 1000px;
   margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
-.footer-logo {
-  font-size: 2vw;
-  font-weight: 700;
-  margin-bottom: 0;
+/* LOGO IMAGE */
+.footer-logo-wrap {
+  margin-bottom: 1.5vw;
+  margin-top: 2vw;
 }
 
-.footer-subtitle {
-  font-size: 1vw;
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 2vw;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: 0.1vw;
-}
-
-.footer-desc {
-  color: #fff;
-  font-family: "Figtree";
-  font-size: 1vw;
-  font-weight: 400;
-  line-height: 1.2;
+.footer-logo-img {
+  width: 16vw;
+  height: auto;
+  object-fit: contain;
 }
 
 .footer-contact-item {
@@ -170,6 +184,11 @@
   fill: #fff;
 }
 
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
 .footer-social-icons a {
   width: 40px;
   height: 40px;
@@ -188,6 +207,9 @@
 
 .footer-social-icons svg {
   fill: #3b3b98;
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 30px;
 }
 
 .footer-newsletter {
@@ -206,19 +228,6 @@
   border: none;
   background: #fff;
   cursor: pointer;
-}
-
-.footer-social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.footer-social-icons svg {
-  background: #fff;
-  color: #3b3b98;
-  padding: 8px;
-  border-radius: 50%;
-  font-size: 30px;
 }
 
 .footer-heading {
@@ -253,11 +262,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1100px;
+  gap: 20px;
+  flex-wrap: wrap;
+
   width: 100%;
   margin: 40px auto 0;
   padding-top: 1vw;
+
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  position: relative;
+  z-index: 2;
 }
 
 .footer-copy {
@@ -274,13 +289,44 @@
   font-weight: 700;
 }
 
+/* CENTER TEXT */
+.footer-designed {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  color: #fff;
+  font-family: "Figtree";
+  font-size: 1.1vw;
+  font-weight: 500;
+}
+
+.designvio-link {
+  color: #fff;
+  font-family: "Unica One";
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.designvio-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
 .footer-bottom-links {
   display: flex;
   align-items: center;
   gap: 10px;
+
   font-family: "Figtree";
   font-size: 1.2vw;
-  line-height: 1.2vw;
+  line-height: 1.2;
+
   opacity: 0.9;
 }
 
@@ -289,26 +335,6 @@
   text-decoration: none;
 }
 
-.footer-bottom-links a:hover {
-  text-decoration: underline;
-}
-
 .divider {
   color: #fff;
-}
-
-/* WATERMARK TEXT */
-.footer::before {
-  content: "POURNIMA";
-  position: absolute;
-  bottom: -20px;
-  font-family: "Figtree";
-  left: 49.5%;
-  transform: translateX(-50%);
-  font-size: 18vw;
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.05);
-  white-space: nowrap;
-  pointer-events: none;
-  z-index: 0;
 }

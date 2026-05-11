@@ -2,6 +2,8 @@ import React from "react";
 import "./Footer.css";
 import { Link } from "react-router-dom";
 import bgImg from "../src/Footerbackgroundimg.png";
+import footerLogo from "../src/Footerlogowhite.png";
+import watermarkImg from "../src/FooterBackgroundImage.png";
 
 const Footer = () => {
   return (
@@ -30,12 +32,22 @@ const Footer = () => {
       </section>
 
       {/* FOOTER */}
-      <footer className="footer">
+      <footer
+        className="footer"
+        style={{
+          "--watermark-image": `url(${watermarkImg})`,
+        }}
+      >
         <div className="footer-container">
           <div className="footer-col">
-            <h2 className="footer-logo">POURNIMA</h2>
-
-            <p className="footer-subtitle">ENERGY AND INFRA LLP</p>
+            {/* LOGO IMAGE */}
+            <div className="footer-logo-wrap">
+              <img
+                src={footerLogo}
+                alt="Pournima Logo"
+                className="footer-logo-img"
+              />
+            </div>
 
             <p className="footer-desc">
               We’re dedicated to helping you harness the power of the sun to
@@ -154,6 +166,9 @@ const Footer = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
+                <Link to="/blogs">Blogs</Link>
+              </li>
+              <li>
                 <Link to="/about">About Us</Link>
               </li>
               <li>
@@ -161,9 +176,6 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/why-us">Why Choose Us</Link>
-              </li>
-              <li>
-                <Link to="/blog">Blog</Link>
               </li>
             </ul>
           </div>
@@ -197,6 +209,32 @@ const Footer = () => {
             <span className="brand">POURNIMA ENERGY AND INFRA</span>. All rights
             reserved
           </p>
+
+          {/* CENTER */}
+          <div className="footer-designed">
+            Designed By{" "}
+            <a
+              href="https://designvio.framer.ai/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="designvio-link"
+            >
+              Designvio
+            </a>
+            Pvt. Ltd.
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 25 25"
+              fill="none"
+            >
+              <path
+                d="M18.2269 1C17.0544 1.01799 15.9074 1.34088 14.9019 1.93606C13.8964 2.53123 13.0679 3.37762 12.5 4.38975C11.9321 3.37762 11.1036 2.53123 10.0981 1.93606C9.09256 1.34088 7.94564 1.01799 6.77314 1C4.90404 1.08011 3.14305 1.88673 1.87489 3.24364C0.606735 4.60055 -0.0655042 6.39744 0.00504078 8.24175C0.00504078 15.201 11.4129 23.2388 11.8982 23.5799L12.5 24L13.1018 23.5799C13.5871 23.2409 24.995 15.201 24.995 8.24175C25.0655 6.39744 24.3933 4.60055 23.1251 3.24364C21.8569 1.88673 20.096 1.08011 18.2269 1Z"
+                fill="#FD5B5B"
+              />
+            </svg>
+          </div>
 
           <div className="footer-bottom-links">
             <Link to="/terms">Terms & Conditions</Link>
