@@ -20,6 +20,9 @@ import AboutMissionSection from "./AboutPage/AboutMissionSection";
 import AboutDetailSection from "./AboutPage/AboutDetailSection";
 import Testimonials from "./HomePage/Testimonial";
 import TeamSection from "./HomePage/OurTeam";
+import FAQ from "./HomePage/FAQ";
+import BlogSection from "./HomePage/BlogSection";
+import Consultation from "./HomePage/Consultation;";
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
               <ProjectsSection />
               <Testimonials/>
               <TeamSection/>
+              <FAQ/>
+              <BlogSection/>
+              <Consultation/>
             </>
           }
         />

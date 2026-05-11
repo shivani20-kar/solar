@@ -1,0 +1,134 @@
+.blog-section {
+background: #F6F8FA;
+padding: 10vh 11vw;
+}
+
+.blog-top {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0px;
+  gap: 10px;
+}
+
+.blog-tag {
+  border-radius: 31px;
+border: 1px solid #EEE;
+background: #FFF; 
+color: #15B2FF;
+  padding: 10px 22px;
+  border-radius: 30px;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.blog-heading {
+color: #302E99;
+font-family: Figtree;
+font-size: 3vw;
+font-style: normal;
+font-weight: 700;
+line-height: 50px;
+}
+
+.blog-view-btn {
+  border-radius: 8px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1.5vh 1vw;
+    transition: all 0.3s ease;
+    color: #FFF;
+    text-align: right;
+    font-family: Figtree;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.blog-view-btn svg {
+    width: 18px;
+    height: 18px;
+    font-weight: 600;
+    fill: #fff;
+
+    transform: rotate(-45deg);
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.blog-view-btn:hover {
+    background: #fff;
+    color: #302e99;
+    border: 1px solid #302e99;
+}
+
+.blog-view-btn:hover svg {
+    transform: rotate(0deg);
+    fill: #302e99;
+}
+.blog-cards {
+  display: flex;
+  gap: 1.5vw;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 28%;
+border-radius: 8px;
+background: #FFF;
+  padding: 1vw;
+  transition: 0.3s;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 14vw;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.blog-info {
+  display: flex;
+  gap: 1vw;
+ color: #676B74;
+font-family: Figtree;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 5px; /* 100% */
+  margin-top: 1vw;
+  margin-bottom: 0vw;
+}
+.blog-info svg{
+    vertical-align: middle;
+}
+.blog-title {
+color: #302E99;
+font-family: Figtree;
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 116.667% */
+  margin-bottom: 1vw;
+}
+
+.blog-desc {
+color: #676B74;
+font-family: Figtree;
+font-size: 1.1vw;
+font-style: normal;
+font-weight: 400;
+line-height:20px; /* 175% */
+}
