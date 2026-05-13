@@ -1,0 +1,220 @@
+/* SolarSystemProductPageComponent.css */
+
+.SolarSystemProductPageComponent-section {
+  width: 100%;
+  padding: 8vh 9vw;
+  background: #f6f8fa;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.SolarSystemProductPageComponent-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+/* LEFT SIDE */
+
+.SolarSystemProductPageComponent-cards-wrapper {
+  display: flex;
+  align-items: stretch;
+  gap: 1vw;
+  height: 50vh;
+}
+
+/* CARD */
+
+.SolarSystemProductPageComponent-card {
+  width: 4vw;
+  min-width: 4vw;
+  border-radius: 1vw;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    width 0.9s ease,
+    min-width 0.9s ease,
+    transform 0.5s ease;
+}
+
+/* ACTIVE CARD */
+
+.SolarSystemProductPageComponent-active-card {
+  width: 20vw;
+  min-width: 20vw;
+}
+
+/* IMAGE */
+
+.SolarSystemProductPageComponent-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  animation: SolarFadeZoom 1s ease;
+}
+
+@keyframes SolarFadeZoom {
+  from {
+    opacity: 0;
+    transform: scale(1.08);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* OVERLAY */
+
+.SolarSystemProductPageComponent-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+/* ACTIVE CONTENT */
+
+.SolarSystemProductPageComponent-active-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  color: white;
+  text-align: center;
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  animation: SolarTextUp 1s ease;
+}
+
+@keyframes SolarTextUp {
+  from {
+    opacity: 0;
+    transform: translateY(4vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DESCRIPTION */
+
+.SolarSystemProductPageComponent-active-content p {
+  font-size: 1vw;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #fff;
+  padding: 0 1.5vw;
+  margin-bottom: 2vh;
+
+  text-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);
+  font-family: "Figtree";
+  font-style: normal;
+}
+
+/* TITLE BACKGROUND */
+
+.SolarSystemProductPageComponent-active-content h4 {
+  width: 100%;
+
+  font-size: 1.2vw;
+  font-weight: 400;
+
+  padding: 1.5vh 0;
+
+  margin: 0;
+
+  transition: all 0.5s ease;
+  font-family: "Figtree";
+  font-style: normal;
+  line-height: 1.2;
+}
+
+/* VERTICAL TEXT */
+
+.SolarSystemProductPageComponent-vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+
+  color: #fff;
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: 0.08vw;
+
+  transition: all 0.5s ease;
+}
+
+/* RIGHT SIDE */
+
+.SolarSystemProductPageComponent-content {
+  flex: 1 1;
+  max-width: 38vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.SolarSystemProductPageComponent-content h2 {
+  font-size: 2.5vw;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #001233;
+  font-family: "Figtree";
+  font-style: normal;
+  margin: 0;
+}
+
+.SolarSystemProductPageComponent-content-details {
+  text-align: center;
+
+  animation: SolarContentFade 0.8s ease;
+}
+
+@keyframes SolarContentFade {
+  from {
+    opacity: 0;
+    transform: translateY(3vh);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.SolarSystemProductPageComponent-content-details h3 {
+  font-size: 1.7vw;
+  margin-bottom: 3vh;
+  font-weight: 600;
+  color: #001233;
+  font-family: "Figtree";
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.SolarSystemProductPageComponent-content-details p {
+  font-size: 1.2vw;
+  line-height: 1.5;
+  color: #000;
+  text-align: center;
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 400;
+  max-width: 30vw;
+}
