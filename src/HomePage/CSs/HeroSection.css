@@ -134,7 +134,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 0vw;
-    padding: 0vh 1vw;
+    padding: 1vh 1vw 0vh;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.20);
     box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.20);
@@ -143,20 +143,20 @@
 /* First Small Card */
 .small-card {
     width: 15vw;
-    height: 25vh;
+    height: 18vh;
 }
 
 /* Second Big Card */
 .big-card {
     width: 20vw;
-    height: 40vh;
+    height: 26vh;
 }
 
 .card-top-hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 25px;
+    margin-bottom: 2px;
 }
 
 .card-top-hero p {
@@ -164,23 +164,20 @@
     font-weight: 500;
 }
 
-.card-top-hero button {
-
+.svg-button {
     border-radius: 50%;
     border: 1px solid #4867FF;
     background: linear-gradient(271deg, #17AEFF -99.15%, #4869FF 137.57%);
     color: white;
     font-size: 16px;
     cursor: pointer;
-
 }
 
-.card-top-hero button svg {
+.svg-button svg {
     fill: #fff;
     transform: rotate(-45deg);
     width: 19px;
     height: 25px;
-
 }
 
 .stat-box-hero h2 {
@@ -190,8 +187,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: 70px;
-    /* 128.125% */
     margin-bottom: 0px;
+    margin-top: 0;
 }
 
 .stat-box-hero p {
@@ -201,5 +198,4 @@
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
-    /* 341.667% */
 }

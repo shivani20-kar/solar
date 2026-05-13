@@ -27,6 +27,8 @@ import TeamSection from "./HomePage/OurTeam";
 import FAQ from "./HomePage/FAQ";
 import BlogSection from "./HomePage/BlogSection";
 import Consultation from "./HomePage/Consultation;";
+import DealershipPopup from "./HomePage/DealershipPopup";
+import SolarSolutions from "./OurProduct/SolarSolution";
 
 function App() {
   const { pathname } = useLocation();
@@ -63,7 +65,6 @@ function App() {
             </>
           }
         />
-
         {/* BLOG PAGE */}
         <Route
           path="/blogs"
@@ -92,6 +93,7 @@ function App() {
             </>
           }
         />
+        <Route path="/products" element={<SolarSolutions/>}/>
       </Routes>
 
       <Footer />
