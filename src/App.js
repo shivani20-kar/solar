@@ -22,7 +22,7 @@ import AboutMissionSection from "./AboutPage/AboutMissionSection";
 import AboutDetailSection from "./AboutPage/AboutDetailSection";
 
 import BlogOne from "./BlogPage/BlogOne";
-import Testimonials from "./HomePage/Testimonial";
+import Testimonials from "./HomePage/Testimonial"; 
 import TeamSection from "./HomePage/OurTeam";
 import FAQ from "./HomePage/FAQ";
 import BlogSection from "./HomePage/BlogSection";
