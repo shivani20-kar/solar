@@ -112,8 +112,7 @@ function App() {
             </>
           }
         />
-                <Route path="/products" element={<SolarSolutions/>}/>
-
+      <Route path="/products" element={<SolarSolutions/>}/>
       </Routes>
 
       <Footer />

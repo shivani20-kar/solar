@@ -1,16 +1,13 @@
 
 
 .solar-container {
-  width: 100%;
-  min-height: 100vh;
   position: relative;
   background: url("https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1974&auto=format&fit=crop")
     center/cover no-repeat;
   overflow: hidden;
-  font-family: "Poppins", sans-serif;
 }
 
-.overlay {
+.solar-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.55);

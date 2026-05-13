@@ -12,7 +12,7 @@ import {
 const SolarSolutions = () => {
   return (
     <div className="solar-container">
-      <div className="overlay"></div>
+      <div className="solar-overlay"></div>
 
       <div className="solar-content">
         {/* Left Content */}
