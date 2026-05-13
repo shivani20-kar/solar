@@ -3,7 +3,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 
 import { Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import BlogHeroSection from "./BlogPage/BlogHeroSection";
 import BlogSolarSection from "./BlogPage/BlogSolarSection";
@@ -26,10 +26,12 @@ import Testimonials from "./HomePage/Testimonial";
 import TeamSection from "./HomePage/OurTeam";
 import FAQ from "./HomePage/FAQ";
 import BlogSection from "./HomePage/BlogSection";
+
 import Consultation from "./HomePage/Consultation;";
 import DealershipPopup from "./HomePage/DealershipPopup";
+
 import SolarSolutions from "./OurProduct/SolarSolution";
-import ProductPageSection from "./ProductPage/ProductPageHeroSection";
+
 import ProductPageHeroSection from "./ProductPage/ProductPageHeroSection";
 import ProductPageOffGrid from "./ProductPage/ProductPageOffGrid";
 import ProductPageNeedSection from "./ProductPage/ProductPageNeedSection";
@@ -38,7 +40,10 @@ import SolarSystemProductPageComponent from "./ProductPage/SolarSystemProductPag
 function App() {
   const { pathname } = useLocation();
 
-  // AUTO SCROLL TOP
+  // Popup State
+  const [showPopup, setShowPopup] = useState(false);
+
+  // Auto Scroll Top
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -47,11 +52,32 @@ function App() {
     });
   }, [pathname]);
 
+  // Open Popup
+  const openPopup = () => {
+    setShowPopup(true);
+  };
+
+  // Close Popup
+  const closePopup = () => {
+    setShowPopup(false);
+  };
+
   return (
     <>
       <Navbar />
 
+      {/* Popup Open Button */}
+      <button onClick={openPopup}>
+        Open Dealership Popup
+      </button>
+
+      {/* Popup */}
+      {showPopup && (
+        <DealershipPopup closePopup={closePopup} />
+      )}
+
       <Routes>
+
         {/* HOME */}
         <Route
           path="/"
@@ -70,6 +96,7 @@ function App() {
             </>
           }
         />
+
         {/* BLOG PAGE */}
         <Route
           path="/blogs"
@@ -81,7 +108,7 @@ function App() {
           }
         />
 
-        {/* BLOG DETAILS ROUTES */}
+        {/* BLOG DETAILS */}
         <Route path="/blog-one" element={<BlogOne />} />
 
         {/* ABOUT */}
@@ -99,8 +126,7 @@ function App() {
           }
         />
 
-        {/* SERVICES ROUTES */}
-
+        {/* SERVICES */}
         <Route
           path="/off-grid-solar"
           element={
@@ -112,7 +138,10 @@ function App() {
             </>
           }
         />
-      <Route path="/products" element={<SolarSolutions/>}/>
+
+        {/* PRODUCTS */}
+        <Route path="/products" element={<SolarSolutions />} />
+
       </Routes>
 
       <Footer />

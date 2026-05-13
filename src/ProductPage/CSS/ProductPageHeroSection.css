@@ -4,7 +4,9 @@
   position: relative;
 
   width: 100%;
-  height: 60vh;
+
+  height: 80vh;
+
   margin-top: 11vh;
   background-size: cover;
   background-position: center;
@@ -133,7 +135,9 @@
 
 .productpage-sticky-button {
   position: fixed;
-  height: 35vh;
+
+  height: 18vh;
+
   right: 3vw;
   bottom: 3vw;
 
