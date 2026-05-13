@@ -29,6 +29,11 @@ import BlogSection from "./HomePage/BlogSection";
 import Consultation from "./HomePage/Consultation;";
 import DealershipPopup from "./HomePage/DealershipPopup";
 import SolarSolutions from "./OurProduct/SolarSolution";
+import ProductPageSection from "./ProductPage/ProductPageHeroSection";
+import ProductPageHeroSection from "./ProductPage/ProductPageHeroSection";
+import ProductPageOffGrid from "./ProductPage/ProductPageOffGrid";
+import ProductPageNeedSection from "./ProductPage/ProductPageNeedSection";
+import SolarSystemProductPageComponent from "./ProductPage/SolarSystemProductPageComponent";
 
 function App() {
   const { pathname } = useLocation();
@@ -59,9 +64,9 @@ function App() {
               <ProjectsSection />
               <Testimonials />
               <TeamSection />
-              <FAQ/>
-              <BlogSection/>
-              <Consultation/>
+              <FAQ />
+              <BlogSection />
+              <Consultation />
             </>
           }
         />
@@ -93,7 +98,22 @@ function App() {
             </>
           }
         />
-        <Route path="/products" element={<SolarSolutions/>}/>
+
+        {/* SERVICES ROUTES */}
+
+        <Route
+          path="/off-grid-solar"
+          element={
+            <>
+              <ProductPageHeroSection />
+              <ProductPageOffGrid />
+              <ProductPageNeedSection />
+              <SolarSystemProductPageComponent />
+            </>
+          }
+        />
+                <Route path="/products" element={<SolarSolutions/>}/>
+
       </Routes>
 
       <Footer />

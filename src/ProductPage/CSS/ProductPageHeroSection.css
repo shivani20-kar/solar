@@ -1,0 +1,204 @@
+/* ProductPageSection.css */
+
+.productpage-section {
+  position: relative;
+
+  width: 100%;
+  height: 60vh;
+  margin-top: 11vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+/* OVERLAY */
+
+.productpage-overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+}
+
+/* CONTAINER */
+
+.productpage-container {
+  position: relative;
+  z-index: 2;
+
+  width: 85%;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+/* LEFT */
+
+.productpage-left {
+  width: 45%;
+}
+
+/* HEADING */
+
+.productpage-left h1 {
+  color: #fff;
+
+  font-family: "Figtree";
+  font-size: 4vw;
+  font-weight: 700;
+  line-height: 1;
+
+  margin: 1.5vw 0;
+
+  font-style: normal;
+  letter-spacing: -0.02em;
+}
+
+/* PARAGRAPH */
+
+.productpage-left p {
+  color: #fff;
+
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 1.2;
+
+  max-width: 30vw;
+
+  margin-bottom: 2vw;
+
+  font-style: normal;
+}
+
+/* FEATURES */
+
+.productpage-features {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+
+  margin-bottom: 1.5vw;
+}
+
+.productpage-feature-bottom {
+  margin-left: 7vw;
+}
+
+/* CARD */
+
+.productpage-feature-card {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+
+  padding: 1vw 1.5vw;
+
+  border-radius: 1.3vw;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  box-shadow:
+    0 0.4vw 1.5vw rgba(0, 0, 0, 0.2),
+    inset 0 0.1vw 0.2vw rgba(255, 255, 255, 0.2);
+
+  width: fit-content;
+}
+
+/* CHECK */
+
+.productpage-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TEXT */
+
+.productpage-feature-card span {
+  color: #fff;
+
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+/* STICKY BUTTON */
+
+.productpage-sticky-button {
+  position: fixed;
+  height: 35vh;
+  right: 3vw;
+  bottom: 3vw;
+
+  z-index: 999;
+}
+
+/* BUTTON */
+
+.productpage-sticky-button button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  background: linear-gradient(90deg, #15b2ff, #4867ff);
+
+  cursor: pointer;
+
+  padding: 1.5vh 1vw;
+
+  transition: all 0.3s ease;
+
+  color: #fff;
+  text-align: right;
+
+  font-family: "Figtree";
+  font-size: 1.1vw;
+  font-weight: 500;
+  line-height: 20px;
+
+  box-shadow: 0 0.6vw 1.5vw rgba(0, 0, 0, 0.2);
+
+  outline: none;
+}
+
+/* SVG */
+
+.productpage-sticky-button button svg {
+  width: 18px;
+  height: 18px;
+
+  font-weight: 600;
+
+  transform: rotate(-45deg);
+
+  transition: all 0.3s ease;
+
+  fill: #fff;
+}
+
+/* HOVER */
+
+.productpage-sticky-button button:hover {
+  background: #fff;
+
+  color: #302e99;
+
+  border: 1px solid #302e99;
+}
+
+.productpage-sticky-button button:hover svg {
+  transform: rotate(0deg);
+
+  fill: #302e99;
+}
