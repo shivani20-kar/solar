@@ -1,6 +1,7 @@
 // SolarSolutions.jsx
 import React from "react";
 import "./CSS/SolarSolution.css";
+import img from "./Images/unsplash_0SyvPKyZc-M.png"
 import {
   FaUsers,
   FaBolt,
@@ -12,7 +13,9 @@ import {
 const SolarSolutions = () => {
   return (
     <div className="solar-container">
-      <div className="solar-overlay"></div>
+      <div className="solar-overlay">
+        <img src={img}/>
+      </div>
 
       <div className="solar-content">
         {/* Left Content */}
