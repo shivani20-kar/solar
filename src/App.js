@@ -36,6 +36,12 @@ import ProductPageHeroSection from "./ProductPage/ProductPageHeroSection";
 import ProductPageOffGrid from "./ProductPage/ProductPageOffGrid";
 import ProductPageNeedSection from "./ProductPage/ProductPageNeedSection";
 import SolarSystemProductPageComponent from "./ProductPage/SolarSystemProductPageComponent";
+import ProductPageWork from "./ProductPage/ProductPageWork";
+import ProductPageEstimated from "./ProductPage/ProductPageEstimated";
+import ProductPageRequirement from "./ProductPage/ProductPageRequirement";
+import ProductPageProps from "./ProductPage/ProductPageProps";
+import ProductPageBetter from "./ProductPage/ProductPageBetter";
+import ProductPageSure from "./ProductPage/ProductPageSure";
 
 function App() {
   const { pathname } = useLocation();
@@ -135,6 +141,12 @@ function App() {
               <ProductPageOffGrid />
               <ProductPageNeedSection />
               <SolarSystemProductPageComponent />
+              <ProductPageWork />
+              <ProductPageEstimated />
+              <ProductPageRequirement />
+              <ProductPageProps />
+              <ProductPageBetter />
+              <ProductPageSure />
             </>
           }
         />

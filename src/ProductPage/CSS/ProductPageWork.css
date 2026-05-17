@@ -1,0 +1,93 @@
+/* ProductPageWork.css */
+
+.productpagework-section {
+  width: 100%;
+  background: #fff;
+  padding: 5vw 0 7vw;
+}
+
+.productpagework-container {
+  width: 83%;
+  margin: auto;
+}
+
+.productpagework-container h2 {
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 2.5vw;
+  font-weight: 600;
+  margin-bottom: 6vw;
+  color: #001233;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.productpagework-top-row {
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+  margin-bottom: 5vw;
+}
+
+.productpagework-bottom-row {
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.productpagework-card {
+  position: relative;
+
+  width: 20vw;
+  height: 24vw;
+
+  border-radius: 1.8vw;
+  overflow: hidden;
+}
+
+.productpagework-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.productpagework-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.productpagework-content {
+  position: absolute;
+  bottom: 2vw;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 85%;
+
+  text-align: center;
+  z-index: 2;
+}
+
+.productpagework-content h3 {
+  color: #fff;
+  font-family: "Figtree";
+  font-size: 1.7vw;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1vw;
+  font-style: normal;
+}
+
+.productpagework-content p {
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+  font-style: normal;
+}

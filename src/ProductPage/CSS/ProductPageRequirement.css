@@ -1,0 +1,223 @@
+/* ProductPageRequirement.css */
+
+.productpagerequirement-section {
+  width: 100%;
+  background: #f6f8fa;
+
+  padding: 5vw 0 5vw;
+}
+
+.productpagerequirement-container {
+  width: 50%;
+  margin: auto;
+}
+
+/* HEADING */
+
+.productpagerequirement-container h2 {
+  margin-bottom: 1vw;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 2.5vw;
+  font-weight: 600;
+  color: #001233;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.productpagerequirement-container > p {
+  color: #000;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.7vw;
+  line-height: 1.4;
+  margin-bottom: 3vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+/* MAIN BOX */
+
+.productpagerequirement-box {
+  border-radius: 1.5vw;
+  border: 0.56px solid rgba(255, 215, 0, 0.5);
+  background: #fff;
+  box-shadow: 0 8px 4px 0 rgba(255, 215, 0, 0.5);
+  padding: 2.5vw;
+}
+
+/* TOP */
+
+.productpagerequirement-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2vw;
+
+  margin-bottom: 2vw;
+}
+
+.productpagerequirement-icon {
+  width: 2.8vw;
+  height: 2.8vw;
+
+  border-radius: 50%;
+  background: rgba(103, 107, 116, 0.3);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+}
+
+.productpagerequirement-icon svg {
+  width: 1.8vw;
+  height: 1.8vw;
+
+  display: block;
+}
+
+.productpagerequirement-icon svg ellipse {
+  fill: #676b74;
+  fill-opacity: 0.3;
+}
+.productpagerequirement-top h3 {
+  margin: 0;
+  color: #000;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.7vw;
+  line-height: 1.4;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* DIVIDER */
+
+.productpagerequirement-divider {
+  width: 100%;
+  height: 1px;
+
+  background: #8c8c8c;
+
+  margin-bottom: 3vw;
+}
+
+/* ROWS */
+
+.productpagerequirement-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+
+.productpagerequirement-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT */
+
+.productpagerequirement-left {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+      margin-top: 1vw;
+}
+
+.productpagerequirement-dot {
+  width: 0.7vw;
+  height: 0.7vw;
+  border-radius: 50%;
+  background: #00b552;
+}
+
+.productpagerequirement-left h4 {
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  color: #000;
+  font-style: normal;
+}
+
+/* ARROW */
+
+.productpagerequirement-arrow {
+  color: #111;
+
+  font-size: 4vw;
+  font-weight: 300;
+}
+
+/* TAG */
+
+.productpagerequirement-tag {
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+
+  padding: 1vw 1.5vw;
+
+  border-radius: 1.2vw;
+
+  background: #f3f3f3;
+
+  border: 0.56px solid rgba(255, 215, 0, 0.5);
+  background: rgba(103, 107, 116, 0.12);
+  box-shadow: 0 4px 4px 1px rgba(255, 215, 0, 0.5);
+}
+
+.productpagerequirement-tag strong {
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.productpagerequirement-tag span {
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.5);
+  font-style: normal;
+  line-height: 1.2;
+}
+
+/* BOTTOM */
+
+.productpagerequirement-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+
+  border-top: 1px solid #8c8c8c;
+
+  margin-top: 3vw;
+  padding-top: 1.5vw;
+}
+
+.productpagerequirement-line {
+  width: 2px;
+  height: 2vw;
+
+  background: #00b552;
+}
+
+.productpagerequirement-bottom p {
+  margin: 0;
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+  line-height: 1.2;
+}

@@ -1,0 +1,136 @@
+/* ProductPageProps.css */
+
+.productpageprops-section {
+  width: 100%;
+  background: #f6f8fa;
+}
+
+.productpageprops-container {
+  width: 83%;
+  margin: auto;
+}
+
+.productpageprops-container h2 {
+  margin: 0 0 3vw;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 2.5vw;
+  font-weight: 600;
+  color: #001233;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+/* CARDS */
+
+.productpageprops-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+.productpageprops-card {
+  flex: 1;
+
+  padding: 2.5vw;
+
+  border-radius: 1.8vw;
+  border: 1px solid rgba(255, 215, 0, 0.7);
+  background: #fff;
+  box-shadow: 0 0.4vw 0.8vw rgba(255, 215, 0, 0.2);
+}
+
+/* TOP */
+
+.productpageprops-top {
+  margin-bottom: 2.5vw;
+}
+
+.productpageprops-titlewrap {
+  display: flex;
+  align-items: center;
+  gap: 1.2vw;
+
+  margin-bottom: 1.8vw;
+}
+
+.productpageprops-icon {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.productpageprops-green {
+  border-radius: 10px;
+  border: 0.56px solid rgba(0, 181, 82, 0.4);
+  background: rgba(0, 181, 82, 0.17);
+}
+
+.productpageprops-red {
+  border-radius: 10px;
+  border: 0.56px solid rgba(255, 0, 0, 0.19);
+  background: rgba(255, 180, 180, 0.5);
+}
+
+.productpageprops-icon svg {
+  width: 2vw;
+  height: 2vw;
+}
+
+.productpageprops-titlewrap h3 {
+  margin: 0;
+  color: #001233;
+  font-family: "Figtree";
+  font-size: 2.2vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.productpageprops-divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* LIST */
+
+.productpageprops-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+
+.productpageprops-item {
+  display: flex;
+  align-items: center;
+  gap: 1.3vw;
+}
+
+.productpageprops-smallicon {
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.productpageprops-smallicon svg {
+  width: 2vw;
+  height: 2vw;
+}
+
+.productpageprops-item p {
+  margin: 0;
+  color: #001233; 
+  font-family: "Figtree"; 
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2vw; 
+}
