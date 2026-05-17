@@ -46,6 +46,7 @@ import ProductPageRequirement from "./ProductPage/ProductPageRequirement";
 import ProductPageProps from "./ProductPage/ProductPageProps";
 import ProductPageBetter from "./ProductPage/ProductPageBetter";
 import ProductPageSure from "./ProductPage/ProductPageSure";
+import ThankYouSection from "./OurProduct/ThankyouSection";
 
 function App() {
   const { pathname } = useLocation();
@@ -162,6 +163,7 @@ function App() {
           <ProductsSection/>
           <SolustionPage/>
           <SafetyLightning/>
+          <ThankYouSection/>
           </>} 
           />
 
