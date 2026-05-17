@@ -1,0 +1,142 @@
+
+
+.safety-section {
+  background: #ffffff;
+padding: 5vh 10vw;
+}
+
+/* Heading */
+
+.section-heading {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.section-heading h2 {
+ color: #001233;
+font-family: Figtree;
+font-size: 3vw;
+font-style: normal;
+font-weight: 700;
+line-height: 5px;
+  white-space: nowrap;
+}
+
+.heading-line {
+  width: 240px;
+  height: 4px;
+  background: #f4c400;
+  border-radius: 10px;
+}
+
+.safe-solution-container {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.safe-solution-card {
+  width: 380px;
+  background: #fff;
+  overflow: hidden;
+border-radius: 20px;
+background: #FFF;
+box-shadow: 0 4px 4px 2px #000;
+  transition: 0.3s ease;
+}
+
+.safe-solution-card:hover {
+  transform: translateY(-8px);
+}
+
+.safe-card-image img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.safe-card-content {
+  padding: 2vh 1vw 2vh;
+  text-align: center;
+}
+
+.safe-card-content h3 {
+ color: #001233;
+font-family: Figtree;
+font-size: 2.1vw;
+font-style: normal;
+font-weight: 700;
+line-height: 5px; /* 227.778% */
+  margin-bottom: 20px;
+}
+
+.safe-title-line {
+  width: 190px;
+  height: 4px;
+  background: #f4c400;
+  border-radius: 10px;
+  margin: 0 auto 18px;
+}
+
+.safe-card-content p {
+ color: #000;
+text-align: center;
+font-family: Figtree;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 112% */
+  margin: auto;
+}
+
+.safe-book-btn {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1.5vh 1vw;
+    transition: all 0.3s ease;
+    color: #FFF;
+    text-align: right;
+    font-family: Figtree;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+ margin: 0px auto 0;
+}
+.safe-book-btn svg {
+    width: 18px;
+    height: 18px;
+    font-weight: 600;
+    fill: #fff;
+
+    transform: rotate(-45deg);
+
+    transition: all 0.3s ease;
+}
+
+.safe-book-btn span {
+  margin-left: 10px;
+}
+
+.safe-book-btn:hover {
+    background: #fff;
+    color: #302e99;
+    border: 1px solid #302e99;
+}
+
+.safe-book-btn:hover svg {
+    transform: rotate(0deg);
+    fill: #302e99;
+}

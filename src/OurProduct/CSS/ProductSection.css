@@ -1,0 +1,240 @@
+
+.products-section{
+  background: #ffffff;
+padding: 5vh 12vw;
+}
+
+.products-section p{
+    text-align: center;
+color: #000;
+font-family: Figtree;
+font-size: 2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 2px; /* 227.778% */
+  margin-top: 0px;
+}
+
+.product-card{
+margin-bottom: 2vh !important;
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.18);
+}
+
+/* Left */
+
+.product-image{
+  width: 50%;
+}
+
+.product-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Right */
+
+.product-content{
+  width: 50%;
+  padding: 4vh 2vw 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-content h3{
+    text-align: center;
+ color: #001233;
+font-family: Figtree;
+font-size: 2.6vw;
+font-style: normal;
+font-weight: 700;
+line-height: 12px; /* 227.778% */
+  margin-bottom: 25px;
+}
+
+.yellow-line{
+  width: 28vw;
+  height: 4px;
+  background: #FFD700;
+  margin-bottom: 25px;
+  margin-left: 4.5vw;
+  border-radius: 20px;
+}
+
+.product-content p{
+ color: #000;
+text-align: center;
+font-family: Figtree;
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 400;
+line-height: 35px; /* 166.667% */
+  margin-bottom: 3vh;
+}
+.features{
+  display: flex;
+  justify-content: center;
+  gap:0px;
+  margin-bottom: 3vh;
+}
+
+.feature-box{
+  padding-right: 1vw;
+  padding-left: 1vw;
+  border-left: 1px solid #bcbcbc;
+}
+
+.feature-box:last-child{
+  padding-left: 1vw;
+  border-right: 1px solid #bcbcbc;
+}
+
+.feature-box h4{
+ color: #001233;
+text-align: center;
+font-family: Figtree;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 600;
+line-height: 5px; /* 372.727% */
+}
+
+.feature-box span{
+color: #676B74;
+font-family: Figtree;
+font-size: 1vw;
+font-style: normal;
+font-weight: 600;
+line-height: 5px;
+}
+
+.product-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.book-btn{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    padding: 1.5vh 1vw;
+    transition: all 0.3s ease;
+    color: #FFF;
+    text-align: right;
+    font-family: Figtree;
+    font-size: 1.1vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+.book-btn svg {
+    width: 18px;
+    height: 18px;
+    font-weight: 600;
+    fill: #fff;
+
+    transform: rotate(-45deg);
+
+    transition: all 0.3s ease;
+}
+
+.book-btn span {
+  margin-left: 10px;
+}
+
+.book-btn:hover {
+    background: #fff;
+    color: #302e99;
+    border: 1px solid #302e99;
+}
+
+.book-btn:hover svg {
+    transform: rotate(0deg);
+    fill: #302e99;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.stars svg {
+  width: 20px;
+  height: 20px;
+}
+
+.rating span {
+color: #676B74;
+font-family: Figtree;
+font-size: 1.8vw;
+font-style: normal;
+font-weight: 600;
+line-height: 5px; /* 292.857% */
+}
+
+/* Add This CSS */
+
+.reverse-card {
+  flex-direction: row-reverse;
+}
+/* EVO SERIES Brown Color */
+.brown-text {
+ color: #8D3C10 !important;
+text-align: center;
+font-family: Figtree;
+font-size: 1.6vw !important;
+font-style: normal;
+font-weight: 600 !important;
+line-height: 5px !important; /* 292.857% */
+}
+
+/* Remove Border */
+.no-border {
+  border: none !important;
+  background: transparent;
+  box-shadow: none;
+  padding-left: 0;
+}
+
+/* Multi Features Layout */
+
+.features-multi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0vw;
+  align-items: center;
+}
+
+.features-multi .feature-box {
+  text-align: center;
+}
+
+/* Eco Friendly center */
+.features-multi .feature-box:last-child {
+  /* margin: 0 auto; */
+}

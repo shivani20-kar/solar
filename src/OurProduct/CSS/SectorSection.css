@@ -1,0 +1,102 @@
+.sector-wrapper {
+padding: 5vh 12vw;
+background: #ffffff;
+}
+.sector-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.sector-heading h2 {
+ color: #001233;
+font-family: Figtree;
+font-size: 3vw;
+font-style: normal;
+font-weight: 700;
+line-height: 5px;
+  white-space: nowrap;
+}
+
+.arrow-line {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.arrow {
+  font-size: 30px;
+  color: #FFD700;
+  margin-top: -5px;
+}
+
+.sector-cards {
+  display: flex;
+  justify-content: center;
+  gap: 4vw;
+  flex-wrap: wrap;
+}
+
+.sector-card {
+  position: relative;
+  width: 22vw;
+  height: 55vh;
+  border-radius: 14px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.sector-card:hover {
+  transform: translateY(-10px);
+}
+
+.sector-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.sector-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2vh 0vw;
+border-radius: 16px;
+background: rgba(255, 255, 255, 0.10);
+  text-align: center;
+  color: white;
+}
+
+.sector-overlay h3 {
+ color: #FFF;
+text-align: center;
+font-family: Figtree;
+font-size: 1.5vw;
+font-style: normal;
+font-weight: 500;
+line-height: 20px; /* 104.167% */
+  margin-bottom: 6px;
+}
+
+.yellow-underline {
+  width: 100px;
+  height: 4px;
+background: #FFD700;
+  margin: 0 auto 14px;
+  border-radius: 10px;
+}
+
+.sector-overlay p {
+ color: #FFF;
+text-align: center;
+font-family: Figtree;
+font-size: 1.1vw;
+font-style: normal;
+font-weight: 400;
+line-height: 10px; /* 113.636% */
+}

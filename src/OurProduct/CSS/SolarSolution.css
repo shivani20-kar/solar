@@ -3,7 +3,7 @@
 .solar-container {
   position: relative;
   overflow: hidden;
-    margin-top: 11vh;
+  margin-top: 8vh;
 }
 
 .solar-overlay {
@@ -28,38 +28,47 @@
 
 .top-btn {
   padding: 10px 22px;
-  border-radius: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.12);
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  backdrop-filter: blur(10px);
-  margin-bottom: 30px;
+  border-radius: 16px;
+  border: none;
+background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+ color: #FFF;
+font-family: Figtree;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 600;
+line-height: 8px; /* 273.333% */
+  margin-bottom: 0px;
 }
 
 .left-section h1 {
-  font-size: 72px;
-  line-height: 1.05;
-  color: white;
-  font-weight: 700;
+ color: #FFF;
+font-family: Figtree;
+font-size: 4vw;
+font-style: normal;
+font-weight: 700;
+line-height: 70px; /* 113.889% */
+letter-spacing: -2.56px;
   margin-bottom: 30px;
 }
 
 .left-section p {
-  font-size: 22px;
-  line-height: 1.7;
-  color: #e5e5e5;
-  max-width: 700px;
+color: #FFF;
+font-family: Figtree;
+font-size: 1.4vw;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 125% */
+  max-width: 600px;
 }
 
 /* TRUSTED CARD */
 
 .trusted-card {
-  width: 320px;
-  padding: 45px 30px;
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.1);
+  width: 250px;
+  padding: 2vh 1vw;
+ border-radius: 16px;
+background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -67,53 +76,68 @@
 }
 
 .trusted-icon {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background: #4169ff;
+  background: #385AFF;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  font-size: 32px;
-  margin-bottom: 20px;
+
 }
 
 .trusted-card h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
+ color: #FFF;
+text-align: center;
+font-family: Figtree;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 10px; /* 256.25% */
+  margin-bottom: 0px;
 }
 
 .trusted-card h3 {
-  font-size: 40px;
-  color: #4169ff;
-  margin-bottom: 12px;
+ color: #4867FF;
+text-align: center;
+font-family: Figtree;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: 12px; /* 256.25% */
+  margin-bottom: 2px;
 }
 
 .trusted-card p {
-  font-size: 18px;
-  color: #f1f1f1;
+ color: #FFF;
+text-align: center;
+font-family: Figtree;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 125% */
 }
 
 /* FEATURE BOX */
 
-.feature-box {
+.solar-feature-box {
   position: relative;
   z-index: 2;
-  width: 88%;
+  width: 74%;
   margin: 40px auto 70px;
-  padding: 28px 40px;
-  border-radius: 24px;
+  padding: 2vh 2vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 25px;
-  background: rgba(255, 255, 255, 0.08);
+ border-radius: 16px;
+background: rgba(255, 255, 255, 0.10);
   backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.feature-item {
+.solar-feature-item {
   display: flex;
   align-items: center;
   gap: 18px;
@@ -121,19 +145,23 @@
   flex: 1;
 }
 
-.feature-icon {
-  font-size: 40px;
-}
-
-.feature-item h4 {
-  font-size: 24px;
+.solar-feature-item h4 {
+ color: #FFF;
+font-family: Figtree;
+font-size: 1.2vw;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; /* 125% */
   margin-bottom: 5px;
-  font-weight: 600;
 }
 
-.feature-item p {
-  font-size: 19px;
-  color: #ececec;
+.solar-feature-item p {
+ color: #FFF;
+font-family: Figtree;
+font-size: 1.1vw;
+font-style: normal;
+font-weight: 400;
+line-height: 25px;
 }
 
 .divider {

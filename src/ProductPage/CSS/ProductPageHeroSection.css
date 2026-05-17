@@ -7,7 +7,7 @@
 
   height: 80vh;
 
-  margin-top: 11vh;
+  margin-top: 8vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,6 @@
 .productpage-overlay {
   position: absolute;
   inset: 0;
-
   z-index: 1;
 }
 

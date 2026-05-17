@@ -36,6 +36,10 @@ import ProductPageHeroSection from "./ProductPage/ProductPageHeroSection";
 import ProductPageOffGrid from "./ProductPage/ProductPageOffGrid";
 import ProductPageNeedSection from "./ProductPage/ProductPageNeedSection";
 import SolarSystemProductPageComponent from "./ProductPage/SolarSystemProductPageComponent";
+import SectorSection from "./OurProduct/SectorSection";
+import ProductsSection from "./OurProduct/ProductSection";
+import SolustionPage from "./OurProduct/SolutionPage";
+import SafetyLightning from "./OurProduct/SafetyLighting";
 
 function App() {
   const { pathname } = useLocation();
@@ -140,7 +144,13 @@ function App() {
         />
 
         {/* PRODUCTS */}
-        <Route path="/products" element={<SolarSolutions />} />
+        <Route path="/products" element={
+          <><SolarSolutions />
+          <SectorSection/>
+          <ProductsSection/>
+          <SolustionPage/>
+          <SafetyLightning/>
+          </>} />
 
       </Routes>
 
