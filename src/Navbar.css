@@ -1,32 +1,24 @@
+/* Navbar.css */
+
 .navbar {
-  width: 90%;
-  background:
-    linear-gradient(0deg, #fff 0%, #fff 100%), rgba(255, 255, 255, 0.1);
+  width: 100%;
+  background: #fff;
   padding: 1.5vh 9vw;
-height: 8vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  /* border: 1px solid red; */
+  box-sizing: border-box;
 }
 
-/* Container */
-
 .navbar-container {
-  width: 90%;
-  gap: 5vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-/* Logo */
-
-.navbar-logo-section {
-  display: flex;
-  align-items: center;
-}
+/* LOGO */
 
 .navbar-logo-image {
   width: 11vw;
@@ -34,6 +26,7 @@ height: 8vh;
   object-fit: contain;
 }
 
+/* NAV LINKS */
 
 .navbar-nav-links {
   display: flex;
@@ -46,25 +39,21 @@ height: 8vh;
   position: relative;
 }
 
-/* LINK */
-
 .navbar-nav-item {
   text-decoration: none;
   transition: 0.3s ease;
   position: relative;
   display: flex;
   align-items: center;
-  gap: 1vw;
+  gap: 0.5vw;
   color: #000;
-  text-align: center;
   font-family: "Figtree";
   font-size: 1.1vw;
-  font-style: normal;
   font-weight: 500;
-  line-height: 1.2;
+  cursor: pointer;
 }
 
-/* ACTIVE LINK */
+/* ACTIVE */
 
 .active-link {
   color: #302e99;
@@ -77,68 +66,46 @@ height: 8vh;
   bottom: -18px;
   width: 90%;
   height: 2px;
-
   background: #6f78ff;
   border-radius: 50px;
 }
 
-/* =========================
-   SERVICES DROPDOWN
-========================= */
+/* DROPDOWN */
 
 .navbar-services-dropdown {
   position: relative;
 }
 
-/* SERVICES LINK */
-
 .navbar-services-link {
   display: flex;
   align-items: center;
-  gap: 1vw;
-  cursor: pointer;
 }
 
-/* DROPDOWN ICON */
-
 .navbar-dropdown-icon {
-  font-size: 1vw;
-  margin-top: 0.1vw;
   transition: 0.3s ease;
 }
 
-/* ROTATE ICON */
-
-.navbar-services-dropdown:hover .navbar-dropdown-icon {
+.rotate-icon {
   transform: rotate(180deg);
 }
-
-/* DROPDOWN MENU */
 
 .navbar-dropdown-menu {
   position: absolute;
   top: 2vw;
   left: 0;
-  min-width: 15vw;
+  min-width: 16vw;
   background: #fff;
   border-radius: 12px;
   padding: 0.5vw 0;
   list-style: none;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
-  transition: all 0.3s ease;
-  z-index: 999;
-  color: #000;
-  font-family: "Figtree";
-  font-size: 1vw;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.2;
-}
 
-/* SHOW DROPDOWN */
+  transition: 0.3s ease;
+}
 
 .navbar-services-dropdown:hover .navbar-dropdown-menu {
   opacity: 1;
@@ -146,19 +113,12 @@ height: 8vh;
   transform: translateY(0);
 }
 
-/* DROPDOWN ITEMS */
-
 .navbar-dropdown-item {
   display: block;
-
   padding: 1vw 1.5vw;
-
   text-decoration: none;
-
   color: #111;
   font-size: 1vw;
-  font-weight: 500;
-
   transition: 0.3s ease;
 }
 
@@ -168,44 +128,36 @@ height: 8vh;
   padding-left: 2vw;
 }
 
-/* =========================
-   CONTACT BUTTON
-========================= */
+/* BUTTON */
 
 .navbar-contact-btn {
   border-radius: 8px;
   border: 1px solid transparent;
   background: linear-gradient(90deg, #15b2ff, #4867ff);
   cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5vw;
-  padding: 1.5vh 1vw;
-  transition: all 0.3s ease;
-  color: #FFF;
-text-align: right;
-font-family: Figtree;
-font-size: 1.1vw;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 100% */
-}
 
-/* ARROW */
+  padding: 1.5vh 1vw;
+
+  transition: 0.3s ease;
+
+  color: #fff;
+  font-family: Figtree;
+  font-size: 1vw;
+  font-weight: 500;
+}
 
 .navbar-contact-btn svg {
   width: 18px;
   height: 18px;
-  font-weight: 600;
   fill: #fff;
-
   transform: rotate(-45deg);
-
-  transition: all 0.3s ease;
+  transition: 0.3s ease;
 }
-
-/* HOVER EFFECT */
 
 .navbar-contact-btn:hover {
   background: #fff;
@@ -216,4 +168,193 @@ line-height: 20px; /* 100% */
 .navbar-contact-btn:hover svg {
   transform: rotate(0deg);
   fill: #302e99;
+}
+
+/* HAMBURGER */
+
+.navbar-hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #302e99;
+}
+
+/* MOBILE CONTACT */
+
+.mobile-contact-btn {
+  display: none;
+}
+
+.desktop-contact-btn {
+  display: flex;
+}
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    padding: 2vh 5vw;
+  }
+
+  .navbar-container {
+    position: relative;
+  }
+
+  /* LOGO */
+
+  .navbar-logo-image {
+    width: 50vw;
+  }
+
+  /* HAMBURGER */
+
+  .navbar-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+    cursor: pointer;
+    color: #302e99;
+    z-index: 1200;
+  }
+
+  /* SIDE MENU */
+
+  .navbar-nav-links {
+    position: fixed;
+
+    top: 0;
+    left: -100%;
+
+    width: 78%;
+    height: 100vh;
+
+    background: #fff;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 8vw 7vw 8vw;
+
+    gap: 6vw;
+
+    transition: all 0.4s ease;
+
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
+
+    z-index: 1100;
+
+    overflow-y: auto;
+    margin-top: 15vw;
+  }
+
+  /* OPEN MENU */
+
+  .navbar-mobile-active {
+    left: 0;
+  }
+
+  /* LINKS */
+
+  .navbar-nav-item {
+    font-size: 4.8vw;
+    font-weight: 600;
+  }
+
+  .active-link::after {
+    bottom: -2vw;
+    height: 2px;
+  }
+
+  /* DROPDOWN */
+
+  .navbar-services-dropdown {
+    width: 100%;
+  }
+
+  .navbar-services-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-dropdown-icon {
+    font-size: 5vw;
+  }
+
+  .navbar-dropdown-menu {
+    position: static;
+
+    width: 100%;
+
+    background: #f8f9ff;
+
+    border-radius: 12px;
+
+    margin-top: 3vw;
+
+    padding: 0;
+
+    opacity: 1;
+    visibility: visible;
+
+    transform: none;
+
+    box-shadow: none;
+
+    display: none;
+  }
+
+  .show-dropdown {
+    display: block;
+  }
+
+  .navbar-dropdown-item {
+    font-size: 4vw;
+
+    padding: 4vw 5vw;
+
+    border-bottom: 1px solid #ececec;
+  }
+
+  .navbar-dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-dropdown-item:hover {
+    padding-left: 5vw;
+  }
+
+  /* CONTACT BUTTON */
+
+  .desktop-contact-btn {
+    display: none;
+  }
+
+  .mobile-contact-btn {
+    display: flex;
+
+    width: 100%;
+
+    justify-content: center;
+
+    margin-top: 3vw;
+
+    padding: 4vw;
+
+    font-size: 4.2vw;
+  }
+
+  /* OPTIONAL DARK OVERLAY */
+
+  .navbar-mobile-active::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 22%;
+    height: 100vh;
+  }
 }
