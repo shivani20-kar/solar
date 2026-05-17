@@ -22,7 +22,7 @@ import AboutMissionSection from "./AboutPage/AboutMissionSection";
 import AboutDetailSection from "./AboutPage/AboutDetailSection";
 
 import BlogOne from "./BlogPage/BlogOne";
-import Testimonials from "./HomePage/Testimonial"; 
+import Testimonials from "./HomePage/Testimonial";
 import TeamSection from "./HomePage/OurTeam";
 import FAQ from "./HomePage/FAQ";
 import BlogSection from "./HomePage/BlogSection";
@@ -77,17 +77,14 @@ function App() {
       <Navbar />
 
       {/* Popup Open Button */}
-      <button onClick={openPopup}>
+      {/* <button onClick={openPopup}>
         Open Dealership Popup
-      </button>
+      </button> */}
 
       {/* Popup */}
-      {showPopup && (
-        <DealershipPopup closePopup={closePopup} />
-      )}
+      {showPopup && <DealershipPopup closePopup={closePopup} />}
 
       <Routes>
-
         {/* HOME */}
         <Route
           path="/"
@@ -155,18 +152,20 @@ function App() {
           }
         />
 
-
         {/* PRODUCTS */}
-        <Route path="/products" element={
-          <><SolarSolutions />
-          <SectorSection/>
-          <ProductsSection/>
-          <SolustionPage/>
-          <SafetyLightning/>
-          <ThankYouSection/>
-          </>} 
-          />
-
+        <Route
+          path="/products"
+          element={
+            <>
+              <SolarSolutions />
+              <SectorSection />
+              <ProductsSection />
+              <SolustionPage />
+              <SafetyLightning />
+              <ThankYouSection />
+            </>
+          }
+        />
       </Routes>
 
       <Footer />

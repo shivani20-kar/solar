@@ -327,24 +327,70 @@
     padding-left: 5vw;
   }
 
-  /* CONTACT BUTTON */
+  /* Desktop button hide */
 
   .desktop-contact-btn {
-    display: none;
+    display: none !important;
+  }
+  /* =========================
+   MOBILE CONTACT BUTTON
+========================= */
+
+  .desktop-contact-btn {
+    display: none !important;
   }
 
   .mobile-contact-btn {
-    display: flex;
+    display: flex !important;
 
-    width: 100%;
-
+    align-items: center;
     justify-content: center;
+    gap: 2vw;
 
-    margin-top: 3vw;
+    width: 60%;
 
-    padding: 4vw;
+    padding: 4vw 5vw;
 
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    color: #fff;
+    font-family: "Figtree";
     font-size: 4.2vw;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  /* SVG */
+
+  .mobile-contact-btn svg {
+    width: 5vw;
+    height: 5vw;
+
+    fill: #fff;
+
+    transform: rotate(-45deg);
+
+    transition: 0.3s ease;
+  }
+
+  /* SAME ANIMATION */
+
+  .mobile-contact-btn:hover {
+    background: #fff;
+    color: #302e99;
+    border: 1px solid #302e99;
+  }
+
+  .mobile-contact-btn:hover svg {
+    transform: rotate(0deg);
+    fill: #302e99;
   }
 
   /* OPTIONAL DARK OVERLAY */
