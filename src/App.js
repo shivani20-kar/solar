@@ -162,7 +162,8 @@ function App() {
           <ProductsSection/>
           <SolustionPage/>
           <SafetyLightning/>
-          </>} />
+          </>} 
+          />
 
       </Routes>
 
