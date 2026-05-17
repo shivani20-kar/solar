@@ -149,3 +149,85 @@
 
   font-style: normal;
 }
+
+/* ========================================= */
+/* RESPONSIVE CSS (320px to 480px) */
+/* ========================================= */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .aboutwhatwe-section {
+    padding: 12vw 0;
+  }
+
+  .aboutwhatwe-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .aboutwhatwe-heading {
+    gap: 3vw;
+    margin-bottom: 5vw;
+  }
+
+  .aboutwhatwe-heading h2 {
+    font-size: 8vw;
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  .aboutwhatwe-line {
+    width: 12vw;
+    height: 0.8vw;
+  }
+
+  /* SUB TEXT */
+
+  .aboutwhatwe-subtext {
+    font-size: 4vw;
+    line-height: 1.7;
+    margin-bottom: 8vw;
+    padding: 0 2vw;
+  }
+
+  /* CARDS */
+
+  .aboutwhatwe-cards {
+    grid-template-columns: 1fr;
+    gap: 6vw;
+    margin-bottom: 10vw;
+  }
+
+  /* CARD */
+
+  .aboutwhatwe-card {
+    height: 65vw;
+    border-radius: 5vw;
+  }
+
+  .aboutwhatwe-card img {
+    border-radius: 5vw;
+  }
+
+  /* TEXT */
+
+  .aboutwhatwe-card h3 {
+    bottom: 5vw;
+    width: 90%;
+    font-size: 6vw;
+    line-height: 1.3;
+  }
+
+  /* BOTTOM TEXT BOX */
+
+  .aboutwhatwe-bottomtext {
+    width: 87%;
+    border-radius: 5vw;
+    padding: 5vw;
+  }
+
+  .aboutwhatwe-bottomtext p {
+    font-size: 4vw;
+    line-height: 1.7;
+  }
+}

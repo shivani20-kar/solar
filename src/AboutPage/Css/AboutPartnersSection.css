@@ -144,14 +144,15 @@
 
   .aboutpartners-logos {
     width: 100%;
-    gap: 5vw;
+    /* gap: 5vw; */
+    margin-right: 8vw;
   }
 
   /* FIRST ROW */
 
   .aboutpartners-row1 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 5vw;
+    /* gap: 5vw; */
   }
 
   /* SECOND ROW */
@@ -159,7 +160,7 @@
   .aboutpartners-row2 {
     width: 100%;
     grid-template-columns: 1fr;
-    gap: 5vw;
+    /* gap: 5vw; */
   }
 
   /* ITEM */
@@ -182,7 +183,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5vw;
+    gap: 0vw;
   }
 
   /* LAST LOGO CENTER */
