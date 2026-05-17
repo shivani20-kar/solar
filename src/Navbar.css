@@ -188,13 +188,12 @@
 .desktop-contact-btn {
   display: flex;
 }
-/* =========================
-   MOBILE RESPONSIVE
-========================= */
 
 @media (min-width: 320px) and (max-width: 480px) {
   .navbar {
     padding: 2vh 5vw;
+    border: 2px solid red;
+    height: 9vh;
   }
 
   .navbar-container {
