@@ -40,6 +40,12 @@ import SectorSection from "./OurProduct/SectorSection";
 import ProductsSection from "./OurProduct/ProductSection";
 import SolustionPage from "./OurProduct/SolutionPage";
 import SafetyLightning from "./OurProduct/SafetyLighting";
+import ProductPageWork from "./ProductPage/ProductPageWork";
+import ProductPageEstimated from "./ProductPage/ProductPageEstimated";
+import ProductPageRequirement from "./ProductPage/ProductPageRequirement";
+import ProductPageProps from "./ProductPage/ProductPageProps";
+import ProductPageBetter from "./ProductPage/ProductPageBetter";
+import ProductPageSure from "./ProductPage/ProductPageSure";
 
 function App() {
   const { pathname } = useLocation();
@@ -65,7 +71,6 @@ function App() {
   const closePopup = () => {
     setShowPopup(false);
   };
-
   return (
     <>
       <Navbar />
@@ -139,9 +144,16 @@ function App() {
               <ProductPageOffGrid />
               <ProductPageNeedSection />
               <SolarSystemProductPageComponent />
+              <ProductPageWork />
+              <ProductPageEstimated />
+              <ProductPageRequirement />
+              <ProductPageProps />
+              <ProductPageBetter />
+              <ProductPageSure />
             </>
           }
         />
+
 
         {/* PRODUCTS */}
         <Route path="/products" element={

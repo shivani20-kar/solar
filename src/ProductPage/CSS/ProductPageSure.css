@@ -1,0 +1,184 @@
+/* ================= SECTION ================= */
+
+.ProductPageSure-section {
+  width: 100%;
+  background: #f6f8fa;
+  padding: 0vw 0 6vw 0;
+  box-sizing: border-box;
+}
+
+/* ================= CONTAINER ================= */
+
+.ProductPageSure-container {
+  width: 50%;
+  margin: auto;
+
+  padding: 3vw 4vw;
+
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 4px 3px rgba(255, 215, 0, 0.35);
+  box-sizing: border-box;
+}
+
+/* ================= TOP ================= */
+
+.ProductPageSure-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2vw;
+}
+
+/* ================= ICON ================= */
+
+.ProductPageSure-icon {
+  width: 5vw;
+  height: 5vw;
+
+  flex-shrink: 0;
+}
+
+.ProductPageSure-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ================= CONTENT ================= */
+
+.ProductPageSure-content {
+  text-align: center;
+}
+
+/* ================= TITLE ================= */
+
+.ProductPageSure-title {
+  margin: 0;
+  color: #001233;
+  font-family: "Figtree";
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.ProductPageSure-title span {
+  color: #4867ff;
+}
+
+/* ================= TEXT ================= */
+
+.ProductPageSure-text {
+  margin: 1.5vw 0 2.5vw;
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+/* ================= BUTTON ================= */
+
+.ProductPageSure-btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  background: linear-gradient(90deg, #15b2ff, #4867ff);
+
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6vw;
+
+  padding: 1.5vh 1vw;
+
+  transition: all 0.3s ease;
+
+  color: #fff;
+
+  font-family: "Figtree";
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-right: 5vw;
+}
+
+/* ================= SVG ================= */
+
+.ProductPageSure-btn svg {
+  width: 1.1vw;
+  height: 1.1vw;
+
+  fill: #fff;
+
+  transform: rotate(-45deg);
+
+  transition: all 0.3s ease;
+}
+
+/* ================= HOVER ================= */
+
+.ProductPageSure-btn:hover {
+  background: #fff;
+  color: #302e99;
+  border: 1px solid #302e99;
+}
+
+.ProductPageSure-btn:hover svg {
+  fill: #302e99;
+  transform: rotate(0deg);
+}
+/* ================= FEATURES ================= */
+
+.ProductPageSure-features {
+  margin-top: 3vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3vw;
+  flex-wrap: wrap;
+}
+
+.ProductPageSure-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+}
+
+/* ================= CHECK ICON ================= */
+
+.ProductPageSure-check {
+  width: 1.5vw;
+  height: 1.5vw;
+  border-radius: 50%;
+  border: 2px solid #00b552;
+  color: #00b552;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ProductPageSure-check svg {
+  width: 1vw;
+  height: 1vw;
+}
+
+/* ================= FEATURE TEXT ================= */
+
+.ProductPageSure-feature p {
+  margin: 0;
+  color: #001233;
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.3;
+}

@@ -1,0 +1,166 @@
+/* ProductPageEstimated.css */
+
+.productpageestimated-section {
+  width: 100%;
+  background: #f6f8fa;
+  padding: 5vw 0 0vw 0;
+}
+
+.productpageestimated-container {
+  width: 70%;
+  margin: auto;
+}
+
+.productpageestimated-container h2 {
+  margin-bottom: 1vw;
+
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 2.5vw;
+  font-weight: 600;
+
+  color: #001233;
+  font-style: normal;
+  line-height: 1.2;
+}
+
+.productpageestimated-container > p {
+  color: #000;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.7vw;
+  line-height: 1.4;
+  margin-bottom: 3vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+/* MAIN BOX */
+
+.productpageestimated-box {
+  border-radius: 1vw;
+  padding: 3vw 2vw;
+
+  border: 0.56px solid rgba(255, 215, 0, 0.5);
+  background: #fff;
+  box-shadow: 0 4px 4px 0 rgba(255, 215, 0, 0.5);
+}
+
+.productpageestimated-box h3 {
+  color: #000;
+  margin-bottom: 3vw;
+  text-align: center;
+  font-family: "Figtree";
+  font-size: 1.7vw;
+  line-height: 1.4;
+  font-style: normal;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+/* TABLE */
+
+.productpageestimated-table {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 215, 0, 0.7);
+  background: #fff;
+
+  padding: 2vw;
+}
+
+/* HEADER */
+
+.productpageestimated-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid #111;
+
+  padding-bottom: 1vw;
+  margin-bottom: 2vw;
+}
+
+.productpageestimated-header span {
+  font-family: "Figtree";
+  font-size: 1.7vw;
+  color: #000;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* ROWS */
+
+.productpageestimated-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+
+.productpageestimated-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: #fff;
+
+  padding: 1vw;
+
+  border-radius: 0.8vw;
+
+  box-shadow: 0 0.2vw 0.7vw rgba(0, 0, 0, 0.15);
+}
+
+.productpageestimated-tag {
+  background: #9fdcff;
+  padding: 0.8vw 1vw;
+  border-radius: 0.5vw;
+  color: #111;
+  font-family: "Figtree", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 500;
+}
+
+.productpageestimated-row h4 {
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 500;
+  color: #000;
+  font-style: normal;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* NOTE */
+
+.productpageestimated-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7vw;
+
+  border-top: 1px solid #bdbdbd;
+
+  margin-top: 3vw;
+  padding-top: 2vw;
+}
+
+.productpageestimated-note span {
+  width: 0.8vw;
+  height: 0.8vw;
+
+  border-radius: 50%;
+
+  background: #4eff54;
+}
+
+.productpageestimated-note p {
+  font-family: "Figtree";
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: #000;
+  font-style: normal;
+  line-height: 1.2;
+}
