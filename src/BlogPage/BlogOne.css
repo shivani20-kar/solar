@@ -241,3 +241,171 @@
   line-height: 1.2;
   font-family: "Figtree";
 }
+/* ========================================= */
+/* RESPONSIVE CSS (320px to 480px) */
+/* ========================================= */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .blogone-section {
+    padding: 10vw 0;
+    margin-top: 8vh;
+  }
+
+  .blogone-container {
+    width: 90%;
+  }
+
+  /* BREADCRUMB */
+
+  .blogone-breadcrumb {
+    gap: 2vw;
+    margin-bottom: 5vw;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .blogone-breadcrumb span,
+  .blogone-breadcrumb p,
+  .blogone-breadcrumb .active {
+    font-size: 3.8vw;
+    line-height: 1.4;
+  }
+
+  /* TOP */
+
+  .blogone-top {
+    gap: 3vw;
+    margin-bottom: 4vw;
+    flex-wrap: wrap;
+  }
+
+  .author-name {
+    font-size: 3.8vw;
+    letter-spacing: 0.2vw;
+  }
+
+  .blog-date {
+    font-size: 3.8vw;
+  }
+
+  /* TITLE */
+
+  .blogone-title {
+    font-size: 8vw;
+    line-height: 1.2;
+    margin-bottom: 6vw;
+  }
+
+  /* MAIN IMAGE */
+
+  .blogone-main-image {
+    height: 60vw;
+    border-radius: 16px;
+    margin-bottom: 6vw;
+  }
+
+  /* INTRO PARAGRAPH */
+
+  .blogone-para {
+    font-size: 4vw;
+    line-height: 1.8;
+    margin-bottom: 8vw;
+  }
+
+  /* CONTENT */
+
+  .blogone-content {
+    margin-bottom: 10vw;
+  }
+
+  .blogone-list {
+    padding-left: 5vw;
+  }
+
+  .blogone-item {
+    margin-bottom: 8vw;
+  }
+
+  .blogone-item::marker {
+    font-size: 4vw;
+  }
+
+  .blogone-item h3 {
+    font-size: 6vw;
+    line-height: 1.35;
+    margin-bottom: 3vw;
+  }
+
+  .blogone-item p {
+    font-size: 4vw;
+    line-height: 1.8;
+  }
+
+  /* MORE NEWS */
+
+  .more-news h2 {
+    font-size: 8vw;
+    line-height: 1.2;
+    margin-bottom: 6vw;
+  }
+
+  /* GRID */
+
+  .more-news-grid {
+    grid-template-columns: 1fr;
+    gap: 6vw;
+  }
+
+  /* CARD */
+
+  .more-news-card {
+    padding: 4vw;
+    border-radius: 18px;
+  }
+
+  .more-news-card:hover {
+    transform: translateY(-4px);
+  }
+
+  /* IMAGE */
+
+  .more-news-image {
+    height: 220px;
+    margin-bottom: 4vw;
+    border-radius: 16px;
+  }
+
+  /* META */
+
+  .more-news-meta {
+    gap: 4vw;
+    flex-wrap: wrap;
+    margin-bottom: 3vw;
+  }
+
+  .more-news-meta span {
+    font-size: 3.5vw;
+    gap: 2vw;
+  }
+
+  .more-news-meta span svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* TITLE */
+
+  .more-news-content h3 {
+    width: 100%;
+    font-size: 5.5vw;
+    line-height: 1.35;
+    margin: 4vw 0;
+  }
+
+  /* DESCRIPTION */
+
+  .more-news-content p {
+    font-size: 3.8vw;
+    line-height: 1.7;
+  }
+}

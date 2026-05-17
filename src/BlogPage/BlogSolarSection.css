@@ -152,3 +152,97 @@
   transform: rotate(0deg);
   fill: #302e99;
 }
+
+/* ===================================== */
+/* RESPONSIVE CSS (320px - 480px) */
+/* ===================================== */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .blogsolar-section {
+    padding: 12vw 0;
+  }
+
+  .blogsolar-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .blogsolar-heading {
+    font-size: 8vw;
+    line-height: 1.25;
+    text-align: left;
+    margin-bottom: 8vw;
+  }
+
+  /* GRID */
+
+  .blogsolar-grid {
+    grid-template-columns: 1fr;
+    gap: 6vw;
+  }
+
+  /* CARD */
+
+  .blogsolar-card {
+    padding: 4vw;
+    border-radius: 20px;
+  }
+
+  /* IMAGE */
+
+  .blogsolar-image {
+    height: 220px;
+    margin-bottom: 4vw;
+    border-radius: 16px;
+  }
+
+  /* META */
+
+  .blogsolar-meta {
+    gap: 4vw;
+    margin-bottom: 3vw;
+  }
+
+  .blogsolar-meta span {
+    font-size: 3.5vw;
+    gap: 2vw;
+  }
+
+  .blogsolar-meta span svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* TITLE */
+
+  .blogsolar-card h3 {
+    width: 100%;
+    font-size: 5.5vw;
+    line-height: 1.35;
+    margin: 4vw 0;
+  }
+
+  /* DESCRIPTION */
+
+  .blogsolar-card p {
+    font-size: 3.8vw;
+    line-height: 1.7;
+  }
+
+  /* BUTTON */
+
+  .blogsolar-load-btn {
+    margin-top: 8vw;
+    width: fit-content;
+    padding: 1.8vh 6vw;
+    gap: 3vw;
+    font-size: 4vw;
+    border-radius: 10px;
+  }
+
+  .blogsolar-load-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}

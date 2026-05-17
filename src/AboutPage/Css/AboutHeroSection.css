@@ -143,3 +143,93 @@
   font-style: normal;
   margin: 0;
 }
+
+/* ========================================= */
+/* RESPONSIVE CSS (320px to 480px) */
+/* ========================================= */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .abouthero-section {
+    min-height: auto;
+    padding: 14vw 0;
+    margin-top: 7vh;
+    background-position: center;
+  }
+
+  /* OVERLAY */
+
+  .abouthero-overlay {
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  /* CONTAINER */
+
+  .abouthero-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+  }
+
+  /* LEFT CONTENT */
+
+  .abouthero-content {
+    width: 100%;
+  }
+
+  .abouthero-content h1 {
+    font-size: 9vw;
+    line-height: 1.15;
+    margin-bottom: 5vw;
+  }
+
+  .abouthero-content p {
+    width: 100%;
+    font-size: 4vw;
+    line-height: 1.8;
+    margin-bottom: 4vw;
+  }
+
+  /* CARDS */
+
+  .abouthero-cards {
+    width: 100%;
+    padding-left: 0;
+    padding-bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vw;
+  }
+
+  /* CARD */
+
+  .abouthero-card {
+    width: 75%;
+    height: auto;
+    padding: 3vw 5vw;
+    border-radius: 20px;
+  }
+
+  /* ICON */
+
+  .abouthero-icon {
+    width: 18vw;
+    height: 18vw;
+    margin-bottom: 5vw;
+  }
+
+  .abouthero-icon svg {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  /* TEXT */
+
+  .abouthero-card h3,
+  .abouthero-card p {
+    font-size: 5.5vw;
+    line-height: 1.4;
+  }
+}
