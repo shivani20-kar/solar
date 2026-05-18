@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../ProductPage/CSS/ProductPageSure.css";
-
+import ContactPopup from "../HomePage/ContactPopup";
 import questionIcon from "../ProductPage/Images/questionIcon.png";
 
 const ProductPageSure = () => {
@@ -103,6 +103,9 @@ const ProductPageSure = () => {
           </div>
         </div>
       </div>
+
+      {/* POPUP */}
+      {showPopup && <ContactPopup closePopup={() => setShowPopup(false)} />}
     </section>
   );
 };

@@ -1,11 +1,11 @@
 // ProductPageSection.jsx
-
-import React from "react";
+import React, { useState } from "react";
+import ContactPopup from "../HomePage/ContactPopup";
 import "../ProductPage/CSS/ProductPageHeroSection.css";
-
 import heroImg from "../ProductPage/Images/ProductPageBackgroundImg.png";
 
 const ProductPageHeroSection = () => {
+  const [showPopup, setShowPopup] = useState(false);
   return (
     <section
       className="productpage-section"
@@ -136,13 +136,16 @@ const ProductPageHeroSection = () => {
       {/* STICKY BUTTON */}
 
       <div className="productpage-sticky-button">
-        <button>
+        <button onClick={() => setShowPopup(true)}>
           Book Now
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
             <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
           </svg>
         </button>
       </div>
+
+      {/* POPUP */}
+      {showPopup && <ContactPopup closePopup={() => setShowPopup(false)} />}
     </section>
   );
 };
