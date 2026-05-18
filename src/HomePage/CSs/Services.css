@@ -251,3 +251,100 @@ line-height: 25px; /* 175% */
     line-height: 24px;
   }
 }
+
+/* ==========================================
+   RESPONSIVE CSS (481px to 767px)
+========================================== */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+  .services-section {
+    padding: 20px 20px;
+  }
+
+  .services-container {
+    width: 100%;
+  }
+
+  /* TOP SECTION */
+
+  .services-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    margin-bottom: 10px;
+  }
+
+  .services-tag {
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+
+  .services-top h2 {
+    margin-top: 10px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .services-btn {
+    font-size: 16px;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .services-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* SERVICES GRID */
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* CARD */
+
+  .service-card {
+    padding: 18px 16px 20px;
+    height: auto;
+    min-height: 300px;
+    border-radius: 18px;
+  }
+
+  /* Bottom Cut Shape */
+
+  .service-card::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Curve */
+
+  .service-card::after {
+    bottom: 56px;
+  }
+
+  .service-icon {
+    margin-bottom: 16px;
+  }
+
+  .service-icon img,
+  .service-icon svg {
+    width: 55px;
+    height: 55px;
+  }
+
+  .service-card h3 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 14px;
+  }
+
+  .service-card p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+}
