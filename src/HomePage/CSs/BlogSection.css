@@ -132,3 +132,94 @@ font-style: normal;
 font-weight: 400;
 line-height:20px; /* 175% */
 }
+
+/* ==========================================
+   RESPONSIVE CSS (320px to 480px)
+========================================== */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .blog-section {
+    padding: 25px 20px;
+  }
+
+  .blog-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    margin-bottom: 15px;
+  }
+
+  .blog-tag {
+    font-size: 13px;
+    padding: 10px 18px;
+  }
+
+  .blog-heading {
+    font-size: 34px;
+    line-height: 42px;
+  }
+
+
+  .blog-view-btn {
+    font-size: 14px;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 10px;
+  }
+
+  .blog-view-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* BLOG CARDS */
+
+  .blog-cards {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .blog-card {
+    width: 90%;
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .blog-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+  }
+
+  /* BLOG INFO */
+
+  .blog-info {
+    gap: 14px;
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    flex-wrap: wrap;
+  }
+
+  .blog-info svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* TITLE */
+
+  .blog-title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 0cqh;
+  }
+
+  /* DESCRIPTION */
+
+  .blog-desc {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

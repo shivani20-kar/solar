@@ -35,7 +35,7 @@ const ContactPopup = () => {
             </button>
 
             {/* Left Side */}
-            <div className="left-section">
+            <div className="left-sections">
               <h1>Get a Free Consultation</h1>
               <p>
                 Tell us your requirements and our experts

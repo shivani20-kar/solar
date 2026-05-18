@@ -76,11 +76,6 @@ function App() {
     <>
       <Navbar />
 
-      {/* Popup Open Button */}
-      {/* <button onClick={openPopup}>
-        Open Dealership Popup
-      </button> */}
-
       {/* Popup */}
       {showPopup && <DealershipPopup closePopup={closePopup} />}
 

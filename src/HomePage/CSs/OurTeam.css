@@ -102,3 +102,68 @@ width: 520px;
 .map-wrapper img{
  width: 100%;
 }
+
+/* ==========================================
+   RESPONSIVE CSS (320px to 480px)
+========================================== */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .team-section {
+    padding: 25px 20px;
+  }
+
+  .team-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .team-content {
+    width: 100%;
+  }
+
+  .team-badge {
+    font-size: 13px;
+    padding: 10px 18px;
+  }
+
+  .team-content h1 {
+    margin-top: 16px;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 1px;
+  }
+
+  .team-content p {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .contact-btn {
+    font-size: 14px;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 10px;
+  }
+
+  .contact-btn span {
+    margin-left: 4px;
+  }
+
+  .contact-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* MAP */
+
+  .map-wrapper {
+    width: 100%;
+  }
+
+  .map-wrapper img {
+    width: 100%;
+    display: block;
+  }
+}

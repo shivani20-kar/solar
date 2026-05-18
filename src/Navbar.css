@@ -192,7 +192,7 @@
 @media (min-width: 320px) and (max-width: 480px) {
   .navbar {
     padding: 2vh 5vw;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 9vh;
   }
 
@@ -254,8 +254,6 @@
   .navbar-mobile-active {
     left: 0;
   }
-
-  /* LINKS */
 
   .navbar-nav-item {
     font-size: 4.8vw;

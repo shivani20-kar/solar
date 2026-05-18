@@ -153,3 +153,103 @@ font-style: normal;
 font-weight: 700;
 line-height: 15px; /* 125% */
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .thankyou-wrapper {
+    padding: 10px 12px;
+  }
+
+  .thankyou-container {
+    flex-direction: column;
+    min-height: auto;
+    border-radius: 16px;
+  }
+
+  /* LEFT SIDE */
+
+  .thankyou-left {
+    width: 100%;
+    padding: 14px 15px;
+    box-sizing: border-box;
+  }
+
+  .heart-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 3px;
+  }
+
+  .heart-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .thankyou-left h2 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 0px;
+  }
+
+  .thankyou-text,
+  .thankyou-subtext {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0px;
+  }
+
+  /* FEATURES GRID */
+
+  .thankyou-features-grid {
+    grid-template-columns: 1fr;
+    gap: 1px;
+    margin-top: 1px;
+  }
+
+  .thankyou-feature-box h4 {
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 0px;
+  }
+
+  .thankyou-feature-box p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  /* RIGHT SIDE */
+
+  .thankyou-right {
+    width: 100%;
+    height: 280px;
+  }
+
+  .thankyou-right img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .glass-card {
+    width: 80%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 15px;
+    padding: 18px 16px;
+    border-radius: 14px;
+  }
+
+  .quote {
+    font-size: 40px;
+    line-height: 20px;
+  }
+
+  .glass-card p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .glass-card h3 {
+    font-size: 20px;
+    line-height: 15px;
+  }
+}

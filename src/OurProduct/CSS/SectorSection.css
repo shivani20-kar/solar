@@ -100,3 +100,80 @@ font-style: normal;
 font-weight: 400;
 line-height: 10px; /* 113.636% */
 }
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+  .sector-wrapper {
+    padding: 5px 10px;
+  }
+
+  /* HEADING */
+
+  .sector-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .sector-heading h2 {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  /* LEFT SVG */
+
+  .sector-heading .line svg {
+    width: 60px;
+    height: auto;
+  }
+
+  /* RIGHT ARROW SVG */
+
+  .arrow-line .line svg {
+    width: 80px;
+    height: auto;
+  }
+
+  /* CARDS */
+
+  .sector-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sector-card {
+    width: 98%;
+    height: 250px;
+    border-radius: 16px;
+  }
+
+  .sector-card:hover {
+    transform: translateY(-4px);
+  }
+
+  /* OVERLAY */
+
+  .sector-overlay {
+    padding: 5px 1px;
+  }
+
+  .sector-overlay h3 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .yellow-underline {
+    width: 40%;
+    margin-bottom: 0px;
+  }
+
+  .sector-overlay p {
+    font-size: 14px;
+    line-height: 10px;
+  }
+}
