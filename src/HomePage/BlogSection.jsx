@@ -1,6 +1,5 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./CSs/BlogSection.css";
-
 import blog1 from "./Images/blog.png";
 import blog2 from "./Images/blog-img14.png.png";
 import blog3 from "./Images/blog-img14.png (1).png";
@@ -33,6 +32,7 @@ const blogData = [
 ];
 
 const BlogSection = () => {
+  const navigate = useNavigate();
   return (
     <div className="blog-section">
       <div className="blog-top">
@@ -46,7 +46,7 @@ const BlogSection = () => {
           </h1>
         </div>
 
-        <button className="blog-view-btn">
+        <button className="blog-view-btn"  onClick={() => navigate("/blogs")}>
           View All Blog  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
             <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
           </svg>

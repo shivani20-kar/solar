@@ -163,9 +163,9 @@ const closeContactPopup = () => {
             <>
               <SolarSolutions />
               <SectorSection />
-              <ProductsSection />
-              <SolustionPage />
-              <SafetyLightning />
+             <ProductsSection openContactPopup={openContactPopup} />
+              <SolustionPage openContactPopup={openContactPopup} />
+              <SafetyLightning openContactPopup={openContactPopup} />
               <ThankYouSection />
             </>
           }

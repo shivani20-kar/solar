@@ -4,7 +4,7 @@ import solarImg from "./Images/unsplash_FBSTmfa8nOM.png";
 import solarImg1 from "./Images/20260318165810de971 1.png"
 import solarImg2 from "./Images/images (4) 1.png"
 
-const SolustionPage = () => {
+const SolustionPage =({ openContactPopup }) => { 
   const stars = [1, 2, 3, 4, 5];
 
   const products = [
@@ -186,7 +186,7 @@ const SolustionPage = () => {
 
       {/* Bottom */}
       <div className="product-footer">
-        <button className="book-btn">
+        <button className="book-btn" onClick={openContactPopup}>
           Book Now
           <span>
             <svg
