@@ -680,6 +680,7 @@
 
   .navbar-mobile-active {
     left: 0;
+    margin-top: 8vw;
   }
 
   /* NAV LINKS */

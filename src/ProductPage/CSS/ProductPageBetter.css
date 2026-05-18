@@ -162,3 +162,128 @@
     line-height: 1.8;
   }
 }
+
+/* ======================================== */
+/* RESPONSIVE DESIGN — 481px to 767px */
+/* ======================================== */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* ================= SECTION ================= */
+
+  .ProductPageBetter-section {
+    padding: 8vw 0 10vw;
+  }
+
+  /* ================= CONTAINER ================= */
+
+  .ProductPageBetter-container {
+    width: 88%;
+  }
+
+  /* ================= TITLE ================= */
+
+  .ProductPageBetter__title {
+    font-size: 5.8vw;
+    line-height: 1.3;
+
+    margin-bottom: 6vw;
+  }
+
+  .ProductPageBetter__underline::after {
+    bottom: -0.8vw;
+
+    width: 75%;
+    height: 0.5vw;
+  }
+
+  /* ================= CARD ================= */
+
+  .ProductPageBetter__card {
+    width: 90%;
+
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    gap: 4vw;
+
+    padding: 5vw 4vw;
+
+    border-radius: 4vw;
+
+    box-shadow: 0 1vw 3vw rgba(255, 215, 0, 0.15);
+  }
+
+  /* ================= ICON ================= */
+
+  .ProductPageBetter__icon {
+    width: 13vw;
+    height: 13vw;
+  }
+
+  /* ================= TEXT ================= */
+
+  .ProductPageBetter__text {
+    font-size: 3vw;
+    line-height: 1.7;
+  }
+}
+
+/* ======================================== */
+/* RESPONSIVE DESIGN — 768px to 1024px */
+/* ======================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* ================= SECTION ================= */
+
+  .ProductPageBetter-section {
+    padding: 6vw 0 8vw;
+  }
+
+  /* ================= CONTAINER ================= */
+
+  .ProductPageBetter-container {
+    width: 80%;
+  }
+
+  /* ================= TITLE ================= */
+
+  .ProductPageBetter__title {
+    font-size: 4vw;
+    line-height: 1.25;
+
+    margin-bottom: 4vw;
+  }
+
+  .ProductPageBetter__underline::after {
+    bottom: -0.5vw;
+
+    width: 72%;
+    height: 0.3vw;
+  }
+
+  /* ================= CARD ================= */
+
+  .ProductPageBetter__card {
+    gap: 2.5vw;
+
+    padding: 4vw;
+
+    border-radius: 3vw;
+  }
+
+  /* ================= ICON ================= */
+
+  .ProductPageBetter__icon {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  /* ================= TEXT ================= */
+
+  .ProductPageBetter__text {
+    font-size: 2vw;
+    line-height: 1.6;
+  }
+}
