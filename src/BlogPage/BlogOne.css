@@ -674,8 +674,15 @@
   /* GRID */
 
   .more-news-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3vw;
+  }
+
+  .more-news-card:last-child {
+    grid-column: 1 / -1;
+    width: 48%;
+    margin: 0 auto;
   }
 
   /* CARD */

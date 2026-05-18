@@ -287,3 +287,220 @@
   }
 
 }
+/* ========================= */
+/* RESPONSIVE CSS */
+/* 481px to 767px */
+/* ========================= */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+  /* SECTION */
+
+  .productpageneed-section {
+    padding: 8vw 0 10vw;
+  }
+
+  /* CONTAINER */
+
+  .productpageneed-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .productpageneed-container h2 {
+    font-size: 5.8vw;
+
+    line-height: 1.25;
+
+    margin-bottom: 6vw;
+  }
+
+  /* CARDS WRAPPER */
+
+  .productpageneed-cards {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 4vw;
+  }
+
+  /* SINGLE CARD */
+
+  .productpageneed-card {
+    width: 100%;
+
+    height: 18vw;
+
+    border-radius: 3vw;
+
+    transition:
+      height 0.5s ease,
+      transform 0.4s ease;
+  }
+
+  /* ACTIVE CARD */
+
+  .productpageneed-card.active {
+    width: 100%;
+
+    height: 42vw;
+  }
+
+  /* CONTENT */
+
+  .productpageneed-content {
+    padding: 5vw 4vw;
+
+    justify-content: flex-end;
+
+    align-items: center;
+  }
+
+  /* TITLE */
+
+  .productpageneed-content h3 {
+    font-size: 3.8vw;
+
+    line-height: 1.3;
+
+    text-align: center;
+  }
+
+  /* CLOSED CARD TITLE */
+
+  .productpageneed-card:not(.active) h3 {
+    position: static;
+
+    transform: none;
+
+    width: 100%;
+
+    font-size: 3.8vw;
+
+    white-space: normal;
+  }
+
+  /* DESCRIPTION */
+
+  .productpageneed-content p {
+    margin-top: 2.5vw;
+
+    font-size: 2.7vw;
+
+    line-height: 1.7;
+
+    max-width: 100%;
+
+    margin-bottom: 0;
+  }
+
+  /* ANIMATION */
+
+  @keyframes fadeIn {
+
+    from {
+      opacity: 0;
+      transform: translateY(2vw);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  }
+
+}
+
+/* ========================= */
+/* RESPONSIVE CSS */
+/* 768px to 1024px */
+/* ========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* SECTION */
+
+  .productpageneed-section {
+    padding: 6vw 0 8vw;
+  }
+
+  /* CONTAINER */
+
+  .productpageneed-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .productpageneed-container h2 {
+    font-size: 4.2vw;
+
+    line-height: 1.2;
+
+    margin-bottom: 5vw;
+  }
+
+  /* CARDS WRAPPER */
+
+  .productpageneed-cards {
+    gap: 3vw;
+
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  /* SINGLE CARD */
+
+  .productpageneed-card {
+    width: 10vw;
+
+    height: 32vw;
+
+    border-radius: 2.5vw;
+  }
+
+  /* ACTIVE CARD */
+
+  .productpageneed-card.active {
+    width: 28vw;
+  }
+
+  /* CONTENT */
+
+  .productpageneed-content {
+    padding: 3vw 2vw;
+  }
+
+  /* TITLE */
+
+  .productpageneed-content h3 {
+    font-size: 2.3vw;
+
+    line-height: 1.3;
+  }
+
+  /* CLOSED CARD TITLE */
+
+  .productpageneed-card:not(.active) h3 {
+    bottom: 13vw;
+
+    font-size: 2vw;
+  }
+
+  /* DESCRIPTION */
+
+  .productpageneed-content p {
+    margin-top: 1.8vw;
+
+    font-size: 1.7vw;
+
+    line-height: 1.6;
+
+    max-width: 90%;
+  }
+
+}

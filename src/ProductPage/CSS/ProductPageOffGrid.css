@@ -85,3 +85,84 @@
   }
 
 }
+/* ========================= */
+/* RESPONSIVE CSS */
+/* 481px to 767px */
+/* ========================= */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* SECTION */
+
+  .productpageoffgrid-section {
+    padding: 7vw 0;
+  }
+
+  /* CONTAINER */
+
+  .productpageoffgrid-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .productpageoffgrid-container h2 {
+    font-size: 5.8vw;
+
+    line-height: 1.2;
+
+    margin-bottom: 3vw;
+  }
+
+  /* PARAGRAPH */
+
+  .productpageoffgrid-container p {
+    font-size: 2.8vw;
+
+    line-height: 1.8;
+
+    max-width: 90%;
+
+    margin: 0;
+  }
+}
+
+/* ========================= */
+/* RESPONSIVE CSS */
+/* 768px to 1024px */
+/* ========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* SECTION */
+
+  .productpageoffgrid-section {
+    padding: 5vw 0;
+  }
+
+  /* CONTAINER */
+
+  .productpageoffgrid-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .productpageoffgrid-container h2 {
+    font-size: 4.2vw;
+
+    line-height: 1.2;
+
+    margin-bottom: 2vw;
+  }
+
+  /* PARAGRAPH */
+
+  .productpageoffgrid-container p {
+    font-size: 2vw;
+
+    line-height: 1.8;
+
+    max-width: 80%;
+
+    margin: 0;
+  }
+}

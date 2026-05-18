@@ -398,3 +398,273 @@
     fill: #302e99;
   }
 }
+
+/* ========================= */
+/* RESPONSIVE CSS */
+/* 481px to 767px */
+/* ========================= */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* SECTION */
+
+  .productpage-section {
+    height: 85vh;
+
+    margin-top: 10vh;
+
+    padding: 10vw 0 16vw;
+
+    background-position: center;
+  }
+
+  /* OVERLAY */
+
+  .productpage-overlay {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  /* CONTAINER */
+
+  .productpage-container {
+    width: 90%;
+
+    height: auto;
+  }
+
+  /* LEFT */
+
+  .productpage-left {
+    width: 100%;
+  }
+
+  /* HEADING */
+
+  .productpage-left h1 {
+    font-size: 6.5vw;
+
+    line-height: 1.05;
+
+    margin: 0 0 4vw;
+  }
+
+  /* PARAGRAPH */
+
+  .productpage-left p {
+    font-size: 3vw;
+
+    line-height: 1.6;
+
+    max-width: 90%;
+
+    margin-bottom: 6vw;
+  }
+
+  /* FEATURES */
+
+  .productpage-features {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 3vw;
+
+    margin-bottom: 3vw;
+  }
+
+  .productpage-feature-bottom {
+    margin-left: 0;
+  }
+
+  /* FEATURE CARD */
+
+  .productpage-feature-card {
+    width: 50%;
+
+    gap: 2.5vw;
+
+    padding: 2.8vw 3.5vw;
+
+    border-radius: 2.5vw;
+
+    box-shadow:
+      0 0.8vw 3vw rgba(0, 0, 0, 0.25),
+      inset 0 0.2vw 0.3vw rgba(255, 255, 255, 0.2);
+  }
+
+  /* CHECK */
+
+  .productpage-check svg {
+    width: 5vw;
+    height: 5vw;
+
+    flex-shrink: 0;
+  }
+
+  /* TEXT */
+
+  .productpage-feature-card span {
+    font-size: 2.8vw;
+
+    line-height: 1.4;
+  }
+
+  /* STICKY BUTTON */
+
+  .productpage-sticky-button {
+    right: 4vw;
+    bottom: 4vw;
+
+    height: auto;
+  }
+
+  .productpage-sticky-button button {
+    gap: 1.5vw;
+
+    padding: 1.4vh 3vw;
+
+    border-radius: 10px;
+
+    font-size: 2.5vw;
+
+    line-height: 1;
+
+    box-shadow: 0 0.8vw 3vw rgba(0, 0, 0, 0.25);
+  }
+
+  /* SVG */
+
+  .productpage-sticky-button button svg {
+    width: 3.8vw;
+    height: 3.8vw;
+  }
+}
+
+/* ========================= */
+/* RESPONSIVE CSS */
+/* 768px to 1024px */
+/* ========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* SECTION */
+
+  .productpage-section {
+    height: 75vh;
+
+    margin-top: 8vh;
+
+    padding: 6vw 0;
+
+    background-position: center;
+  }
+
+  /* OVERLAY */
+
+  .productpage-overlay {
+    background: rgba(0, 0, 0, 0.25);
+  }
+
+  /* CONTAINER */
+
+  .productpage-container {
+    width: 90%;
+  }
+
+  /* LEFT */
+
+  .productpage-left {
+    width: 60%;
+  }
+
+  /* HEADING */
+
+  .productpage-left h1 {
+    font-size: 5.5vw;
+
+    line-height: 1.05;
+
+    margin: 0 0 3vw;
+  }
+
+  /* PARAGRAPH */
+
+  .productpage-left p {
+    font-size: 2vw;
+
+    line-height: 1.6;
+
+    max-width: 80%;
+
+    margin-bottom: 4vw;
+  }
+
+  /* FEATURES */
+
+  .productpage-features {
+    gap: 2vw;
+
+    margin-bottom: 2vw;
+
+    flex-wrap: wrap;
+  }
+
+  .productpage-feature-bottom {
+    margin-left: 4vw;
+  }
+
+  /* FEATURE CARD */
+
+  .productpage-feature-card {
+    gap: 1.5vw;
+
+    padding: 1.8vw 2.5vw;
+
+    border-radius: 2vw;
+
+    box-shadow:
+      0 0.6vw 2vw rgba(0, 0, 0, 0.22),
+      inset 0 0.1vw 0.2vw rgba(255, 255, 255, 0.2);
+  }
+
+  /* CHECK */
+
+  .productpage-check svg {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+
+  /* TEXT */
+
+  .productpage-feature-card span {
+    font-size: 1.8vw;
+
+    line-height: 1.3;
+  }
+
+  /* STICKY BUTTON */
+
+  .productpage-sticky-button {
+    right: 3vw;
+    bottom: 3vw;
+
+    height: auto;
+  }
+
+  .productpage-sticky-button button {
+    gap: 1vw;
+
+    padding: 1.3vh 2.2vw;
+
+    border-radius: 10px;
+
+    font-size: 1.8vw;
+
+    line-height: 1;
+  }
+
+  /* SVG */
+
+  .productpage-sticky-button button svg {
+    width: 2.6vw;
+    height: 2.6vw;
+  }
+}

@@ -420,7 +420,7 @@
   /* LOGO */
 
   .navbar-logo-image {
-    width: 32vw;
+    width: 23vw;
   }
 
   /* HAMBURGER */
@@ -611,7 +611,6 @@
     height: 100vh;
   }
 }
-
 /* ========================================= */
 /* RESPONSIVE CSS (768px to 1024px) */
 /* ========================================= */
@@ -620,84 +619,208 @@
   .navbar {
     padding: 2vh 4vw;
     border: 1px solid #000;
+    height: 10vh;
   }
 
   .navbar-container {
-    gap: 2vw;
+    position: relative;
   }
 
   /* LOGO */
 
   .navbar-logo-image {
-    width: 18vw;
-  }
-
-  /* NAV LINKS */
-
-  .navbar-nav-links {
-    gap: 2vw;
-  }
-
-  .navbar-nav-item {
-    font-size: 1.5vw;
-    gap: 0.5vw;
-  }
-
-  .active-link::after {
-    bottom: -1.8vw;
-    width: 100%;
-  }
-
-  /* DROPDOWN */
-
-  .navbar-dropdown-menu {
-    top: 3vw;
-    min-width: 24vw;
-
-    border-radius: 12px;
-
-    padding: 0.8vw 0;
-  }
-
-  .navbar-dropdown-item {
-    padding: 1.5vw 2vw;
-    font-size: 1.4vw;
-  }
-
-  .navbar-dropdown-item:hover {
-    padding-left: 2.5vw;
-  }
-
-  /* BUTTON */
-
-  .navbar-contact-btn {
-    gap: 0.8vw;
-
-    padding: 1.2vh 1.8vw;
-
-    font-size: 1.4vw;
-
-    border-radius: 10px;
-  }
-
-  .navbar-contact-btn svg {
-    width: 1.8vw;
-    height: 1.8vw;
+    width: 20vw;
   }
 
   /* HAMBURGER */
 
   .navbar-hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    color: #302e99;
+    z-index: 1200;
+    cursor: pointer;
+  }
+
+  /* SIDE MENU */
+
+  .navbar-nav-links {
+    position: fixed;
+
+    top: 0;
+    left: -100%;
+
+    width: 50%;
+    height: 100vh;
+
+    background: #fff;
+
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    padding: 6vw 5vw;
+
+    gap: 3vw;
+
+    transition: all 0.4s ease;
+
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.08);
+
+    z-index: 1100;
+
+    overflow-y: auto;
+
+    margin-top: 8vh;
+  }
+
+  /* OPEN MENU */
+
+  .navbar-mobile-active {
+    left: 0;
+  }
+
+  /* NAV LINKS */
+
+  .navbar-nav-item {
+    font-size: 2vw;
+    font-weight: 600;
+    gap: 0.5vw;
+  }
+
+  .active-link::after {
+    bottom: -0.8vw;
+    width: 100%;
+  }
+
+  /* DROPDOWN */
+
+  .navbar-services-dropdown {
+    width: 100%;
+  }
+
+  .navbar-services-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar-dropdown-icon {
+    font-size: 2vw;
+  }
+
+  .navbar-dropdown-menu {
+    position: static;
+
+    width: 100%;
+
+    background: #f8f9ff;
+
+    border-radius: 12px;
+
+    margin-top: 1.5vw;
+
+    padding: 0;
+
+    opacity: 1;
+    visibility: visible;
+
+    transform: none;
+
+    box-shadow: none;
+
     display: none;
   }
 
-  /* MOBILE BUTTON */
+  .show-dropdown {
+    display: block;
+  }
 
-  .mobile-contact-btn {
+  .navbar-dropdown-item {
+    font-size: 1.8vw;
+
+    padding: 1.8vw 2vw;
+
+    border-bottom: 1px solid #ececec;
+  }
+
+  .navbar-dropdown-item:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-dropdown-item:hover {
+    padding-left: 3vw;
+  }
+
+  /* DESKTOP BUTTON */
+
+  .desktop-contact-btn {
     display: none !important;
   }
 
-  .desktop-contact-btn {
-    display: flex;
+  /* MOBILE CONTACT BUTTON */
+
+  .mobile-contact-btn {
+    display: flex !important;
+
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+
+    width: 50%;
+
+    padding: 1.8vw 2vw;
+
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    color: #fff;
+    font-family: "Figtree";
+    font-size: 1.8vw;
+    font-weight: 500;
+  }
+
+  .mobile-contact-btn svg {
+    width: 2vw;
+    height: 2vw;
+
+    fill: #fff;
+
+    transform: rotate(-45deg);
+
+    transition: 0.3s ease;
+  }
+
+  .mobile-contact-btn:hover {
+    background: #fff;
+    color: #302e99;
+    border: 1px solid #302e99;
+  }
+
+  .mobile-contact-btn:hover svg {
+    transform: rotate(0deg);
+    fill: #302e99;
+  }
+
+  /* OVERLAY */
+
+  .navbar-mobile-active::before {
+    content: "";
+
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 50%;
+    height: 100vh;
   }
 }

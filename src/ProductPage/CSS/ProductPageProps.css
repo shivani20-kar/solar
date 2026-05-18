@@ -128,11 +128,11 @@
 
 .productpageprops-item p {
   margin: 0;
-  color: #001233; 
-  font-family: "Figtree"; 
+  color: #001233;
+  font-family: "Figtree";
   font-style: normal;
   font-weight: 500;
-  font-size: 1.2vw; 
+  font-size: 1.2vw;
 }
 
 /* ======================================== */
@@ -140,7 +140,6 @@
 /* ======================================== */
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-
   .productpageprops-section {
     padding: 14vw 0;
   }
@@ -242,5 +241,206 @@
   .productpageprops-item p {
     font-size: 4vw;
     line-height: 1.6;
+  }
+}
+
+/* ======================================== */
+/* RESPONSIVE DESIGN — 481px to 767px */
+/* ======================================== */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .productpageprops-section {
+    padding: 0vw 0;
+  }
+
+  .productpageprops-container {
+    width: 88%;
+  }
+
+  /* HEADING */
+
+  .productpageprops-container h2 {
+    font-size: 5.8vw;
+    line-height: 1.2;
+
+    margin-bottom: 6vw;
+  }
+
+  /* CARDS */
+
+  .productpageprops-cards {
+    flex-direction: column;
+
+    gap: 5vw;
+  }
+
+  .productpageprops-card {
+    width: 90%;
+
+    padding: 5vw 4vw;
+
+    border-radius: 4vw;
+
+    box-shadow: 0 1vw 3vw rgba(255, 215, 0, 0.18);
+  }
+
+  /* TOP */
+
+  .productpageprops-top {
+    margin-bottom: 4vw;
+  }
+
+  .productpageprops-titlewrap {
+    gap: 2.5vw;
+
+    margin-bottom: 3vw;
+  }
+
+  /* MAIN ICON */
+
+  .productpageprops-icon {
+    width: 9vw;
+    height: 9vw;
+
+    border-radius: 2.5vw;
+  }
+
+  .productpageprops-icon svg {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+
+  /* TITLE */
+
+  .productpageprops-titlewrap h3 {
+    font-size: 4.5vw;
+    line-height: 1.2;
+  }
+
+  /* LIST */
+
+  .productpageprops-list {
+    gap: 3vw;
+  }
+
+  .productpageprops-item {
+    align-items: flex-start;
+
+    gap: 2.5vw;
+  }
+
+  /* SMALL ICON */
+
+  .productpageprops-smallicon {
+    width: 7vw;
+    height: 7vw;
+  }
+
+  .productpageprops-smallicon svg {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  /* TEXT */
+
+  .productpageprops-item p {
+    font-size: 3vw;
+    line-height: 1.6;
+    margin-top: 1.5vw;
+  }
+}
+
+/* ======================================== */
+/* RESPONSIVE DESIGN — 768px to 1024px */
+/* ======================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .productpageprops-section {
+    padding: 0vw 0;
+  }
+
+  .productpageprops-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .productpageprops-container h2 {
+    font-size: 4vw;
+
+    margin-bottom: 5vw;
+  }
+
+  /* CARDS */
+
+  .productpageprops-cards {
+    gap: 3vw;
+  }
+
+  .productpageprops-card {
+    padding: 3.5vw;
+
+    border-radius: 3vw;
+  }
+
+  /* TOP */
+
+  .productpageprops-top {
+    margin-bottom: 3vw;
+  }
+
+  .productpageprops-titlewrap {
+    gap: 1.8vw;
+
+    margin-bottom: 2.5vw;
+  }
+
+  /* MAIN ICON */
+
+  .productpageprops-icon {
+    width: 6vw;
+    height: 6vw;
+
+    border-radius: 1.8vw;
+  }
+
+  .productpageprops-icon svg {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  /* TITLE */
+
+  .productpageprops-titlewrap h3 {
+    font-size: 3vw;
+  }
+
+  /* LIST */
+
+  .productpageprops-list {
+    gap: 2vw;
+  }
+
+  .productpageprops-item {
+    gap: 1.8vw;
+  }
+
+  /* SMALL ICON */
+
+  .productpageprops-smallicon {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .productpageprops-smallicon svg {
+    width: 2.8vw;
+    height: 2.8vw;
+  }
+
+  /* TEXT */
+
+  .productpageprops-item p {
+    font-size: 2vw;
+    line-height: 1.5;
   }
 }

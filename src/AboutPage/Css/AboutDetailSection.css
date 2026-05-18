@@ -239,3 +239,173 @@
     font-weight: 700;
   }
 }
+
+/* ========================= */
+/* RESPONSIVE */
+/* 481px to 767px */
+/* ========================= */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  /* SECTION */
+
+  .aboutdetail-section {
+    padding: 8vw 0;
+  }
+
+  /* CARD */
+
+  .aboutdetail-card {
+    width: 82%;
+    border-radius: 2vw;
+    padding: 5vw 4vw;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  /* TOP AREA */
+
+  .aboutdetail-top {
+    width: 100%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4vw;
+
+    margin-bottom: 6vw;
+  }
+
+  /* LOGO */
+
+  .aboutdetail-logo {
+    width: 22vw;
+    justify-content: center;
+  }
+
+  .aboutdetail-logo img {
+    padding-top: 0;
+  }
+
+  /* TITLE AREA */
+
+  .aboutdetail-title-area {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* TITLE */
+
+  .aboutdetail-title-area h2 {
+    font-size: 5.5vw;
+    margin-bottom: 2vw;
+    line-height: 1.1;
+  }
+
+  /* YELLOW LINE */
+
+  .aboutdetail-yellow-line {
+    width: 28vw;
+    height: 0.5vw;
+  }
+
+  /* CONTENT */
+
+  .aboutdetail-content {
+    gap: 3.5vw;
+  }
+
+  /* TEXT */
+
+  .aboutdetail-content p {
+    font-size: 2.8vw;
+    line-height: 1.7;
+    text-align: left;
+    word-break: break-word;
+  }
+
+  /* BOLD LABEL */
+
+  .aboutdetail-content p span {
+    font-weight: 700;
+  }
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* 768px to 1024px */
+/* ========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* SECTION */
+
+  .aboutdetail-section {
+    padding: 7vw 0;
+  }
+
+  /* CARD */
+
+  .aboutdetail-card {
+    width: 82%;
+    border-radius: 1.5vw;
+    padding: 4vw 3.5vw;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+  }
+
+  /* TOP AREA */
+
+  .aboutdetail-top {
+    width: 92%;
+    margin-bottom: 4vw;
+  }
+
+  /* LOGO */
+
+  .aboutdetail-logo {
+    width: 16vw;
+  }
+
+  .aboutdetail-logo img {
+    padding-top: 0.5vw;
+  }
+
+  /* TITLE AREA */
+
+  .aboutdetail-title-area {
+    margin-right: 16vw;
+  }
+
+  /* TITLE */
+
+  .aboutdetail-title-area h2 {
+    font-size: 4vw;
+    margin-bottom: 1.5vw;
+    line-height: 1.1;
+  }
+
+  /* YELLOW LINE */
+
+  .aboutdetail-yellow-line {
+    width: 22vw;
+    height: 0.35vw;
+  }
+
+  /* CONTENT */
+
+  .aboutdetail-content {
+    gap: 3vw;
+  }
+
+  /* TEXT */
+
+  .aboutdetail-content p {
+    font-size: 2.1vw;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+
+  /* BOLD LABEL */
+
+  .aboutdetail-content p span {
+    font-weight: 700;
+  }
+}

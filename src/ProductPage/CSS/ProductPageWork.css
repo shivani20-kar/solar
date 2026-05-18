@@ -166,3 +166,145 @@
     margin: 0;
   }
 }
+/* ================================== */
+/* RESPONSIVE DESIGN (481px–767px) */
+/* ================================== */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .productpagework-section {
+    padding: 8vw 0 6vw;
+  }
+
+  .productpagework-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .productpagework-container h2 {
+    font-size: 5.8vw;
+    line-height: 1.25;
+    margin-bottom: 6vw;
+    margin-top: 0vw;
+  }
+
+  /* ROWS */
+
+  .productpagework-top-row,
+  .productpagework-bottom-row {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 5vw;
+
+    margin-bottom: 5vw;
+  }
+
+  /* CARD */
+
+  .productpagework-card {
+    width: 100%;
+    height: 52vw;
+
+    border-radius: 4vw;
+  }
+
+  /* IMAGE */
+
+  .productpagework-card img {
+    transition: transform 0.5s ease;
+  }
+
+  .productpagework-card:hover img {
+    transform: scale(1.05);
+  }
+
+  /* CONTENT */
+
+  .productpagework-content {
+    bottom: 4vw;
+
+    width: 85%;
+  }
+
+  .productpagework-content h3 {
+    font-size: 4vw;
+    line-height: 1.3;
+
+    margin-bottom: 2vw;
+  }
+
+  .productpagework-content p {
+    font-size: 2.9vw;
+    line-height: 1.5;
+
+    margin: 0;
+  }
+}
+
+/* ================================== */
+/* RESPONSIVE DESIGN (768px–1024px) */
+/* ================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .productpagework-section {
+    padding: 7vw 0 9vw;
+  }
+
+  .productpagework-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .productpagework-container h2 {
+    font-size: 3.8vw;
+    line-height: 1.2;
+
+    margin-bottom: 6vw;
+  }
+
+  /* ROWS */
+
+  .productpagework-top-row,
+  .productpagework-bottom-row {
+    gap: 4vw;
+  }
+
+  /* CARD */
+
+  .productpagework-card {
+    width: 26vw;
+    height: 32vw;
+
+    border-radius: 2.5vw;
+  }
+
+  /* CONTENT */
+
+  .productpagework-content {
+    bottom: 2.5vw;
+
+    width: 86%;
+  }
+
+  .productpagework-content h3 {
+    font-size: 2.2vw;
+    line-height: 1.3;
+
+    margin-bottom: 1.2vw;
+  }
+
+  .productpagework-content p {
+    font-size: 1.7vw;
+    line-height: 1.5;
+
+    margin: 0;
+  }
+
+  /* IMAGE HOVER */
+
+  .productpagework-card:hover img {
+    transform: scale(1.04);
+  }
+}

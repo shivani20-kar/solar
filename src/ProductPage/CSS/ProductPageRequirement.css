@@ -383,3 +383,304 @@
     line-height: 1.6;
   }
 }
+
+/* ======================================== */
+/* RESPONSIVE DESIGN — 481px to 767px */
+/* ======================================== */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .productpagerequirement-section {
+    padding: 0vw 0 8vw 0;
+  }
+
+  .productpagerequirement-container {
+    width: 88%;
+  }
+
+  /* HEADING */
+
+  .productpagerequirement-container h2 {
+    font-size: 5.8vw;
+    line-height: 1.2;
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+  }
+
+  .productpagerequirement-container > p {
+    font-size: 2.8vw;
+    line-height: 1.6;
+
+    margin-bottom: 6vw;
+
+    padding: 0 4vw;
+  }
+
+  /* MAIN BOX */
+
+  .productpagerequirement-box {
+    border-radius: 4vw;
+
+    padding: 5vw;
+
+    box-shadow: 0 1vw 3vw rgba(255, 215, 0, 0.3);
+  }
+
+  /* TOP */
+
+  .productpagerequirement-top {
+    gap: 2.5vw;
+
+    margin-bottom: 4vw;
+  }
+
+  .productpagerequirement-icon {
+    width: 9vw;
+    height: 9vw;
+  }
+
+  .productpagerequirement-icon svg {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+
+  .productpagerequirement-top h3 {
+    font-size: 3vw;
+    line-height: 1.5;
+  }
+
+  /* DIVIDER */
+
+  .productpagerequirement-divider {
+    margin-bottom: 5vw;
+  }
+
+  /* ROWS */
+
+  .productpagerequirement-rows {
+    gap: 5vw;
+  }
+
+  .productpagerequirement-row {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 3vw;
+
+    padding: 4vw;
+
+    border-radius: 3vw;
+
+    background: #fafafa;
+
+    box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.08);
+  }
+
+  /* LEFT */
+
+  .productpagerequirement-left {
+    gap: 2vw;
+
+    margin-top: 0;
+  }
+
+  .productpagerequirement-dot {
+    width: 2vw;
+    height: 2vw;
+  }
+
+  .productpagerequirement-left h4 {
+    font-size: 3.5vw;
+  }
+
+  /* ARROW */
+
+  .productpagerequirement-arrow {
+    transform: rotate(90deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .productpagerequirement-arrow svg {
+    width: 30vw;
+    height: 0.8vw;
+  }
+
+  /* TAG */
+
+  .productpagerequirement-tag {
+    gap: 1vw;
+
+    padding: 2.8vw 4vw;
+
+    border-radius: 3vw;
+
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .productpagerequirement-tag strong {
+    font-size: 3vw;
+  }
+
+  .productpagerequirement-tag span {
+    font-size: 2.8vw;
+  }
+
+  /* BOTTOM */
+
+  .productpagerequirement-bottom {
+    flex-direction: column;
+
+    gap: 2.5vw;
+
+    margin-top: 6vw;
+    padding-top: 4vw;
+
+    text-align: center;
+  }
+
+  .productpagerequirement-line {
+    width: 14vw;
+    height: 2px;
+  }
+
+  .productpagerequirement-bottom p {
+    font-size: 2.8vw;
+    line-height: 1.6;
+  }
+}
+
+/* ======================================== */
+/* RESPONSIVE DESIGN — 768px to 1024px */
+/* ======================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .productpagerequirement-section {
+    padding:0 0 6vw 0;
+  }
+
+  .productpagerequirement-container {
+    width: 82%;
+  }
+
+  /* HEADING */
+
+  .productpagerequirement-container h2 {
+    font-size: 4.2vw;
+    margin-top: 0;
+    margin-bottom: 1.5vw;
+  }
+
+  .productpagerequirement-container > p {
+    font-size: 2.2vw;
+    line-height: 1.5;
+
+    margin-bottom: 5vw;
+  }
+
+  /* MAIN BOX */
+
+  .productpagerequirement-box {
+    border-radius: 3vw;
+
+    padding: 4vw;
+  }
+
+  /* TOP */
+
+  .productpagerequirement-top {
+    gap: 2vw;
+
+    margin-bottom: 3vw;
+  }
+
+  .productpagerequirement-icon {
+    width: 6vw;
+    height: 6vw;
+  }
+
+  .productpagerequirement-icon svg {
+    width: 3vw;
+    height: 3vw;
+  }
+
+  .productpagerequirement-top h3 {
+    font-size: 2.3vw;
+  }
+
+  /* DIVIDER */
+
+  .productpagerequirement-divider {
+    margin-bottom: 4vw;
+  }
+
+  /* ROWS */
+
+  .productpagerequirement-rows {
+    gap: 3.5vw;
+  }
+
+  .productpagerequirement-row {
+    gap: 2vw;
+  }
+
+  /* LEFT */
+
+  .productpagerequirement-left {
+    gap: 1.2vw;
+  }
+
+  .productpagerequirement-dot {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+
+  .productpagerequirement-left h4 {
+    font-size: 2vw;
+  }
+
+  /* ARROW */
+
+  .productpagerequirement-arrow svg {
+    width: 14vw;
+    height: 2vw;
+  }
+
+  /* TAG */
+
+  .productpagerequirement-tag {
+    gap: 0.8vw;
+
+    padding: 1.8vw 2.5vw;
+
+    border-radius: 2vw;
+  }
+
+  .productpagerequirement-tag strong {
+    font-size: 1.9vw;
+  }
+
+  .productpagerequirement-tag span {
+    font-size: 1.8vw;
+  }
+
+  /* BOTTOM */
+
+  .productpagerequirement-bottom {
+    gap: 1.5vw;
+
+    margin-top: 5vw;
+    padding-top: 3vw;
+  }
+
+  .productpagerequirement-line {
+    height: 3vw;
+  }
+
+  .productpagerequirement-bottom p {
+    font-size: 1.9vw;
+    line-height: 1.5;
+  }
+}
