@@ -94,3 +94,72 @@
     max-width: 90%;
   }
 }
+
+/* ========================= */
+/* RESPONSIVE - TABLET SMALL */
+/* 481px to 767px */
+/* ========================= */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .blog-hero-section {
+    height: 60vh;
+    margin-top: 10vh;
+  }
+
+  .blog-hero-bg {
+    object-position: center;
+  }
+
+  .blog-hero-content {
+    padding-left: 8%;
+    padding-right: 8%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .blog-hero-content h1 {
+    font-size: 6.5vw;
+    line-height: 1.15;
+    margin-bottom: 2vh;
+  }
+
+  .blog-hero-content p {
+    font-size: 2.5vw;
+    line-height: 1.6;
+    max-width: 75%;
+  }
+}
+
+/* ========================= */
+/* RESPONSIVE - TABLET */
+/* 768px to 1024px */
+/* ========================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .blog-hero-section {
+    height: 65vh;
+    margin-top: 13vh;
+  }
+
+  .blog-hero-bg {
+    object-position: center;
+  }
+
+  .blog-hero-content {
+    padding-left: 9%;
+    padding-right: 5%;
+    justify-content: center;
+  }
+
+  .blog-hero-content h1 {
+    font-size: 5.5vw;
+    line-height: 1.15;
+    margin-bottom: 1.5vh;
+  }
+
+  .blog-hero-content p {
+    font-size: 1.8vw;
+    line-height: 1.5;
+    max-width: 55%;
+  }
+}

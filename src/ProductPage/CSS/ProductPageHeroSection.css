@@ -217,8 +217,8 @@
   /* ========================= */
 
   .productpage-section {
-    height: auto;
-    min-height: 85vh;
+    height: 85vh;
+
     margin-top: 9vh;
     background-position: center;
     padding: 16vw 0 24vw;

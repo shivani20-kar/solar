@@ -307,7 +307,7 @@
   /* ================= FEATURE TEXT ================= */
 
   .ProductPageSure-feature p {
-    font-size: 4vw;
+    font-size: 4vw; 
     line-height: 1.5;
   }
 }

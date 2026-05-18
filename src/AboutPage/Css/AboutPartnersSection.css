@@ -194,3 +194,153 @@
     margin: 0 auto;
   }
 }
+
+/* ========================================= */
+/* RESPONSIVE CSS (481px to 767px) */
+/* ========================================= */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .aboutpartners-section {
+    padding: 8vw 0;
+  }
+
+  .aboutpartners-container {
+    width: 90%;
+    margin-left: 2vw;
+  }
+
+  /* HEADING */
+
+  .aboutpartners-heading {
+    gap: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 5vw;
+  }
+
+  .aboutpartners-heading h2 {
+    font-size: 5.5vw;
+    line-height: 1.2;
+    white-space: normal;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* LINE */
+
+  .aboutpartners-line {
+    width: 14vw;
+    height: 0.5vw;
+  }
+
+  /* LOGOS */
+
+  .aboutpartners-logos {
+    width: 100%;
+  }
+
+  /* FIRST ROW */
+
+  .aboutpartners-row1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+  }
+
+  /* SECOND ROW */
+
+  .aboutpartners-row2 {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+  }
+
+  /* LAST LOGO CENTER */
+
+  .aboutpartners-row2 .aboutpartners-item:last-child {
+    grid-column: span 2;
+    width: 55%;
+    margin: 0 auto;
+  }
+
+  /* ITEM */
+
+  .aboutpartners-item {
+    height: 22vw;
+    padding: 3vw;
+    border-radius: 16px;
+  }
+
+  .aboutpartners-item img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CSS (768px to 1024px) */
+/* ========================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutpartners-section {
+    padding: 6vw 0;
+  }
+
+  .aboutpartners-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .aboutpartners-heading {
+    gap: 2vw;
+    margin-bottom: 2vw;
+  }
+
+  .aboutpartners-heading h2 {
+    font-size: 4vw;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  /* LINE */
+
+  .aboutpartners-line {
+    width: 18vw;
+    height: 0.35vw;
+  }
+
+  /* LOGOS */
+
+  .aboutpartners-logos {
+    width: 100%;
+    margin-right: 3vw;
+  }
+
+  /* FIRST ROW */
+
+  .aboutpartners-row1 {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vw;
+  }
+
+  /* SECOND ROW */
+
+  .aboutpartners-row2 {
+    width: 85%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+  }
+
+  /* ITEM */
+
+  .aboutpartners-item {
+    height: 16vw;
+    padding: 2vw;
+  }
+
+  .aboutpartners-item img {
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: contain;
+  }
+}

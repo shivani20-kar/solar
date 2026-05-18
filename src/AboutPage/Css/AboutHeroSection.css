@@ -216,8 +216,8 @@
   /* ICON */
 
   .abouthero-icon {
-    width: 18vw;
-    height: 18vw;
+    width: 15vw;
+    height: 15vw;
     margin-bottom: 5vw;
   }
 
@@ -232,5 +232,213 @@
   .abouthero-card p {
     font-size: 5.5vw;
     line-height: 1.4;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CSS (481px to 767px) */
+/* ========================================= */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .abouthero-section {
+    min-height: auto;
+    padding: 10vw 0;
+    margin-top: 10vh;
+    background-position: center;
+  }
+
+  /* OVERLAY */
+
+  .abouthero-overlay {
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  /* CONTAINER */
+
+  .abouthero-container {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8vw;
+  }
+
+  /* LEFT CONTENT */
+
+  .abouthero-content {
+    width: 100%;
+  }
+
+  .abouthero-content h1 {
+    font-size: 6.5vw;
+    line-height: 1.15;
+
+    margin-top: 0;
+    margin-bottom: 4vw;
+  }
+
+  .abouthero-content p {
+    width: 100%;
+
+    font-size: 3vw;
+    line-height: 1.7;
+
+    margin-bottom: 3vw;
+  }
+
+  /* CARDS */
+
+  .abouthero-cards {
+    width: 100%;
+
+    padding-left: 0;
+    padding-bottom: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 4vw;
+
+    flex-wrap: wrap;
+  }
+
+  /* CARD */
+
+  .abouthero-card {
+    width: 42%;
+    height: auto;
+
+    padding: 4vw 3vw;
+
+    border-radius: 20px;
+  }
+
+  /* ICON */
+
+  .abouthero-icon {
+    width: 11vw;
+    height: 11vw;
+
+    margin-bottom: 3vw;
+  }
+
+  .abouthero-icon svg {
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+
+  /* TEXT */
+
+  .abouthero-card h3,
+  .abouthero-card p {
+    font-size: 3.5vw;
+    line-height: 1.4;
+  }
+}
+
+/* ========================================= */
+/* RESPONSIVE CSS (768px to 1024px) */
+/* ========================================= */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .abouthero-section {
+    min-height: auto;
+
+    padding: 8vw 0;
+
+    background-position: center;
+
+           margin-top: 13vh;
+  }
+
+  /* OVERLAY */
+
+  .abouthero-overlay {
+    background: rgba(0, 0, 0, 0.35);
+  }
+
+  /* CONTAINER */
+
+  .abouthero-container {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 6vw;
+  }
+
+  /* LEFT CONTENT */
+
+  .abouthero-content {
+    width: 100%;
+  }
+
+  .abouthero-content h1 {
+    font-size: 5.5vw;
+    line-height: 1.1;
+
+    margin-top: 0;
+    margin-bottom: 3vw;
+  }
+
+  .abouthero-content p {
+    width: 100%;
+
+    font-size: 2.2vw;
+    line-height: 1.7;
+
+    margin-bottom: 2vw;
+  }
+
+  /* CARDS */
+
+  .abouthero-cards {
+    width: 100%;
+
+    padding-left: 0;
+    padding-bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 3vw;
+  }
+
+  /* CARD */
+
+  .abouthero-card {
+    width: 32%;
+    height: auto;
+
+    padding: 3vw 2vw;
+
+    border-radius: 20px;
+  }
+
+  /* ICON */
+
+  .abouthero-icon {
+    width: 8vw;
+    height: 8vw;
+
+    margin-bottom: 2.5vw;
+  }
+
+  .abouthero-icon svg {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  /* TEXT */
+
+  .abouthero-card h3,
+  .abouthero-card p {
+    font-size: 2.5vw;
+    line-height: 1.3;
   }
 }
