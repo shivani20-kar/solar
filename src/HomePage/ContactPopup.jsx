@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./CSs/ContactPopup.css";
 
-const ContactPopup = () => {
-  const [showPopup, setShowPopup] = useState(true);
-
+const ContactPopup = ({ closePopup }) => {
   const [propertyType, setPropertyType] = useState("");
   const [installationType, setInstallationType] = useState("");
 
@@ -23,13 +21,13 @@ const ContactPopup = () => {
 
   return (
     <>
-      {showPopup && (
+       (
         <div className="popup-overlay">
           <div className="popup-container">
             {/* Close Button */}
             <button
               className="close-btn"
-              onClick={() => setShowPopup(false)}
+             onClick={closePopup}
             >
               ✕
             </button>
@@ -71,7 +69,7 @@ const ContactPopup = () => {
                 <textarea placeholder="Your message"></textarea>
 
                 <div className="form-buttons">
-                  <button type="button" className="home-btnn" onClick={() => setShowPopup(false)}>
+                  <button type="button" className="home-btnn" onClick={closePopup}>
                     Go to Home
                   </button>
 
@@ -118,7 +116,7 @@ const ContactPopup = () => {
             </div>
           </div>
         </div>
-      )}
+      )
     </>
   );
 };

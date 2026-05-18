@@ -253,3 +253,73 @@ line-height: 26px; /* 162.5% */
     line-height: 28px;
   }
 }
+
+/* ==========================================
+   RESPONSIVE CSS (768px to 1024px)
+========================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .faq-section {
+    padding: 8vh 5vw;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  /* LEFT SIDE */
+
+  .faq-left {
+    width: 42%;
+  }
+
+  .faq-tag {
+    font-size: 14px;
+    padding: 12px 22px;
+  }
+
+  .faq-left h1 {
+    font-size: 42px;
+    line-height: 56px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .faq-left p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* RIGHT SIDE */
+
+  .faq-right {
+    width: 55%;
+    gap: 18px;
+  }
+
+  .faq-item {
+    border-radius: 16px;
+  }
+
+  .faq-question {
+    padding: 22px 24px;
+    font-size: 18px;
+    line-height: 30px;
+    gap: 14px;
+  }
+
+  .icon {
+    font-size: 30px;
+    flex-shrink: 0;
+  }
+
+  .faq-answer-wrapper.show {
+    max-height: 450px;
+  }
+
+  .faq-answer {
+    padding: 0 24px 24px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

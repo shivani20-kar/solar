@@ -390,3 +390,121 @@ line-height: 16px; /* 100% */
     line-height: 22px;
   }
 }
+
+/* ==========================================
+   RESPONSIVE CSS (768px to 1024px)
+========================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .aboutsolar-section {
+    padding: 8vh 5vw;
+  }
+
+  .aboutsolar-container {
+    width: 100%;
+    max-width: 100%;
+    gap: 4vw;
+    align-items: center;
+  }
+
+  /* LEFT SIDE */
+
+  .aboutsolar-left {
+    width: 48%;
+    gap: 16px;
+  }
+
+  .aboutsolar-card {
+    border-radius: 16px;
+  }
+
+  .image-card {
+    height: 240px;
+  }
+
+  .image-card img {
+    border-radius: 16px;
+  }
+
+  .stats-card,
+  .award-card {
+    padding: 10px 5px;
+    gap: 8px;
+  }
+
+  .stats-card {
+    height: 130px !important;
+  }
+
+  .award-card {
+    height: 180px;
+  }
+
+  .stats-card h2,
+  .award-card h2 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .stats-card p,
+  .award-card p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .stars {
+    font-size: 22px;
+    margin-top: 1px;
+    letter-spacing: 3px;
+  }
+
+  /* RIGHT SIDE */
+
+  .aboutsolar-right {
+    width: 50%;
+    padding-top: 0;
+  }
+
+  .about-btn {
+    font-size: 14px;
+    padding: 12px 24px;
+    margin-bottom: 10px;
+  }
+
+  .aboutsolar-right h1 {
+    font-size: 38px;
+    line-height: 56px;
+    margin-bottom: 12px;
+  }
+
+  .about-desc {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 16px;
+  }
+
+  /* FEATURES */
+
+  .about-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 20px;
+  }
+
+  .feature-item {
+    gap: 10px;
+    align-items: center;
+  }
+
+  .feature-item span {
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+    margin-top: 2px;
+  }
+
+  .feature-item p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

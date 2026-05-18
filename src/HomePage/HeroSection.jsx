@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CSs/HeroSection.css";
 import heroImg from "./Images/Gradient.png";
 import DealershipPopup from "./DealershipPopup";
 
-const HeroSection = () => {
-   const [showPopup, setShowPopup] = useState(false);
+const HeroSection = ({ openPopup }) => {
     return (
         <section className="solar-hero">
             <img src={heroImg} alt="Solar Hero" className="hero-bg" />
@@ -43,7 +42,7 @@ const HeroSection = () => {
                 <div className="stat-box-hero big-card">
                     <div className="card-top-hero">
                         <p>Join as Dealership</p>
-                        <button className="svg-button" onClick={() => setShowPopup(true)}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+                        <button className="svg-button" onClick={openPopup}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
                         <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
                         </svg></button>
                          {/* Popup */}
@@ -52,9 +51,7 @@ const HeroSection = () => {
                     <h2>250+</h2>
                     <p>Enterprises to thrive</p>
                 </div>
-                {showPopup && (
-  <DealershipPopup closePopup={() => setShowPopup(false)} />
-)}
+                
 
 
             </div>

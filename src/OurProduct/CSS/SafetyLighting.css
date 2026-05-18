@@ -320,3 +320,101 @@ line-height: 28px; /* 112% */
     height: 16px;
   }
 }
+/* ==========================================
+   RESPONSIVE CSS (768px to 1024px)
+========================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .safety-section {
+    padding: 40px 40px;
+  }
+
+  /* HEADING */
+
+  .section-heading {
+    gap: 16px;
+    margin-bottom: 35px;
+    flex-wrap: nowrap;
+  }
+
+  .section-heading h2 {
+    font-size: 42px;
+    line-height: 50px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .heading-line {
+    width: 140px;
+    height: 4px;
+  }
+
+  /* CARDS CONTAINER */
+
+  .safe-solution-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    justify-content: center;
+  }
+
+  /* CARD */
+
+  .safe-solution-card {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+  }
+
+  .safe-solution-card:hover {
+    transform: translateY(-6px);
+  }
+
+  /* IMAGE */
+
+  .safe-card-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  /* CONTENT */
+
+  .safe-card-content {
+    padding: 22px 20px 24px;
+  }
+
+  .safe-card-content h3 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 16px;
+  }
+
+  .safe-title-line {
+    width: 180px;
+    height: 4px;
+    margin-bottom: 16px;
+  }
+
+  .safe-card-content p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  /* BUTTON */
+
+  .safe-book-btn {
+    width: auto;
+    justify-content: center;
+    padding: 14px 24px;
+    font-size: 17px;
+    gap: 10px;
+  }
+
+  .safe-book-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+}

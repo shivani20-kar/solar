@@ -263,3 +263,98 @@ line-height: 10px; /* 113.636% */
     line-height: 20px;
   }
 }
+
+/* ==========================================
+   RESPONSIVE CSS (768px to 1024px)
+========================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .sector-wrapper {
+    padding: 50px 20px;
+  }
+
+  /* HEADING */
+
+  .sector-heading {
+    gap: 14px;
+    margin-bottom: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .sector-heading h2 {
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  /* LEFT SVG */
+
+  .sector-heading .line svg {
+    width: 100px;
+    height: auto;
+  }
+
+  /* RIGHT ARROW SVG */
+
+  .arrow-line .line svg {
+    width: 130px;
+    height: auto;
+  }
+
+  .arrow {
+    font-size: 36px;
+    margin-top: -3px;
+  }
+
+  /* CARDS */
+
+  .sector-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .sector-card {
+    width: 100%;
+    height: 420px;
+    border-radius: 20px;
+  }
+
+  /* CENTER 3RD CARD */
+
+  .sector-card:nth-child(3) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+    width: 52%;
+  }
+
+  .sector-card:hover {
+    transform: translateY(-8px);
+  }
+
+  /* OVERLAY */
+
+  .sector-overlay {
+    padding: 18px 16px;
+  }
+
+  .sector-overlay h3 {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+
+  .yellow-underline {
+    width: 110px;
+    height: 4px;
+    margin-bottom: 12px;
+  }
+
+  .sector-overlay p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

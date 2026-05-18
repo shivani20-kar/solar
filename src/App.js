@@ -1,6 +1,7 @@
 import "./App.css";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import ContactPopup from "./HomePage/ContactPopup";
 
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -53,6 +54,7 @@ function App() {
 
   // Popup State
   const [showPopup, setShowPopup] = useState(false);
+  const [showContactPopup, setShowContactPopup] = useState(false);
 
   // Auto Scroll Top
   useEffect(() => {
@@ -72,9 +74,16 @@ function App() {
   const closePopup = () => {
     setShowPopup(false);
   };
+  const openContactPopup = () => {
+  setShowContactPopup(true);
+};
+
+const closeContactPopup = () => {
+  setShowContactPopup(false);
+};
   return (
     <>
-      <Navbar />
+      <Navbar openContactPopup={openContactPopup} />
 
       {/* Popup */}
       {showPopup && <DealershipPopup closePopup={closePopup} />}
@@ -85,7 +94,7 @@ function App() {
           path="/"
           element={
             <>
-              <HeroSection />
+             <HeroSection openPopup={openPopup} />
               <AboutSolar />
               <Services />
               <WhyChooseUs />
@@ -162,6 +171,9 @@ function App() {
           }
         />
       </Routes>
+      {showContactPopup && (
+  <ContactPopup closePopup={closeContactPopup} />
+)}
 
       <Footer />
     </>

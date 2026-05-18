@@ -291,3 +291,95 @@ line-height: normal;
     margin-top: 0px;
   }
 }
+
+/* ==========================================
+   RESPONSIVE CSS (768px to 1024px)
+========================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .consultation-section {
+    padding: 8vh 5vw;
+  }
+
+  /* CIRCLE DESIGN */
+
+  .consultation-section::before,
+  .consultation-section::after {
+    width: 220px;
+    height: 220px;
+  }
+
+  .consultation-section::before {
+    top: -110px;
+    left: -110px;
+  }
+
+  .consultation-section::after {
+    bottom: -110px;
+    right: -110px;
+  }
+
+  /* CONTAINER */
+
+  .consultation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+  }
+
+  /* LEFT SIDE */
+
+  .consultation-left {
+    flex: 1;
+  }
+
+  .consultation-left h1 {
+    font-size: 48px;
+    line-height: 62px;
+    margin-bottom: 8px;
+  }
+
+  .consultation-left p {
+    font-size: 30px;
+    line-height: 48px;
+  }
+
+  /* FORM BOX */
+
+  .consultation-form-box {
+    width: 42%;
+    min-width: 340px;
+    padding: 28px 24px;
+    border-radius: 18px;
+    box-sizing: border-box;
+  }
+
+  .form-group {
+    margin-bottom: 22px;
+  }
+
+  .form-group label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .form-group input {
+    width: 100%;
+    height: 54px;
+    font-size: 15px;
+    padding: 0 16px;
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+
+  .submit-btn {
+    width: 100%;
+    height: 54px;
+    font-size: 18px;
+    border-radius: 12px;
+    margin-top: 4px;
+  }
+}

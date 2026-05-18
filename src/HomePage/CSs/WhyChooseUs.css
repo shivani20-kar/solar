@@ -300,3 +300,103 @@ line-height: 24px; /* 150% */
     height: 220px;
   }
 }
+
+/* ==========================================
+   RESPONSIVE CSS (768px to 1024px)
+========================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .whychoose-section {
+    padding: 8vh 5vw;
+  }
+
+  .whychoose-container {
+    width: 100%;
+    max-width: 100%;
+    gap: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* LEFT SIDE */
+
+  .whychoose-left {
+    flex: 1;
+  }
+
+  .whychoose-badge {
+    font-size: 14px;
+    padding: 12px 22px;
+    gap: 8px;
+  }
+
+  .whychoose-left h2 {
+    margin-top: 12px;
+    font-size: 42px;
+    line-height: 56px;
+    margin-bottom: 10px;
+  }
+
+  .whychoose-left p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  /* STATS */
+
+  .whychoose-stats {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+  }
+
+  .whychoose-stat-box h3 {
+    font-size: 42px;
+    line-height: 48px;
+    margin-bottom: 6px;
+    text-align: left;
+  }
+
+  .whychoose-stat-box p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* IMAGE GRID */
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .image-grid img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 16px;
+    object-fit: cover;
+  }
+
+  /* IMAGE HEIGHTS */
+
+  .image-grid img:nth-child(1) {
+    height: 220px;
+  }
+
+  .image-grid img:nth-child(2) {
+    height: 180px;
+    align-self: end;
+  }
+
+  .image-grid img:nth-child(3) {
+    height: 180px;
+  }
+
+  .image-grid img:nth-child(4) {
+    height: 220px;
+  }
+}

@@ -5,10 +5,9 @@ import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import logoImg from "../src/pournimalogo.png";
-import ContactPopup from "./HomePage/ContactPopup";
+// import ContactPopup from "./HomePage/ContactPopup";
 
-const Navbar = () => {
-  const [showPopup, setShowPopup] = useState(false);
+const Navbar = ({ openContactPopup }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
 
@@ -16,6 +15,7 @@ const Navbar = () => {
     setMenuOpen(false);
     setServicesOpen(false);
   };
+
 
   return (
     <>
@@ -210,10 +210,7 @@ const Navbar = () => {
             {/* Contact Button Mobile */}
             <button
               className="mobile-contact-btn"
-              onClick={() => {
-                setShowPopup(true);
-                closeAll();
-              }}
+             onClick={openContactPopup}
             >
               Contact Us
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -225,7 +222,7 @@ const Navbar = () => {
           {/* Desktop Button */}
           <button
             className="navbar-contact-btn desktop-contact-btn"
-            onClick={() => setShowPopup(true)}
+            onClick={openContactPopup}
           >
             Contact Us
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
@@ -233,8 +230,7 @@ const Navbar = () => {
             </svg>
           </button>
 
-          {/* Popup */}
-          {showPopup && <ContactPopup closePopup={() => setShowPopup(false)} />}
+         
         </div>
       </nav>
     </>
