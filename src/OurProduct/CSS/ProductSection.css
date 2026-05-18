@@ -385,3 +385,157 @@ line-height: 5px !important; /* 292.857% */
     flex-direction: column;
   }
 }
+
+/* ==========================================
+   RESPONSIVE CSS (481px to 767px)
+========================================== */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+  .products-section {
+    padding: 20px 20px;
+  }
+
+  .products-section p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 5px;
+  }
+
+  /* PRODUCT CARD */
+
+  .product-card {
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 20px !important;
+  }
+
+  /* IMAGE */
+
+  .product-image {
+    width: 100%;
+    height: 280px;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* CONTENT */
+
+  .product-content {
+    width: 100%;
+    padding: 2px 20px;
+    box-sizing: border-box;
+  }
+
+  .product-content h3 {
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 22px;
+  }
+
+  .yellow-line {
+    width: 70%;
+    margin: 0 auto 10px;
+  }
+
+  .product-content p {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 2px;
+  }
+
+  /* FEATURES */
+
+  .features,
+  .features-multi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 2px;
+  }
+
+  .features .feature-box,
+  .features-multi .feature-box {
+    width: 31%;
+    padding: 12px 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .feature-box:last-child {
+    border-right: 1px solid #d9d9d9;
+  }
+
+  .feature-box h4 {
+    width: 100% !important;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+
+  .feature-box span {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* FOOTER */
+
+  .product-footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  /* BUTTON */
+
+  .book-btn {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .book-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* RATING */
+
+  .rating {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .rating span {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .stars svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* BROWN TEXT */
+
+  .brown-text {
+    font-size: 18px !important;
+    line-height: 18px !important;
+  }
+
+  /* REVERSE CARD */
+
+  .reverse-card {
+    flex-direction: column;
+  }
+}
