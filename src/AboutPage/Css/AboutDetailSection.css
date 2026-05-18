@@ -131,3 +131,111 @@
 .aboutdetail-content p span {
   font-weight: 600;
 }
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* 320px to 480px */
+/* ========================= */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* ========================= */
+  /* SECTION */
+  /* ========================= */
+
+  .aboutdetail-section {
+    padding: 12vw 0;
+  }
+
+  /* ========================= */
+  /* CARD */
+  /* ========================= */
+
+  .aboutdetail-card {
+    width: 79%;
+    border-radius: 4vw;
+    padding: 8vw 5vw;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* ========================= */
+  /* TOP AREA */
+  /* ========================= */
+
+  .aboutdetail-top {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+
+    margin-bottom: 8vw;
+  }
+
+  /* ========================= */
+  /* LOGO */
+  /* ========================= */
+
+  .aboutdetail-logo {
+    width: 32vw;
+    justify-content: center;
+  }
+
+  .aboutdetail-logo img {
+    padding-top: 0;
+  }
+
+  /* ========================= */
+  /* TITLE AREA */
+  /* ========================= */
+
+  .aboutdetail-title-area {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* ========================= */
+  /* TITLE */
+  /* ========================= */
+
+  .aboutdetail-title-area h2 {
+    font-size: 8vw;
+    margin-bottom: 3vw;
+    line-height: 1.1;
+  }
+
+  /* ========================= */
+  /* YELLOW LINE */
+  /* ========================= */
+
+  .aboutdetail-yellow-line {
+    width: 42vw;
+    height: 0.8vw;
+  }
+
+  /* ========================= */
+  /* CONTENT */
+  /* ========================= */
+
+  .aboutdetail-content {
+    gap: 5vw;
+  }
+
+  /* ========================= */
+  /* TEXT */
+  /* ========================= */
+
+  .aboutdetail-content p {
+    font-size: 4.3vw;
+    line-height: 1.6;
+    text-align: left;
+    word-break: break-word;
+  }
+
+  /* ========================= */
+  /* BOLD LABEL */
+  /* ========================= */
+
+  .aboutdetail-content p span {
+    font-weight: 700;
+  }
+}

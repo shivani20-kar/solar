@@ -91,3 +91,78 @@
   text-align: center;
   font-style: normal;
 }
+
+/* ================================== */
+/* RESPONSIVE DESIGN (320px–480px) */
+/* ================================== */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .productpagework-section {
+    padding: 10vw 0 14vw;
+  }
+
+  .productpagework-container {
+    width: 90%;
+  }
+
+  /* HEADING */
+
+  .productpagework-container h2 {
+    font-size: 7vw;
+    line-height: 1.25;
+
+    margin-bottom: 10vw;
+  }
+
+  /* ROWS */
+
+  .productpagework-top-row,
+  .productpagework-bottom-row {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 6vw;
+
+    margin-bottom: 6vw;
+  }
+
+  /* CARD */
+
+  .productpagework-card {
+    width: 100%;
+    height: 62vw;
+
+    border-radius: 5vw;
+  }
+
+  /* IMAGE HOVER */
+
+  .productpagework-card img {
+    transition: transform 0.5s ease;
+  }
+
+  .productpagework-card:hover img {
+    transform: scale(1.05);
+  }
+
+  /* CONTENT */
+
+  .productpagework-content {
+    bottom: 5vw;
+
+    width: 86%;
+  }
+
+  .productpagework-content h3 {
+    font-size: 5vw;
+    line-height: 1.3;
+
+    margin-bottom: 2.5vw;
+  }
+
+  .productpagework-content p {
+    font-size: 3.8vw;
+    line-height: 1.5;
+    margin: 0;
+  }
+}

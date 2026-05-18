@@ -220,3 +220,130 @@
   font-style: normal;
   font-weight: 400;
 }
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* 320px to 480px */
+/* ========================= */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* ========================= */
+  /* SECTION */
+  /* ========================= */
+
+  .aboutmission-section {
+    padding: 10vw 0 14vw;
+  }
+
+  /* ========================= */
+  /* CORNER IMAGES */
+  /* ========================= */
+
+  .aboutmission-corner-top-left,
+  .aboutmission-corner-top-right,
+  .aboutmission-corner-bottom-left,
+  .aboutmission-corner-bottom-right {
+    width: 28vw;
+    opacity: 0.6;
+  }
+
+  /* ========================= */
+  /* DECORATIVE CIRCLES */
+  /* ========================= */
+
+  .aboutmission-circle-top,
+  .aboutmission-circle-bottom {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  /* ========================= */
+  /* CONTAINER */
+  /* ========================= */
+
+  .aboutmission-container {
+    width: 90%;
+  }
+
+  /* ========================= */
+  /* HEADING */
+  /* ========================= */
+
+  .aboutmission-heading {
+    font-size: 9vw;
+    line-height: 1.15;
+    padding: 4vw 0 8vw;
+  }
+
+  /* ========================= */
+  /* CARD */
+  /* ========================= */
+
+  .aboutmission-card {
+    width: 88%;
+    border-radius: 4vw;
+    padding: 7vw 5vw;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  /* BOTH CARDS CENTER */
+
+  .aboutmission-card:first-of-type,
+  .aboutmission-card:last-of-type {
+    align-self: center;
+    margin: 0 0 8vw 0;
+  }
+
+  .aboutmission-card:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* ========================= */
+  /* CARD TITLE */
+  /* ========================= */
+
+  .aboutmission-card-title {
+    gap: 3vw;
+    margin-bottom: 4vw;
+    flex-direction: row;
+  }
+
+  /* ========================= */
+  /* ICON */
+  /* ========================= */
+
+  .aboutmission-icon {
+    width: 9vw;
+    height: 9vw;
+    flex-shrink: 0;
+  }
+
+  /* ========================= */
+  /* TITLE */
+  /* ========================= */
+
+  .aboutmission-card-title h3 {
+    font-size: 6.5vw;
+    line-height: 1.1;
+  }
+
+  /* ========================= */
+  /* YELLOW LINE */
+  /* ========================= */
+
+  .aboutmission-yellow-line,
+  .aboutmission-yellow-line.small {
+    width: 42vw;
+    height: 0.8vw;
+    margin-bottom: 4vw;
+  }
+
+  /* ========================= */
+  /* PARAGRAPH */
+  /* ========================= */
+
+  .aboutmission-card p {
+    font-size: 4vw;
+    line-height: 1.6;
+    margin: 0;
+  }
+}

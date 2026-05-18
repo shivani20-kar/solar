@@ -205,3 +205,196 @@
 
   fill: #302e99;
 }
+
+/* ========================= */
+/* MOBILE RESPONSIVE */
+/* 320px to 480px */
+/* ========================= */
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* ========================= */
+  /* SECTION */
+  /* ========================= */
+
+  .productpage-section {
+    height: auto;
+    min-height: 85vh;
+    margin-top: 9vh;
+    background-position: center;
+    padding: 16vw 0 24vw;
+  }
+
+  /* ========================= */
+  /* OVERLAY */
+  /* ========================= */
+
+  .productpage-overlay {
+    background: rgba(0, 0, 0, 0.45);
+  }
+
+  /* ========================= */
+  /* CONTAINER */
+  /* ========================= */
+
+  .productpage-container {
+    width: 90%;
+    height: auto;
+  }
+
+  /* ========================= */
+  /* LEFT */
+  /* ========================= */
+
+  .productpage-left {
+    width: 100%;
+  }
+
+  /* ========================= */
+  /* HEADING */
+  /* ========================= */
+
+  .productpage-left h1 {
+    font-size: 11vw;
+    line-height: 1.05;
+
+    margin: 0 0 5vw;
+  }
+
+  /* ========================= */
+  /* PARAGRAPH */
+  /* ========================= */
+
+  .productpage-left p {
+    font-size: 4.3vw;
+    line-height: 1.5;
+
+    max-width: 100%;
+
+    margin-bottom: 8vw;
+  }
+
+  /* ========================= */
+  /* FEATURES WRAPPER */
+  /* ========================= */
+
+  .productpage-features {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 4vw;
+
+    margin-bottom: 4vw;
+  }
+
+  .productpage-feature-bottom {
+    margin-left: 0;
+  }
+
+  /* ========================= */
+  /* FEATURE CARD */
+  /* ========================= */
+
+  .productpage-feature-card {
+    width: 60%;
+
+    gap: 4vw;
+
+    padding: 4vw 5vw;
+
+    border-radius: 4vw;
+
+    box-shadow:
+      0 1vw 4vw rgba(0, 0, 0, 0.25),
+      inset 0 0.2vw 0.4vw rgba(255, 255, 255, 0.2);
+  }
+
+  /* ========================= */
+  /* CHECK ICON */
+  /* ========================= */
+
+  .productpage-check svg {
+    width: 7vw;
+    height: 7vw;
+
+    flex-shrink: 0;
+  }
+
+  /* ========================= */
+  /* TEXT */
+  /* ========================= */
+
+  .productpage-feature-card span {
+    font-size: 4vw;
+    line-height: 1.4;
+  }
+
+  .productpage-sticky-button {
+    position: fixed;
+
+    right: 4vw;
+    bottom: 5vw;
+
+    height: auto;
+
+    z-index: 999;
+  }
+
+  .productpage-sticky-button button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2vw;
+
+    border-radius: 8px;
+    border: 1px solid transparent;
+
+    background: linear-gradient(90deg, #15b2ff, #4867ff);
+
+    cursor: pointer;
+
+    padding: 1.6vh 4vw;
+
+    transition: all 0.3s ease;
+
+    color: #fff;
+
+    font-family: "Figtree";
+    font-size: 4vw;
+    font-weight: 500;
+    line-height: 1;
+
+    box-shadow: 0 1vw 4vw rgba(0, 0, 0, 0.25);
+
+    outline: none;
+  }
+
+  /* SVG */
+
+  .productpage-sticky-button button svg {
+    width: 5vw;
+    height: 5vw;
+
+    transform: rotate(-45deg);
+
+    transition: all 0.3s ease;
+
+    fill: #fff;
+  }
+
+  /* HOVER SAME AS DESKTOP */
+
+  .productpage-sticky-button button:hover {
+    background: #fff;
+
+    color: #302e99;
+
+    border: 1px solid #302e99;
+  }
+
+  .productpage-sticky-button button:hover svg {
+    transform: rotate(0deg);
+
+    fill: #302e99;
+  }
+}
