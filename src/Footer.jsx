@@ -87,7 +87,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
           <div className="footer-col">
             <h3 className="footer-heading">Contact Us</h3>
 
@@ -159,7 +158,7 @@ const Footer = () => {
               <span>infomailsolarp@gmail.com</span>
             </p>
           </div>
-
+          33
           <div className="footer-col">
             <h3 className="footer-heading">Quick Links</h3>
 
@@ -181,7 +180,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
           <div className="footer-col">
             <h3 className="footer-heading">Support</h3>
 
