@@ -38,16 +38,16 @@ export default function ProjectsSection() {
         <div>
           <span className="tag">✦ OUR PROJECTS</span>
           <h2>
-            Transforming Lives <br />
+            Transforming Lives 
             with Solar Energy
           </h2>
         </div>
 
-        <button className="view-btn">
+        {/* <button className="view-btn">
           View All Projects  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
             <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" />
           </svg>
-        </button>
+        </button> */}
       </div>
 
       <div className="projects-grid">

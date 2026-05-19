@@ -41,7 +41,7 @@ const BlogSection = () => {
 
           <h1 className="blog-heading">
             Insights on Solar Energy
-            <br />
+         
             and Sustainable Living
           </h1>
         </div>

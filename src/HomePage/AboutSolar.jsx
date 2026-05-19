@@ -91,7 +91,7 @@ const AboutSolar = () => {
           <button className="about-btn">✦ ABOUT US</button>
 
           <h1>
-            Innovating Solar Energy <br />
+            Innovating Solar Energy 
             for Every Home & Business
           </h1>
 

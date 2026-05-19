@@ -20,8 +20,6 @@ const DealershipPopup = ({ closePopup }) => {
            <button className="deal-close-btn" onClick={closePopup}>
   ✕
 </button>
-
-            {/* Header */}
             <div className="deal-popup-header">
               <h1>Become A Solar Partner</h1>
               <p>
@@ -30,17 +28,12 @@ const DealershipPopup = ({ closePopup }) => {
                 solutions across India.
               </p>
             </div>
-
-            {/* Form */}
             <div className="deal-form-grid">
-
-              {/* Left */}
               <div className="deal-form-section">
                 <div className="deal-section-title">
                   <span>1</span>
                   Applicant Details
                 </div>
-
                 <label>Full Name</label>
                 <input type="text" placeholder="Enter your full name" />
 
@@ -64,7 +57,6 @@ const DealershipPopup = ({ closePopup }) => {
                 ></textarea>
               </div>
 
-              {/* Right */}
               <div className="deal-form-section">
                 <div className="deal-section-title">
                   <span>2</span>
@@ -102,7 +94,6 @@ const DealershipPopup = ({ closePopup }) => {
     id="fileUpload"
     style={{ display: "none" }}
   />
-
   <div className="deal-upload-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
   <path d="M8.125 25C6.22917 25 4.60938 24.3438 3.26562 23.0312C1.92188 21.7188 1.25 20.1146 1.25 18.2188C1.25 16.5938 1.73958 15.1458 2.71875 13.875C3.69792 12.6042 4.97917 11.7917 6.5625 11.4375C7.08333 9.52083 8.125 7.96875 9.6875 6.78125C11.25 5.59375 13.0208 5 15 5C17.4375 5 19.5052 5.84896 21.2031 7.54688C22.901 9.24479 23.75 11.3125 23.75 13.75C25.1875 13.9167 26.3802 14.5365 27.3281 15.6094C28.276 16.6823 28.75 17.9375 28.75 19.375C28.75 20.9375 28.2031 22.2656 27.1094 23.3594C26.0156 24.4531 24.6875 25 23.125 25H16.25C15.5625 25 14.974 24.7552 14.4844 24.2656C13.9948 23.776 13.75 23.1875 13.75 22.5V16.0625L11.75 18L10 16.25L15 11.25L20 16.25L18.25 18L16.25 16.0625V22.5H23.125C24 22.5 24.7396 22.1979 25.3438 21.5938C25.9479 20.9896 26.25 20.25 26.25 19.375C26.25 18.5 25.9479 17.7604 25.3438 17.1562C24.7396 16.5521 24 16.25 23.125 16.25H21.25V13.75C21.25 12.0208 20.6406 10.5469 19.4219 9.32812C18.2031 8.10938 16.7292 7.5 15 7.5C13.2708 7.5 11.7969 8.10938 10.5781 9.32812C9.35938 10.5469 8.75 12.0208 8.75 13.75H8.125C6.91667 13.75 5.88542 14.1771 5.03125 15.0312C4.17708 15.8854 3.75 16.9167 3.75 18.125C3.75 19.3333 4.17708 20.3646 5.03125 21.2188C5.88542 22.0729 6.91667 22.5 8.125 22.5H11.25V25H8.125Z" fill="#4867FF"/>
 </svg></div>

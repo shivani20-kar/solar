@@ -32,8 +32,8 @@ const Consultation = () => {
           </h1>
 
           <p>
-            “Make smarter energy <br />
-            decisions with <br />
+            “Make smarter energy 
+            decisions with 
             professional support.”
           </p>
         </div>

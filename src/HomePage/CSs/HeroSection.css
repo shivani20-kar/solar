@@ -133,7 +133,7 @@
   flex-direction: column;
   justify-content: center;
   gap: 0vw;
-  padding: 1vh 1vw 0vh;
+  padding: 0vh 1vw 2vh;
   border-radius: 16px;
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.2);
@@ -162,23 +162,6 @@
   font-size: 16px;
   font-weight: 500;
 }
-
-.svg-button {
-  border-radius: 50%;
-  border: 1px solid #4867ff;
-  background: linear-gradient(271deg, #17aeff -99.15%, #4869ff 137.57%);
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.svg-button svg {
-  fill: #fff;
-  transform: rotate(-45deg);
-  width: 19px;
-  height: 25px;
-}
-
 .stat-box-hero h2 {
   color: #fff;
   font-family: Figtree;
@@ -197,6 +180,65 @@
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+
+.join-btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: linear-gradient(90deg, #15b2ff, #4867ff);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5vw;
+  padding: 1.5vh 1vw;
+  transition: all 0.3s ease;
+  color: #fff;
+  text-align: right;
+  font-family: Figtree;
+  font-size: 1.1vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  width: 9vw;
+}
+
+.join-btn svg {
+  width: 18px;
+  height: 18px;
+  font-weight: 600;
+  fill: #fff;
+
+  transform: rotate(-45deg);
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+
+.join-btn:hover {
+  background: #fff;
+  color: #302e99;
+  border: 1px solid #302e99;
+}
+
+.join-btn:hover svg {
+  transform: rotate(0deg);
+  fill: #302e99;
+}
+
+.hero-card {
+  position: absolute;
+  right: 7%;
+  bottom: 60px;
+  z-index: 3;
+  width: 500px;
+
+  display: flex;
+  align-items: flex-end;
+  /* bottom align */
+  gap: 1vw;
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -309,11 +351,24 @@
   .stat-box-hero h2 {
     font-size: 30px;
     line-height: 10px;
+    margin-bottom: 2vh;
   }
 
   .stat-box-hero p {
     font-size: 13px;
     line-height: 22px;
+  }
+  .join-btn {
+    font-size: 14px;
+    padding: 10px 14px;
+    width: 100%;
+    justify-content: center;
+    width: 30vw;
+  }
+
+  .join-btn svg {
+    width: 16px;
+    height: 16px;
   }
 }
 
@@ -430,12 +485,17 @@
   .stat-box-hero h2 {
     font-size: 40px;
     line-height: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
   }
 
   .stat-box-hero p {
     font-size: 15px;
     line-height: 10px;
+  }
+    .join-btn {
+    font-size: 15px;
+    padding: 12px 16px;
+    width: 25vw;
   }
 }
 
@@ -562,5 +622,10 @@
   .stat-box-hero p {
     font-size: 16px;
     line-height: 24px;
+  }
+   .join-btn {
+    font-size: 15px;
+    padding: 12px 16px;
+    width: 20vw;
   }
 }

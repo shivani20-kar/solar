@@ -192,7 +192,7 @@ const BlogSolarSection = () => {
 
         </div>
 
-        <button className="blogsolar-load-btn">
+        {/* <button className="blogsolar-load-btn">
 
           Learn More
 
@@ -202,7 +202,7 @@ const BlogSolarSection = () => {
 
           </svg>
 
-        </button>
+        </button> */}
 
       </div>
 

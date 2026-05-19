@@ -38,7 +38,7 @@ export default function FAQ() {
 
         <h1>
           Let’s Answer Your Solar
-          <br />
+         
           Questions in Detail
         </h1>
 

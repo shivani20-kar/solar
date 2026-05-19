@@ -73,7 +73,7 @@ const WhyChooseUs = () => {
           </div>
 
           <h2>
-            Empowering Homes and <br />
+            Empowering Homes and 
             Businesses with Solar
           </h2>
 
